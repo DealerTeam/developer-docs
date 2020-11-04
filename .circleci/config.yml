@@ -12,7 +12,7 @@ jobs:
       - run:
           name: install Node package @cparra/apexdocs
           command: |
-            npm-rebuild
+            npm rebuild
             npm update
             sudo npm install -g @cparra/apexdocs --no-package-lock
       - run:
