@@ -1,0 +1,34 @@
+# 
+version: 2
+jobs:
+  generate-docs-job:
+    docker:
+      - image: salestrip/sfdx-cli
+    steps:
+      - run: 
+          name: checkout code
+          command: |
+            - checkout                  # Required step.  Checks out the code from your repository.
+      - run:
+          name: install Node package @cparra/apexdocs
+          command: |
+            npm install @cparra/apexdocs
+      - run:
+          name: create destination docs-output directory
+          command: |
+            mkdir outputdocs
+      - run:
+          name: run apexdocs node package/command to generate docs
+          command: |    
+            apexdocs-generate -s classes -t outputdocs -g jekyll
+  
+  
+  workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - generate-docs-job:
+          context: org-global        
+#END-OF-CONFIG-FILE#
+#DEALERTEAM.COM RELEASE ENGINEERING#
+##
