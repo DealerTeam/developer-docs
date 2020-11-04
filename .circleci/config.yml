@@ -9,16 +9,15 @@ jobs:
       - run:
           name: install Node package @cparra/apexdocs
           command: |
-            npm install @cparra/apexdocs
+            npm install -g @cparra/apexdocs
       - run:
           name: create destination docs-output directory
           command: |
             mkdir outputdocs
       - run:
           name: run apexdocs node package/command to generate docs
-          command: |    
+          command: |
             apexdocs-generate -s classes -t outputdocs -g jekyll
-  
   
 workflows:
   version: 2
