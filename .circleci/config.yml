@@ -25,7 +25,8 @@ jobs:
             cd classes
             ls -l
             cd ..
-            apexdocs-generate -s classes -t outputdocs -g jekyll
+            pwd
+            apexdocs-generate -s /classes -t /outputdocs -g jekyll
   
 workflows:
   version: 2
