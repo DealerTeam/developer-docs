@@ -27,7 +27,7 @@ jobs:
             pwd
             cd ..
             pwd
-            apexdocs-generate -s ~/classes -t ~/outputdocs -g jekyll
+            apexdocs-generate -s ./classes -t ./outputdocs -g jekyll
   
 workflows:
   version: 2
