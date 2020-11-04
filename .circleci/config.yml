@@ -3,9 +3,10 @@ version: 2
 jobs:
   generate-docs-job:
     docker:
-      - image: salestrip/sfdx-cli
+      - image: cimg/node:15.0
     steps:
       - checkout   # Required step.  Checks out the code from your repository.
+      - run: node -v
       - run:
           name: install Node package @cparra/apexdocs
           command: |
