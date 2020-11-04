@@ -15,6 +15,7 @@ jobs:
             npm rebuild
             npm update
             sudo npm install -g @cparra/apexdocs --no-package-lock
+            npm rebuild @cparra/apexdocs
       - run:
           name: create destination docs-output directory
           command: |
