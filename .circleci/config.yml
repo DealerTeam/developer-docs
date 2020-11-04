@@ -5,8 +5,8 @@ jobs:
     docker:
       - image: salestrip/sfdx-cli
     steps:
-      - checkout                  # Required step.  Checks out the code from your repository.
-      -run:
+      - checkout   # Required step.  Checks out the code from your repository.
+      - run:
           name: install sudo command
           command: |
             apt-get install -y sudo
