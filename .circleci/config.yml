@@ -9,7 +9,7 @@ jobs:
       - run:
           name: install Node package @cparra/apexdocs
           command: |
-            npm i @cparra/apexdocs
+            sudo npm i -g @cparra/apexdocs
       - run:
           name: create destination docs-output directory
           command: |
