@@ -12,8 +12,9 @@ jobs:
       - run:
           name: install Node package @cparra/apexdocs
           command: |
+            npm-rebuild
             npm update
-            sudo npm i -g @cparra/apexdocs --no-package-lock
+            sudo npm install -g @cparra/apexdocs --no-package-lock
       - run:
           name: create destination docs-output directory
           command: |
