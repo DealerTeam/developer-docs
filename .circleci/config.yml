@@ -5,10 +5,7 @@ jobs:
     docker:
       - image: salestrip/sfdx-cli
     steps:
-      - run: 
-          name: checkout code
-          command: |
-            - checkout                  # Required step.  Checks out the code from your repository.
+      - checkout                  # Required step.  Checks out the code from your repository.
       - run:
           name: install Node package @cparra/apexdocs
           command: |
