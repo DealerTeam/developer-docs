@@ -24,11 +24,11 @@ jobs:
   
   
   workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - generate-docs-job:
-          context: org-global        
+    version: 2
+    build_and_test:
+      jobs:
+        - generate-docs-job:
+            context: org-global        
 #END-OF-CONFIG-FILE#
 #DEALERTEAM.COM RELEASE ENGINEERING#
 ##
