@@ -12,7 +12,8 @@ jobs:
       - run:
           name: install Node package @cparra/apexdocs
           command: |
-            sudo npm install -g @cparra/apexdocs
+            sudo npm update
+            sudo npm install -g @cparra/apexdocs --no-package-lock
       - run:
           name: create destination docs-output directory
           command: |
@@ -23,7 +24,7 @@ jobs:
             pwd
             ls -la
             cd classes
-            ls -l
+            pwd
             cd ..
             pwd
             sudo apexdocs-generate -s ~/classes -t ~/outputdocs -g jekyll
