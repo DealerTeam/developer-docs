@@ -13,7 +13,7 @@ jobs:
           name: install Node package @cparra/apexdocs
           command: |
             npm update
-            sudo npm ci -g @cparra/apexdocs --force
+            sudo npm ci -g @cparra/apexdocs
       - run:
           name: create destination docs-output directory
           command: |
