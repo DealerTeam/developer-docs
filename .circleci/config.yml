@@ -8,7 +8,7 @@ jobs:
       - checkout   # Required step.  Checks out the code from your repository.
       - run: node -v
       - run: pwd
-      - run: ls
+      - run: ls -a
       - run:
           name: install Node package @cparra/apexdocs
           command: |
@@ -20,6 +20,8 @@ jobs:
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
+            pwd
+            ls -a
             apexdocs-generate -s classes -t outputdocs -g jekyll
   
 workflows:
