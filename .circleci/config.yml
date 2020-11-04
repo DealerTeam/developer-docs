@@ -15,7 +15,6 @@ jobs:
           name: create destination docs-output directory
           command: |
             mkdir outputdocs
-      - run: cd node_modules
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
