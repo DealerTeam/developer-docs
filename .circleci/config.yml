@@ -7,17 +7,14 @@ jobs:
     steps:
       - checkout   # Required step.  Checks out the code from your repository.
       - run:
-          name: install sudo command
-          command: |
-            apt-get install -y sudo
-      - run:
           name: install Node package @cparra/apexdocs
           command: |
-            sudo npm i -g @cparra/apexdocs
+            npm install @cparra/apexdocs
       - run:
           name: create destination docs-output directory
           command: |
             mkdir outputdocs
+      - run: cd node_modules
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
