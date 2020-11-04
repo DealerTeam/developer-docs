@@ -21,7 +21,10 @@ jobs:
           name: run apexdocs node package/command to generate docs
           command: |
             pwd
-            ls -a
+            ls -la
+            cd classes
+            ls -l
+            cd ..
             apexdocs-generate -s classes -t outputdocs -g jekyll
   
 workflows:
