@@ -6,6 +6,10 @@ jobs:
       - image: salestrip/sfdx-cli
     steps:
       - checkout                  # Required step.  Checks out the code from your repository.
+      -run:
+          name: install sudo command
+          command: |
+            apt-get install -y sudo
       - run:
           name: install Node package @cparra/apexdocs
           command: |
