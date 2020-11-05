@@ -8,6 +8,7 @@ jobs:
       - checkout   # Required step.  Checks out the code from your repository.
       - run:
           name:  display some info
+          command: |
             node -v
             pwd
             ls -al
