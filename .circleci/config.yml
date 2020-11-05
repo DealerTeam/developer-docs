@@ -24,12 +24,10 @@ jobs:
           name: run apexdocs node package/command to generate docs
           command: |
             pwd
+            mkdir classcopy
+            cp classes/* classcopy
             ls -la
-            cd classes
-            pwd
-            cd ..
-            pwd
-            apexdocs-generate -s ./classes -t ./outputdocs -g jekyll
+            apexdocs-generate -s /home/circleci/project/classcopy -t /home/circleci/project/outputdocs
   
 workflows:
   version: 2
