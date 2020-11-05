@@ -2,6 +2,7 @@
 version: 2
 jobs:
   generate-docs-job:
+    working_directory: ~/repo
     docker:
       - image: cimg/node:14.9
     steps:
@@ -27,7 +28,7 @@ jobs:
             mkdir classcopy
             cp classes/* classcopy
             ls -la
-            sudo apexdocs-generate -s /home/circleci/project/classcopy -t /home/circleci/project/outputdocs
+            sudo apexdocs-generate -s classcopy -t outputdocs
   
 workflows:
   version: 2
