@@ -1,5 +1,5 @@
 # 
-version: 2.1
+version: 2
 jobs:
   generate-docs-job:
     docker:
@@ -14,26 +14,17 @@ jobs:
           command: |
             sudo npm rebuild
             sudo npm update
-            sudo npm cache clean --force
             sudo npm install -g @cparra/apexdocs --no-package-lock
-            sudo npm rebuild @cparra/apexdocs
-      - run:
-          name: create destination docs-output directory
-          command: |
-            mkdir outputdocs
+            sudo npm rebuild @cparra/apexdocs            
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
             pwd
+            mkdir outputdocs
             mkdir classcopy
             cp classes/* classcopy
             ls -la
-            cd ~
-            pwd
-            cd ~/project
-            pwd
-            ls -la
-            sudo apexdocs-generate -s classcopy -t outputdocs
+            apexdocs-generate -s classcopy -t outputdocs
   
 workflows:
   version: 2
