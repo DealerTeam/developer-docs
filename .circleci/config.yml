@@ -1,5 +1,5 @@
 # 
-version: 2.1
+version: 2.0
 jobs:
   generate-docs-job:
     docker:
@@ -25,6 +25,8 @@ jobs:
             mkdir classcopy
             cp classes/* classcopy
             ls -la
+            dirname classcopy
+            readlink -f classcopy
             apexdocs-generate -s classcopy -t outputdocs
   
 workflows:
