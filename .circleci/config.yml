@@ -27,7 +27,7 @@ jobs:
             mkdir classcopy
             cp classes/* classcopy
             ls -la
-            apexdocs-generate -s /home/circleci/project/classcopy -t /home/circleci/project/outputdocs
+            sudo apexdocs-generate -s /home/circleci/project/classcopy -t /home/circleci/project/outputdocs
   
 workflows:
   version: 2
