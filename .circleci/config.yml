@@ -14,7 +14,6 @@ jobs:
           command: |
             sudo npm rebuild
             sudo npm update
-            sudo npm cache clean --force
             sudo npm install -g @cparra/apexdocs --no-package-lock
             sudo npm rebuild @cparra/apexdocs
       - run:
@@ -33,7 +32,7 @@ jobs:
             cd ~/project
             pwd
             ls -la
-            sudo apexdocs-generate -s classcopy -t outputdocs
+            apexdocs-generate -s classcopy -t outputdocs
   
 workflows:
   version: 2
