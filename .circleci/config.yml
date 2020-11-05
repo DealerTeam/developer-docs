@@ -6,14 +6,16 @@ jobs:
       - image: cimg/node:15.0.1
     steps:
       - checkout   # Required step.  Checks out the code from your repository.
-      - run: node -v
-      - run: pwd
-      - run: ls -a
+      - run:
+          name:  display some info
+            node -v
+            pwd
+            ls -al
       - run:
           name: install Node package @cparra/apexdocs
           command: |
-            sudo npm update
-            sudo npm install -g @cparra/apexdocs --no-package-lock
+            npm update
+            npm install -g @cparra/apexdocs --no-package-lock
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
