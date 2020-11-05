@@ -25,9 +25,9 @@ jobs:
             mkdir classcopy
             cp classes/* classcopy
             ls -la
-            dirname classcopy
+            readlink -f outputdocs
             readlink -f classcopy
-            sudo apexdocs-generate -s /home/circleci/project/classcopy -t /home/circleci/project/outputdocs
+            sudo apexdocs-generate -s /home/circleci/project/classcopy -t outputdocs
   
 workflows:
   version: 2
