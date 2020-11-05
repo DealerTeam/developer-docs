@@ -25,11 +25,9 @@ jobs:
           command: |
             pwd
             ls -la
-            cd classes
-            pwd
-            cd ..
-            pwd
-            apexdocs-generate -s ./classes -t ./outputdocs -g jekyll
+            mkdir classcopy
+            cp classes/* classcopy
+            apexdocs-generate -s classcopy -t outputdocs
   
 workflows:
   version: 2
