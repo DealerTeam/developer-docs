@@ -27,7 +27,7 @@ jobs:
             ls -la
             dirname classcopy
             readlink -f classcopy
-            apexdocs-generate -s classcopy -t outputdocs
+            apexdocs-generate -s /home/circleci/project/classcopy -t /home/circleci/project/outputdocs
   
 workflows:
   version: 2
