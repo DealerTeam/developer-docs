@@ -16,7 +16,7 @@ jobs:
           name: install Node package @cparra/apexdocs
           command: |
             npm update
-            npm install -g @cparra/apexdocs --no-package-lock
+            sudo npm install -g @cparra/apexdocs --no-package-lock
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
