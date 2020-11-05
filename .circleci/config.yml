@@ -1,5 +1,5 @@
 # 
-version: 2.1
+version: 2.0
 jobs:
   generate-docs-job:
     docker:
@@ -16,7 +16,7 @@ jobs:
           name: install Node package @cparra/apexdocs
           command: |
             npm update
-            npm install -g @cparra/apexdocs --no-package-lock
+            sudo npm install -g @cparra/apexdocs --no-package-lock
       - run:
           name: run apexdocs node package/command to generate docs
           command: |
@@ -25,6 +25,8 @@ jobs:
             mkdir classcopy
             cp classes/* classcopy
             ls -la
+            dirname classcopy
+            readlink -f classcopy
             apexdocs-generate -s classcopy -t outputdocs
   
 workflows:
