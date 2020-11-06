@@ -44,7 +44,7 @@ jobs:
             cp -r outputdocs source2/developer-docs/docs
             cd source2
             git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
-            git push origin master
+            git push origin main
 
 workflows:
   version: 2
