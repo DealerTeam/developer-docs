@@ -36,8 +36,8 @@ jobs:
           command: |
             mkdir source2
             cd source2
-            git config user.email "matthewbayon@yahoo.com"
-            git config user.name "gitmemattb"
+            git config --global user.email "matthewbayon@yahoo.com"
+            git config --global user.name "gitmemattb"
             git clone https://github.com/DealerTeam/developer-docs.git
             cd developer-docs
             git checkout main
