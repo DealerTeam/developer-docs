@@ -45,6 +45,8 @@ jobs:
             cd ..
             cp -r outputdocs source2/developer-docs/docs
             cd source2/developer-docs
+            git config --global user.email "matthewbayon@yahoo.com"
+            git config --global user.name "gitmemattb"
             git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
             git push origin main
 
