@@ -27,7 +27,7 @@ jobs:
             ls -la
             readlink -f outputdocs
             readlink -f classcopy
-            sudo apexdocs-generate -s /home/circleci/project/classcopy -t outputdocs
+            sudo apexdocs-generate -s /home/circleci/project/classcopy -t outputdocs -g jekyll
   
 workflows:
   version: 2
