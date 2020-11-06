@@ -41,6 +41,8 @@ jobs:
             git clone https://github.com/DealerTeam/developer-docs.git
             cd developer-docs
             git checkout main
+            git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
+            git push origin main
             cd ..
             cd ..
             cp -r outputdocs source2/developer-docs/docs
