@@ -40,6 +40,8 @@ jobs:
             git config user.name "gitmemattb"
             git clone https://github.com/DealerTeam/developer-docs.git
             git checkout main
+            pwd
+            ls -la
 workflows:
   version: 2
   build_and_test:
