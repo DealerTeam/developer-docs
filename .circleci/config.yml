@@ -40,8 +40,12 @@ jobs:
             git config user.name "gitmemattb"
             git clone https://github.com/DealerTeam/developer-docs.git
             git checkout main
-            pwd
-            ls -la
+            cd ..
+            cp -r outputdocs source2/developer-docs/docs
+            cd source2
+            git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
+            git push origin master
+
 workflows:
   version: 2
   build_and_test:
