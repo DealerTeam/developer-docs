@@ -5,10 +5,6 @@ jobs:
     docker:
       - image: cimg/node:15.0.1
     steps:
-      - run:
-          name: create source dir
-          command: |
-            mkdir source
       - checkout:   # Required step.  Checks out the code from your repository.
           path: /source
       - run:
