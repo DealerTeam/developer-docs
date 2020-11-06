@@ -31,7 +31,7 @@ jobs:
             readlink -f outputdocs
             readlink -f classcopy
             sudo apexdocs-generate -s /home/circleci/project/classcopy -t outputdocs -g jekyll
-        -run:
+      - run:
           name: git commit the docs
           command: |
             mkdir source2
