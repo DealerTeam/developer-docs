@@ -39,10 +39,12 @@ jobs:
             git config user.email "matthewbayon@yahoo.com"
             git config user.name "gitmemattb"
             git clone https://github.com/DealerTeam/developer-docs.git
+            cd developer-docs
             git checkout main
             cd ..
+            cd ..
             cp -r outputdocs source2/developer-docs/docs
-            cd source2
+            cd source2/developer-docs
             git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
             git push origin main
 
