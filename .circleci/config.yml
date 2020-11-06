@@ -5,12 +5,10 @@ jobs:
     docker:
       - image: cimg/node:15.0.1
     steps:
-      - run:
-          name: create source dir
-          command: |
-            mkdir source
-      - checkout   # Required step.  Checks out the code from your repository.
-          path: /source
+      - checkout:   # Required step.  Checks out the code from your repository.
+      - add_ssh_keys:
+          fingerprints:
+            - "48:8b:f1:8e:58:da:4a:a4:1f:cb:9e:7b:d4:9b:8a:10"
       - run:
           name:  display some info
           command: |
@@ -33,7 +31,15 @@ jobs:
             readlink -f outputdocs
             readlink -f classcopy
             sudo apexdocs-generate -s /home/circleci/project/classcopy -t outputdocs -g jekyll
-  
+        -run:
+          name: git commit the docs
+          command: |
+            mkdir source2
+            cd source2
+            git config user.email "matthewbayon@yahoo.com"
+            git config user.name "gitmemattb"
+            git clone https://github.com/DealerTeam/developer-docs.git
+            git checkout master
 workflows:
   version: 2
   build_and_test:
