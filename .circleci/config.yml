@@ -33,9 +33,14 @@ jobs:
             sudo apexdocs-generate -s /home/circleci/project/classcopy -t outputdocs -g jekyll
       - run:
           name: git commit the docs
+          environment: 
+            EMAIL: matthewbayon@yahoo.com
+            GIT_AUTHOR_NAME: gitmemattb
+            GIT_COMMITTER_NAME: gitmemattb
           command: |
             mkdir source2
             cd source2
+            git config --global -l
             git config --global user.email "matthewbayon@yahoo.com"
             git config --global user.name "gitmemattb"
             git clone https://github.com/DealerTeam/developer-docs.git
