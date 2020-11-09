@@ -46,8 +46,8 @@ jobs:
             git config --global user.name "gitmemattb"
             git config --list
             ssh -vT git@github.com
-            cat /home/circleci/.ssh/config
-            cat /etc/ssh/ssh_config
+            sudo cat ~/home/circleci/.ssh/config
+            sudo cat ~/etc/ssh/ssh_config
 
             git remote set-url origin git@github.com:DealerTeam/developer-docs.git
             git clone https://github.com/DealerTeam/developer-docs.git
