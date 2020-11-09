@@ -15,6 +15,7 @@ jobs:
             node -v
             pwd
             ls -al
+            echo $ENVAR
       - run:
           name: install Node package @cparra/apexdocs
           command: |
