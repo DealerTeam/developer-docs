@@ -44,6 +44,8 @@ jobs:
             git config --global -l
             git config --global user.email "matthewbayon@yahoo.com"
             git config --global user.name "gitmemattb"
+            git config --list
+            git config --list --show-origin
             git clone https://github.com/DealerTeam/developer-docs.git
             cd developer-docs
             git checkout main
