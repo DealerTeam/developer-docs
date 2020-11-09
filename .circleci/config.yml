@@ -46,6 +46,7 @@ jobs:
             git config --global user.name "gitmemattb"
             git config --list
             ssh -vT git@github.com
+            sudo cat ~/.ssh/config
             sudo cat ~/home/circleci/.ssh/config
             sudo cat ~/etc/ssh/ssh_config
 
