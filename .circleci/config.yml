@@ -46,10 +46,8 @@ jobs:
             git config --global user.name "gitmemattb"
             git config --list
             ssh -vT git@github.com
-            sudo cat ~/.ssh/config
             sudo cat ~/home/circleci/.ssh/config
-            sudo cat ~/etc/ssh/ssh_config
-
+           
             git remote set-url origin git@github.com:DealerTeam/developer-docs.git
             git clone https://github.com/DealerTeam/developer-docs.git
             cd developer-docs
@@ -59,11 +57,6 @@ jobs:
             cd ..
             cd ..
             cp -r outputdocs source2/developer-docs/docs
-            cd source2/developer-docs
-            git config --global user.email "matthewbayon@yahoo.com"
-            git config --global user.name "gitmemattb"
-            git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
-            git push origin main
 
 workflows:
   version: 2
