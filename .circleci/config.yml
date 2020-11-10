@@ -15,6 +15,7 @@ jobs:
             node -v
             pwd
             ls -al
+            echo $ENVAR
       - run:
           name: install Node package @cparra/apexdocs
           command: |
@@ -43,20 +44,10 @@ jobs:
             git config --global -l
             git config --global user.email "matthewbayon@yahoo.com"
             git config --global user.name "gitmemattb"
+            git config --list
+            sudo cat ~/home/circleci/.ssh/config
+            git remote set-url origin git@github.com:DealerTeam/developer-docs.git
             git clone https://github.com/DealerTeam/developer-docs.git
-            cd developer-docs
-            git checkout main
-            git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
-            git push origin main
-            cd ..
-            cd ..
-            cp -r outputdocs source2/developer-docs/docs
-            cd source2/developer-docs
-            git config --global user.email "matthewbayon@yahoo.com"
-            git config --global user.name "gitmemattb"
-            git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
-            git push origin main
-
 workflows:
   version: 2
   build_and_test:
