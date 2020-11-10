@@ -49,14 +49,6 @@ jobs:
            
             git remote set-url origin git@github.com:DealerTeam/developer-docs.git
             git clone https://github.com/DealerTeam/developer-docs.git
-            cd developer-docs
-            git checkout main
-            git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
-            git push origin main
-            cd ..
-            cd ..
-            cp -r outputdocs source2/developer-docs/docs
-
 workflows:
   version: 2
   build_and_test:
