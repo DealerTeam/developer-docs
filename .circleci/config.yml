@@ -45,7 +45,6 @@ jobs:
             git config --global user.email "matthewbayon@yahoo.com"
             git config --global user.name "gitmemattb"
             git config --list
-            ssh -vT git@github.com
             sudo cat ~/home/circleci/.ssh/config
            
             git remote set-url origin git@github.com:DealerTeam/developer-docs.git
