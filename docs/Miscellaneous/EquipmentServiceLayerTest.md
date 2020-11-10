@@ -1,0 +1,5 @@
+---
+layout: default
+---
+# EquipmentServiceLayerTest class
+---

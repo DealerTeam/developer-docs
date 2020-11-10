@@ -1,0 +1,5 @@
+---
+layout: default
+---
+# HistoricalDataControllerTest class
+---
