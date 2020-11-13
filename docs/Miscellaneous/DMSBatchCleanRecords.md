@@ -11,13 +11,6 @@ Cleans records of invalid external Ids
 
 constructor
 ---
-## Properties
-
-### `DMSObjJSON` → `String`
-
-### `ObjectAPIName` → `String`
-
----
 ## Methods
 ### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`
 

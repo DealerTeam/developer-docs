@@ -3,70 +3,7 @@ layout: default
 ---
 # PartsInvoice_EXT class
 ---
-## Constructors
-### `PartsInvoice_EXT(ApexPages.StandardController controller)`
-
- PartsInvoice_EXT
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`controller` |  [description] |
-
----
-## Properties
-
-### `CounterMan` → `Id`
-
- Counterman @return  Id @notes   The ID of the user who is currently accessing the page
-
-### `CounterManName` → `String`
-
- CounterManName @return String @notets defaults the countermans name to the person who is logged in
-
-### `CurrentOrders` → `List<dealer__Stock_Order__c>`
-
-### `PriceLevels` → `List<dealer__Parts_Service_Pricing_Strategy__c>`
-
-### `body` → `String`
-
-### `clines` → `List<dealer__Cashering__c>`
-
- clines @return  List<dealer__Cashering__c> @notes   returns a list of the cashiering lines associated with this invoice
-
-### `defaultPriceLevel` → `dealer__Parts_Service_Pricing_Strategy__c`
-
-### `defaultTaxOn` → `Boolean`
-
-### `email` → `String`
-
-### `fixedops_settings` → `dealer__FixedOperationsSettings__c`
-
-### `inventorySearch` → `String`
-
-### `jobLineId` → `Id`
-
-### `roData` → `dealer__Service_Repair_Order__c`
-
-### `roId` → `Id`
-
-### `roPage` → `boolean`
-
-### `selectedLocation` → `String`
-
-### `serviceHistoryJSON` → `String`
-
-### `subject` → `String`
-
-### `userID` → `Id`
-
-### `userName` → `String`
-
----
 ## Methods
-### `AttachPDF()` → `Messaging.EmailFileAttachment`
-
- attach parts invoice pdf to email @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
 ### `CreateInvoice(String xmlString)` → `PageReference`
 
  Create Parts Invoice from Quote Screen @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -80,51 +17,7 @@ layout: default
 
  invoiceAddPartLine - XML Payload passed to add invoice line to this existing invoice @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
-### `PartsOrderLine(String partId, String invoiceId, String invoiceLineId, Decimal quantityOrdered, String requestedBy, String orderType, String mfg)` → `void`
-
- PartsOrderLine - Generates a parts oder line
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`partId` |           [description] |
-|`invoiceId` |        [description] |
-|`invoiceLineId` |    [description] |
-|`quantityOrdered` |  [description] |
-|`requestedBy` |      [description] |
-|`orderType` |        [description] |
-|`mfg` |              [description] |
-
-### `ROPartsSalesPrep(ID roNumber)` → `dealer__Service_Repair_Order__c`
-
- ROPartsSalesPrep
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`roNumber` |  [description] |
-
 ### `businessAccountContacts(String s)` → `List<Contact>`
-### `cashierInvoice()` → `PageReference`
-
- handles cashiering the invoice @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
-### `closeInvoice()` → `PageReference`
-
- sets status to invoiced @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
-### `createInvoicefromRO()` → `PageReference`
-
- Called to create a blank invoice related to the Repair Order it was called from @test PartPhysicalInventoryUILayer.testPartsInvoiceOnSRO
-
-### `directView()` → `PageReference`
-
- Direct user to appropriate page, based if the record is tied to a service repair order or not @test PartPhysicalInventoryUILayer.testPartsInvoiceOnSRO
-
-### `emailInvoice()` → `PageReference`
-
- Send user to email estimate page @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
 ### `getInventory(String inventorySearch)` → `dealer__Parts_Inventory__c`
 
  getInventory
@@ -142,14 +35,6 @@ layout: default
 
  getKitItems: return parts kit items for addition to invoices @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
-### `getPriceLevels()` → `List<dealer__Parts_Service_Pricing_Strategy__c>`
-
- getPriceLevels
-
-### `getdefaultPriceLevel()` → `dealer__Parts_Service_Pricing_Strategy__c`
-
- getdefaultPriceLevel
-
 ### `invoiceLine(String LineId)` → `dealer__Parts_Invoice_Line__c`
 
  invoiceLine - get Line specific information via remoting @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -166,11 +51,6 @@ layout: default
 
  loadPartsLines - Quote @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
-### `locationChanged()` → `PageReference`
-### `lookupCurrentOrders()` → `void`
-
- lookupCurrentOrders
-
 ### `matchedInventory(String partno)` → `List<dealer__Parts_Inventory__c>`
 
  matchedInventory
@@ -180,14 +60,22 @@ layout: default
 |-----|-----------|
 |`partno` |  : |
 
-### `reopenInvoice()` → `PageReference`
-
- sets status back to open and invoice datetime to null @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
 ### `searchInventory(String searchString)` → `List<dealer__Parts_Inventory__c>`
-### `sendPdf()` → `PageReference`
 
- send client invoice as pdf email attachment @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+ PartsInvoice_EXT
+
+#### Parameters
+|Param|Description|
+|-----|-----------|
+|`controller` |  [description] |
+|`partId` |           [description] |
+|`invoiceId` |        [description] |
+|`invoiceLineId` |    [description] |
+|`quantityOrdered` |  [description] |
+|`requestedBy` |      [description] |
+|`orderType` |        [description] |
+|`mfg` |              [description] |
+|`roNumber` |  [description] |
 
 ### `setLinePrice(String linedata)` → `boolean`
 
@@ -203,9 +91,4 @@ layout: default
 
  Updates customer shipping address from json string @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
-### `voidInvoice()` → `PageReference`
----
-## Inner Classes
-
-### PartsInvoice_EXT.PartsInvoiceException class
 ---

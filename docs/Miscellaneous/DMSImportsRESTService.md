@@ -10,21 +10,3 @@ layout: default
 ### `createRecords()` → `String`
 ### `deleteRecord()` → `String`
 ---
-## Inner Classes
-
-### DMSImportsRESTService.objectWrapper class
-
-@description
-
----
-#### Properties
-
-##### `action` → `String`
-
-##### `objectApiName` → `String`
-
-##### `objectJSON` → `String`
-
-##### `recordCount` → `Integer`
-
----

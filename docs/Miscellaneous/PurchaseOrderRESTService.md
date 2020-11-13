@@ -3,9 +3,6 @@ layout: default
 ---
 # PurchaseOrderRESTService class
 ---
-## Constructors
-### `PurchaseOrderRESTService()`
----
 ## Methods
 ### `createPurchaseOrder()` → `Id`
 
@@ -20,8 +17,4 @@ layout: default
 
  Can update Purchase Order OR create new lines for a purchase order Can use HTTP Put to do the
 
----
-## Inner Classes
-
-### PurchaseOrderRESTService.PurchaseOrderRestServiceException class
 ---

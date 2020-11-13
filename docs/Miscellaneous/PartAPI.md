@@ -7,12 +7,10 @@ layout: default
 
 ---
 ## Methods
-### `cashTransactions(String invoiceId)` → `>`
 ### `createInventoryFromMaster(List < Parts_Master__c > masterItems, Id location)` → `>`
 
  createInventoryFromMaster provides an api interface and single point of entry for creating inventory from parts master records in a specific location. @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable
 
-### `getPartsKit(Id pkId)` → `Parts_Kit__c`
 ### `matrix(String paymentMethod, Parts_Inventory__c part)` → `Decimal`
 
  Matrix - Determines the matrix value based on the requested part being sold.
@@ -31,38 +29,11 @@ layout: default
 |-----|-----------|
 |`{Map<Id,` |  Parts_Inventory__c>} - parts to process |
 
-### `subLedgerDML(List<Parts_Ledger__c> subLedgerRecords, String DMLoperation)` → `void`
-
- Updates the last_sale_date__c field with the current sale date @function - updatePartLastSaleDate @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Instantiate all fields on Part_Sale_Metric__c - retaining existing values and Setting null values to 0.
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`{Part_Sale_Metric__c}` |  - metric to be reset to 0 |
-|`{ID}` |  - part to be updated in metric |
-|`{Map<Id,` |  Map<Integer, Integer>>} - Map of sale data to update metric |
-|`{DateTime}` |  - date to be processed |
-|`{DateTime}` |  - date to be processed |
-|`{DateTime}` |  - date to be processed |
-|`{DateTime}` |  - date to be processed |
-|`{DateTime}` |  - date to be processed |
-
-### `updateLedger(List<Part_Inventory_History__c> partHistory, List<Parts_Inventory__c> partsToUpdate,Boolean emailLedger)` → `void`
-
- updateLedger handles DML when changes to on hand are requested
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`partHistory` |    List<Part_Inventory_History__c> list of history records with quantity and cost info |
-|`partsToUpdate` |  List<Parts_Inventory__c> affected parts to change on hand quantities |
-|`emailLedger` |    Boolean if true this will attempt to send a GL email |
-
 ---
 ## Inner Classes
 
 ### PartAPI.PartAPIException class
 
- sendNotifications handles sending email with updated GL info @param  records Set<Id> the part_inventory__c ids that were updated @param  adjustmentValue Decimal total value of the transaction
+ Updates the last_sale_date__c field with the current sale date @function - updatePartLastSaleDate @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Instantiate all fields on Part_Sale_Metric__c - retaining existing values and Setting null values to 0. @param {Part_Sale_Metric__c} - metric to be reset to 0 @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Sets all changed fields to new values @param {ID} - part to be updated in metric @param {Map<Id, Map<Integer, Integer>>} - Map of sale data to update metric @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Handles finding the month of the part sale @param {DateTime} - date to be processed @returns {Integer} - Numeric value of month @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Checks if part was sold in last 30 days @param {DateTime} - date to be processed @returns {Boolean} - True if sale was made in last 30 days @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Checks if part was sold in last 60 days @param {DateTime} - date to be processed @returns {Boolean} - True if sale was made in last 60 days @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Checks if part was sold in last 90 days @param {DateTime} - date to be processed @returns {Boolean} - True if sale was made in last 90 days @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** Checks if part was sold in last 120 days @param {DateTime} - date to be processed @returns {Boolean} - True if sale was made in last 120 days @test PartPhysicalInventoryServiceLayer.testPartAPIBatchable /** subLedgerDML @note Abstraction of the DML operations for subledger data manipulation. This routine will ensure that all subledger activity is controlled by a single routine respecting feature enablement. /** updateLedger handles DML when changes to on hand are requested @param  partHistory   List<Part_Inventory_History__c> list of history records with quantity and cost info @param  partsToUpdate List<Parts_Inventory__c> affected parts to change on hand quantities @param  emailLedger   Boolean if true this will attempt to send a GL email /** sendNotifications handles sending email with updated GL info @param  records Set<Id> the part_inventory__c ids that were updated @param  adjustmentValue Decimal total value of the transaction
 
 ---

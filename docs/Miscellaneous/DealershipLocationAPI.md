@@ -8,8 +8,6 @@ layout: default
 ---
 ## Properties
 
-### `AuraFee` → `List<`
-
 ### `CoveredSystems` → `List<CoveredSystem>`
 
 @description
@@ -20,20 +18,6 @@ layout: default
 
 ---
 ## Methods
-### `createLocationFees(Dealer_Location__c dealerLocation, String feeJSON)` → `String`
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`` | n |
-|`` | N |
-
-### `editFee(Dealer_Location__c location, String feeJSON)` → `Dealer_Location__c`
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`` | n |
-|`` | N |
-
 ### `formLogoURL(Id locationId)` → `String`
 
  formLogoURL
@@ -53,35 +37,13 @@ layout: default
 #### Parameters
 |Param|Description|
 |-----|-----------|
+|`` | n |
+|`` | N |
 |`` | d |
 
-### `getLocationFeesLWC(Id LocationId)` → `List<AuraFee>`
 ---
 ## Inner Classes
 
-### DealershipLocationAPI.AuraFee class
----
-#### Properties
-
-##### `feeCode` → `String`
-
-##### `feeDefaultAmount` → `String`
-
-##### `feeDefaultAmountByFormulaField` → `String`
-
-##### `feeDefaultByFormulaField` → `String`
-
-##### `feeDefaultOnDeals` → `String`
-
-##### `feeDefaultOnDealsByFormulaField` → `String`
-
-##### `feeDescription` → `String`
-
-##### `feeName` → `String`
-
-##### `feeTaxable` → `String`
-
----
 ### DealershipLocationAPI.CoveredSystem class
 
 @description
