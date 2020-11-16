@@ -3,4 +3,5 @@
 #remote_theme: pmarsceil/just-the-docs
 #good: remote_theme: carlosperate/jekyll-theme-rtd
 #loads but messy: remote_theme: allejo/jekyll-docs-theme
-remote_theme: CloudCannon/edition-jekyll-template
+#remote_theme: CloudCannon/edition-jekyll-template
+remote_theme: marella/jekyll-theme-documentation
