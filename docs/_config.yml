@@ -1,3 +1,4 @@
 #theme: jekyll-theme-midnight
 #remote_theme: owner/name
-remote_theme: pawamoy/jekyll-readthedocs
+#remote_theme: pawamoy/jekyll-readthedocs
+remote_theme: pmarsceil/just-the-docs
