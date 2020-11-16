@@ -2,4 +2,5 @@
 #remote_theme: pawamoy/jekyll-readthedocs
 #remote_theme: pmarsceil/just-the-docs
 #good: remote_theme: carlosperate/jekyll-theme-rtd
-remote_theme: allejo/jekyll-docs-theme
+#loads but messy: remote_theme: allejo/jekyll-docs-theme
+remote_theme: CloudCannon/edition-jekyll-template
