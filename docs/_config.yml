@@ -1,5 +1,5 @@
 #theme: jekyll-theme-midnight
-#remote_theme: owner/name
 #remote_theme: pawamoy/jekyll-readthedocs
 #remote_theme: pmarsceil/just-the-docs
-remote_theme: carlosperate/jekyll-theme-rtd
+#good: remote_theme: carlosperate/jekyll-theme-rtd
+remote_theme: allejo/jekyll-docs-theme
