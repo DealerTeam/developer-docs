@@ -7,61 +7,6 @@ layout: default
 
 ---
 ## Methods
-### `addDealForms(Id dealId, List<String> formIds)` → `void`
-
- Adds Forms to a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-|`formIds` |  List<String> |
-
-### `applicableForms(String dealId)` → `List<Form__c>`
-
- Retrieves forms Applicable to a deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  String |
-
-### `applyDiscounts(Deal__c deal)` → `void`
-
- Applies Discount logic to a deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`deal` |  Deal__c |
-
-### `availableForms(String dealId)` → `List<Form__c>`
-
- Acquires forms available to a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-
-### `cashTransactions(String dealId)` → `List<Cashering__c>`
-
- Retrieves Cash Transaction Items on a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  String |
-
-### `cloneDeal(Id dealId)` → `String`
-
- Clones a Deal Record
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`Id` |  dealId |
-
 ### `closeDealProcess(List<Deal__c> deals)` → `void`
 
  Processes the closure of a Deal Record
@@ -73,11 +18,13 @@ layout: default
 
 ### `closeDeals(List<Deal__c> deals)` → `void`
 
- This routine will close deals and mark associated records as closed/won
+ /** This routine will close deals and mark associated records as closed/won
 
 #### Parameters
 |Param|Description|
 |-----|-----------|
+|`Id` |  dealId |
+|`Id` |  dealId |
 |`deals` |  List<Deal__c> |
 
 ### `create(deal dealData)` → `Deal__c`
@@ -108,17 +55,6 @@ layout: default
 |-----|-----------|
 |`deals` |  List<Deal__c> |
 
-### `createFromSalesUp(deal dealData)` → `Deal__c`
-### `createPartAfterMarket(Id dealId, PartAddition partData)` → `void`
-
-MOVE TO PARTAPI Creates an Aftermarket record from a part
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-|`partData` |  DealAPI.partData |
-
 ### `dealData(Id dealId)` → `Deal`
 
  Retrieves Data relavent to a deal. Used mostly for deal forms.
@@ -128,120 +64,12 @@ MOVE TO PARTAPI Creates an Aftermarket record from a part
 |-----|-----------|
 |`dealId` |  Id |
 
-### `dealHeader(Id dealId)` → `Deal__c`
-
- Acquires all header-level data for a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`Id` |  dealId |
-
-### `dealLocation(Id dealId)` → `Dealer_Location__c`
-
-Set Deal Totals /** Retrieves Deal's Dealer Location information
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-
-### `formRefQuery(Deal__c deal, String printType)` → `String`
-
- Builds query for Deal-Applicable form references
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`deal` |  Deal__c |
-|`printType` |  FDF, Laser |
-
-### `generateFromSalesUp(Deal dealData)` → `Deal`
-### `getDealDiscounts(Id dealId)` → `List<Discount_Rebate__c>`
-
- Get Discounts Records on a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-
-### `getDealFees(Id dealId)` → `List<Sales_Fee__c>`
-
- Acquires Fee Records on a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-
-### `getDealRebates(Id dealId)` → `List<Discount_Rebate__c>`
-
- Get Rebate Records on a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-
-### `getDealRecord(Id dealId)` → `>`
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`Id` |  dealId |
-
-### `getDiscountTemplates()` → `List<Discount_Rebate__c>`
-
- Returns discount templates for available for Deals
-
-### `getTradeIns(Id dealId)` → `List<Trade_In__c>`
-
- Queries all Trades related to a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-
-### `populateBuyerData(Deal__c deal, Id acctId)` → `void`
-### `populateCoBuyerData(Deal__c deal, Id acctId)` → `void`
-### `populateVehicle(Deal__c deal, Id vehId)` → `void`
-### `removeDealForm(Id dealId, Id formId)` → `void`
-
- Removes a Form from a Deal
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  Id |
-|`formId` |  Id |
-
-### `saveDeal(Deal__c deal)` → `Deal__c`
-
- Saves and calculates deal Assumes all fields on Deal__c were queried prior to entry.
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`deal` |  Deal__c |
-
-### `saveTradesData(Deal dealData)` → `void`
-### `selectedForms(String dealId)` → `List<Form__c>`
-
-Disclude forms that both exist on Deal and Applicable Forms /** this selects sarg
-
-#### Parameters
-|Param|Description|
-|-----|-----------|
-|`dealId` |  String |
-
-### `updateAppraisal(Deal__c deal, List<Trade_In__c> TradeList)` → `void`
 ---
 ## Inner Classes
 
 ### DealAPI.Deal class
 
- getServiceContractTotal @param  contracts List<Service_Contracts__c> @return Decimal /** REMOVE THIS Retrieves Logo URL @param  dealId Id @param  locId Id @return String /** Retrieves list of Taxable Fees on a Deal @param  dealId Id @param  fees List<Sales_Fee__c> @return List<Sales_Fee__c /** Returns Total Allowance @param  tradeInList List<Trade_In__c> @return Decimal /** Returns Total Trade Gross @param  tradeInList List<Trade_In__c> @return Decimal /** Returns Trade Tax Credit Amount @param  dealId Id @return Decimal /** MOVE LOGIC TO VEHICLE API Returns Retail Vehicle Price of Vehicle @param  dealId Id @return Decimal /** Returns Account for Payor 1 @param  dealId Id @return Account /** getPayor2 @param  dealId Id @return Account /** getPayor3 @param  dealId Id @return Account /** Wrapper class for deal data and related records.
+ Saves and calculates deal Assumes all fields on Deal__c were queried prior to entry. @param deal Deal__c @return Deal__c /** Set Deal Totals /** Retrieves Deal's Dealer Location information @param dealId Id @return Dealer_Location__c /** Acquires Fee Records on a Deal @param dealId Id @return List<Sales_fee__c> /** Get Discounts Records on a Deal @param dealId Id @return List<Discount_Rebate__c> /** Get Rebate Records on a Deal @param dealId Id @return List<Discount_Rebate__c> /** Returns discount templates for available for Deals @return List<Discount_Rebate__c> /** Applies Discount logic to a deal @param deal Deal__c @return Deal__c /** Queries all Trades related to a Deal @param dealId Id @return List<Trade_In__c> /** Acquires all header-level data for a Deal @param Id dealId @return Deal__c /** MOVE TO PARTAPI Creates an Aftermarket record from a part @param dealId Id @param partData DealAPI.partData @return Void /** Adds Forms to a Deal @param dealId Id @param formIds List<String> @return Void /** Removes a Form from a Deal @param dealId Id @param formId Id @return Void /** Acquires forms available to a Deal @param  dealId Id @return List<Form__c> /** Disclude forms that both exist on Deal and Applicable Forms /** this selects sarg @param dealId String @return List<Form__c> /** Retrieves forms Applicable to a deal @param  dealId String @return List<Form__c> /** Retrieves Cash Transaction Items on a Deal @param  dealId String @return List<Cashering__c> /** Builds query for Deal-Applicable form references @param  deal Deal__c @param  printType FDF, Laser @return String /** getServiceContractTotal @param  contracts List<Service_Contracts__c> @return Decimal /** REMOVE THIS Retrieves Logo URL @param  dealId Id @param  locId Id @return String /** Retrieves list of Taxable Fees on a Deal @param  dealId Id @param  fees List<Sales_Fee__c> @return List<Sales_Fee__c /** Returns Total Allowance @param  tradeInList List<Trade_In__c> @return Decimal /** Returns Total Trade Gross @param  tradeInList List<Trade_In__c> @return Decimal /** Returns Trade Tax Credit Amount @param  dealId Id @return Decimal /** MOVE LOGIC TO VEHICLE API Returns Retail Vehicle Price of Vehicle @param  dealId Id @return Decimal /** Returns Account for Payor 1 @param  dealId Id @return Account /** getPayor2 @param  dealId Id @return Account /** getPayor3 @param  dealId Id @return Account /** Wrapper class for deal data and related records.
 
 ---
 #### Properties
@@ -305,28 +133,7 @@ Disclude forms that both exist on Deal and Applicable Forms /** this selects sar
 ##### `deal()` → `global`
 ---
 ### DealAPI.DealAPIException class
----
-### DealAPI.PartAddition class
 
  	Wrapper class to add a part After Market Item to Deal
-
----
-#### Properties
-
-##### `Cost` → `Decimal`
-
-##### `Description` → `String`
-
-##### `PartsMasterId` → `String`
-
-##### `Printable` → `Boolean`
-
-##### `Quantity` → `Decimal`
-
-##### `RateType` → `String`
-
-##### `SalePrice` → `Decimal`
-
-##### `Taxable` → `Boolean`
 
 ---

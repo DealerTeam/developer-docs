@@ -14,24 +14,5 @@ layout: default
 
 ### InventoryMediaService.Image class
 ---
-#### Properties
-
-##### `imageData` → `String`
-
-##### `imageMeta` → `Inventory_Images__c`
-
-##### `imageUrl` → `String`
-
----
 ### InventoryMediaService.UploadResults class
----
-#### Constructors
-##### `UploadResults(List<Image> images, InventoryMediaAPI.ResponseWrapper uploadResults )`
----
-#### Properties
-
-##### `images` → `List<Image>`
-
-##### `uploadResults` → `InventoryMediaAPI.ResponseWrapper`
-
 ---

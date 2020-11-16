@@ -16,15 +16,7 @@ layout: default
 ---
 ## Properties
 
-### `createdBy` → `String`
-
-@description
-
 ### `dt` → `Dealer_Trade__c`
-
-@description
-
-### `modifiedBy` → `String`
 
 @description
 

@@ -6,7 +6,3 @@ layout: default
 ## Methods
 ### `execute(SchedulableContext ctx)` → `void`
 ---
-## Inner Classes
-
-### resetStockNumber.resetStockNumberException class
----

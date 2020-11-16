@@ -9,7 +9,3 @@ layout: default
 ## Methods
 ### `onInstall(InstallContext context)` → `void`
 ---
-## Inner Classes
-
-### InstallScript.InstallException class
----

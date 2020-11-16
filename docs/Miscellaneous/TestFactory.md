@@ -13,7 +13,3 @@ layout: default
 ### `createSObjectList(SObject sObj, Integer numberOfObjects, String defaultClassName, Boolean doInsert)` → `SObject[]`
 ### `createSObjectList(Sobject sObj, Integer numberOfObjects, String defaultClassName)` → `SObject[]`
 ---
-## Inner Classes
-
-### TestFactory.TestFactoryException class
----
