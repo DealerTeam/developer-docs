@@ -1,6 +1,6 @@
 #theme: jekyll-theme-midnight
-remote_theme: pawamoy/jekyll-readthedocs
-#remote_theme: pmarsceill/just-the-docs
+#remote_theme: pawamoy/jekyll-readthedocs
+remote_theme: pmarsceill/just-the-docs
 #good: remote_theme: carlosperate/jekyll-theme-rtd
 #loads but messy: remote_theme: allejo/jekyll-docs-theme
 #remote_theme: CloudCannon/edition-jekyll-template
