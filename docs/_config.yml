@@ -4,7 +4,8 @@
 #good: remote_theme: carlosperate/jekyll-theme-rtd
 #loads but messy: remote_theme: allejo/jekyll-docs-theme
 #remote_theme: CloudCannon/edition-jekyll-template
+#good: remote_theme: marella/jekyll-theme-documentation
 #good: 
-remote_theme: marella/jekyll-theme-documentation
-#good: remote_theme: rundocs/jekyll-theme-docsify
+remote_theme: rundocs/jekyll-theme-docsify
 #remote_theme: pixeldroid/programming-pages
+#to test: rundocs/jekyll-rtd-theme
