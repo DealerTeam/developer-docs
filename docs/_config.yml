@@ -1,9 +1,2 @@
 #theme: jekyll-theme-midnight
-#remote_theme: pmarsceill/just-the-docs
-#good/best:
 remote_theme: carlosperate/jekyll-theme-rtd
-#loads but messy: remote_theme: allejo/jekyll-docs-theme
-#good: remote_theme: marella/jekyll-theme-documentation
-#good: remote_theme: rundocs/jekyll-theme-docsify
-#remote_theme: pixeldroid/programming-pages
-#ok: remote_theme: rundocs/jekyll-rtd-theme
