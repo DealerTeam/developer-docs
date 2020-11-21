@@ -14,12 +14,12 @@ Performs an outbound single email to an external handler.
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`` | d |
+|`payload` |  String containing the JSON Payload to be processed |
 
 #### Throws
 |Exception|Description|
 |---------|-----------|
-|`` | n |
+|`CashierException` |  Custom exception handler. |
 
 ### `getPaymentMethods()` → `List<SelectOption>`
 ---
