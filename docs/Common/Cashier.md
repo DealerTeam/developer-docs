@@ -9,7 +9,7 @@ This class performs core cashiering related actions.  Cashier.cls is used throug
 ## Methods
 ### `emailAsyncHandler(String payload)` → `void`
 
-Performs an outbound single email to an external handler.
+Performs an outbound single email to an external handler.  Testing
 
 #### Parameters
 |Param|Description|
