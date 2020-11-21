@@ -95,13 +95,6 @@ Batch Class to populate Vehicle Inventory internal charges fields from related S
 
 
 
-### [Cashier](/Miscellaneous/Cashier.md)
-
-
-Custom controller used in the cashier payments page
-
-
-
 ### [ChangeContactAccountOwnerOnCarDeal](/Miscellaneous/ChangeContactAccountOwnerOnCarDeal.md)
 
 
@@ -582,5 +575,13 @@ Mobility Deal Controller Extension
 
 
 
+
+
+## Common
+
+### [Cashier](/Common/Cashier.md)
+
+
+This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
 
 
