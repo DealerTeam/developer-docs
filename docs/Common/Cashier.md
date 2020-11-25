@@ -9,12 +9,17 @@ This class performs core cashiering related actions.  Cashier.cls is used throug
 ## Methods
 ### `emailAsyncHandler(String payload)` → `void`
 
-This is my method description. This method receives an <<ExampleClass>>.
+Performs an outbound single email to an external handler.
 
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`param1` |  An <<ExampleClass>> instance. Can also do {@link ExampleClass} |
+|`` | d |
+
+#### Throws
+|Exception|Description|
+|---------|-----------|
+|`` | n |
 
 ### `getPaymentMethods()` → `List<SelectOption>`
 ---
