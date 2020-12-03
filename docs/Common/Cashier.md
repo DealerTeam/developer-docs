@@ -16,10 +16,30 @@ Performs an outbound single email to an external handler.
 |-----|-----------|
 |`` | d |
 
+#### Return
+
+**Type**
+
+void
+
+**Description**
+
+void
+
 #### Throws
 |Exception|Description|
 |---------|-----------|
 |`` | n |
 
 ### `getPaymentMethods()` → `List<SelectOption>`
+#### Return
+
+**Type**
+
+List<SelectOption>
+
+**Description**
+
+List<SelectOption>
+
 ---
