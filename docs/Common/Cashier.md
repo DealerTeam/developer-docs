@@ -1,6 +1,3 @@
----
-layout: default
----
 # Cashier class
 
 This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
