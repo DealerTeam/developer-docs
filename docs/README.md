@@ -151,7 +151,7 @@ Cleans records of invalid external Ids
 ### [DealAPI](/Miscellaneous/DealAPI.md)
 
 
- 	DealAPI provides service layer logic for processing requests related to the Deal Records
+DealAPI provides service layer logic for processing requests related to the Deal Records
 
 
 
