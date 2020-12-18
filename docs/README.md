@@ -148,13 +148,6 @@ Cleans records of invalid external Ids
 
 
 
-### [DealAPI](/Miscellaneous/DealAPI.md)
-
-
-DealAPI provides service layer logic for processing requests related to the Deal Records
-
-
-
 ### [DealForm_EXT](/Miscellaneous/DealForm_EXT.md)
 
 
@@ -573,6 +566,14 @@ Mobility Deal Controller Extension
 
 
 This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
+
+
+## Sales
+
+### [DealAPI](/Sales/DealAPI.md)
+
+
+DealAPI provides service layer logic for processing requests related to the Deal Records
 
 
 ## Service
