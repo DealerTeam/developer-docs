@@ -1,6 +1,6 @@
 - [Introduction](introduction)
 - [Quick Start](quick-start)
-- **APEX Classes**
-- [Common](?id=common)
-- [Sales](?id=sales)
+- [Common](#/?id=common)
+- [Sales](#/?id=sales)
+- [Service](#/?id=service)
 - **Links**
