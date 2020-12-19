@@ -1,26 +1,28 @@
 # Classes
-## Miscellaneous
+## Deprecated
 
-### [B2CAccounts](/Miscellaneous/B2CAccounts.md)
+### [B2CAccounts](/Deprecated/B2CAccounts.md)
 
 
 Deprecated - This routine has been scheduled for deprecation
 
 
+## Batch Processing
 
-### [BatchCarfaxHistoryReport](/Miscellaneous/BatchCarfaxHistoryReport.md)
-
-
-
+### [BatchCarfaxHistoryReport](/Batch-Processing/BatchCarfaxHistoryReport.md)
 
 
-
-### [BatchCompletePhysical](/Miscellaneous/BatchCompletePhysical.md)
-
-
-@description
+Performs batch execution to refresh the vehicle history report of Service Vehicles.
 
 
+
+### [BatchCompletePhysical](/Batch-Processing/BatchCompletePhysical.md)
+
+
+Database Batchable interface used with the processing of Parts Physical Inventory workload.
+
+
+## Miscellaneous
 
 ### [BatchDeleteVehicleEquipment](/Miscellaneous/BatchDeleteVehicleEquipment.md)
 
