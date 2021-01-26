@@ -11,6 +11,8 @@ Performs an outbound single email to an external handler.
 #### Parameters
 |Param|Description|
 |-----|-----------|
+|`parentRecordId` |  Record ID of the Transaction recording cashiering events |
+|`Id` |  parentRecordId description |
 |`` | d |
 
 #### Return
