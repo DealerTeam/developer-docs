@@ -1,2 +1,0 @@
-# DeskLog_EXT class
----
