@@ -1,5 +1,0 @@
-# ContactsDuplicateSearch class
-
-@description
-
----
