@@ -73,62 +73,6 @@ Batch Class to populate Vehicle Inventory internal charges fields from related S
 
 
 
-### [BirthDayRemainderScheduler](/Miscellaneous/BirthDayRemainderScheduler.md)
-
-
-@description
-
-
-
-### [CarDealsActivity](/Miscellaneous/CarDealsActivity.md)
-
-
-@description
-
-
-
-### [CarDealsActivityBatchable](/Miscellaneous/CarDealsActivityBatchable.md)
-
-
-@description
-
-
-
-### [ChangeContactAccountOwnerOnCarDeal](/Miscellaneous/ChangeContactAccountOwnerOnCarDeal.md)
-
-
-@description
-
-
-
-### [ChangeContactAccountOwnerOnCarDeal_Batch](/Miscellaneous/ChangeContactAccountOwnerOnCarDeal_Batch.md)
-
-
-@description
-
-
-
-### [ClaimAPI](/Miscellaneous/ClaimAPI.md)
-
-
-@description
-
-
-
-### [ClaimPrintController](/Miscellaneous/ClaimPrintController.md)
-
-
-@description
-
-
-
-### [ContactsDuplicateSearch](/Miscellaneous/ContactsDuplicateSearch.md)
-
-
-@description
-
-
-
 ### [DMSBatchCleanRecords](/Miscellaneous/DMSBatchCleanRecords.md)
 
 
@@ -562,6 +506,56 @@ Mobility Deal Controller Extension
 
 
 
+## Sales
+
+### [BirthDayRemainderScheduler](/Sales/BirthDayRemainderScheduler.md)
+
+
+@description
+
+
+
+### [CarDealsActivity](/Sales/CarDealsActivity.md)
+
+
+@description
+
+
+
+### [CarDealsActivityBatchable](/Sales/CarDealsActivityBatchable.md)
+
+
+@description
+
+
+
+### [ChangeContactAccountOwnerOnCarDeal](/Sales/ChangeContactAccountOwnerOnCarDeal.md)
+
+
+@description
+
+
+
+### [ChangeContactAccountOwnerOnCarDeal_Batch](/Sales/ChangeContactAccountOwnerOnCarDeal_Batch.md)
+
+
+@description
+
+
+
+### [ContactsDuplicateSearch](/Sales/ContactsDuplicateSearch.md)
+
+
+@description
+
+
+
+### [DealAPI](/Sales/DealAPI.md)
+
+
+DealAPI provides service layer logic for processing requests related to the Deal Records
+
+
 ## Common
 
 ### [Cashier](/Common/Cashier.md)
@@ -570,15 +564,21 @@ Mobility Deal Controller Extension
 This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
 
 
-## Sales
-
-### [DealAPI](/Sales/DealAPI.md)
-
-
-DealAPI provides service layer logic for processing requests related to the Deal Records
-
-
 ## Service
+
+### [ClaimAPI](/Service/ClaimAPI.md)
+
+
+@description
+
+
+
+### [ClaimPrintController](/Service/ClaimPrintController.md)
+
+
+@description
+
+
 
 ### [ServiceRepairOrderAPI](/Service/ServiceRepairOrderAPI.md)
 
