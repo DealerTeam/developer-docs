@@ -73,13 +73,6 @@ Batch Class to populate Vehicle Inventory internal charges fields from related S
 
 
 
-### [CarfaxAPIMock](/Miscellaneous/CarfaxAPIMock.md)
-
-
-
-
-
-
 ### [DMSBatchCleanRecords](/Miscellaneous/DMSBatchCleanRecords.md)
 
 
