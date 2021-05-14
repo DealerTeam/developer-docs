@@ -101,66 +101,10 @@ Cleans records of invalid external Ids
 
 
 
-### [DealForm_EXT](/Miscellaneous/DealForm_EXT.md)
-
-
-Mobility Deal Controller Extension
-
-
-
-### [DealPrintController](/Miscellaneous/DealPrintController.md)
-
-
-@description
-
-
-
-### [DealerTrade_EXT](/Miscellaneous/DealerTrade_EXT.md)
-
-
-@description
-
-
-
 ### [DealershipLocationAPI](/Miscellaneous/DealershipLocationAPI.md)
 
 
 @description
-
-
-
-### [DeskLog_EXT](/Miscellaneous/DeskLog_EXT.md)
-
-
-
-
-
-
-### [EmailADFGeneralHandler](/Miscellaneous/EmailADFGeneralHandler.md)
-
-
-
-
-
-
-### [EmailADFHandler](/Miscellaneous/EmailADFHandler.md)
-
-
-
-
-
-
-### [EmailADFVoiceHandler](/Miscellaneous/EmailADFVoiceHandler.md)
-
-
-
-
-
-
-### [EmailHandler](/Miscellaneous/EmailHandler.md)
-
-
-
 
 
 
@@ -185,13 +129,6 @@ Mobility Deal Controller Extension
 
 
 
-### [FormAPI](/Miscellaneous/FormAPI.md)
-
-
-
-
-
-
 ### [GenericHistoryComponentController](/Miscellaneous/GenericHistoryComponentController.md)
 
 
@@ -203,13 +140,6 @@ Mobility Deal Controller Extension
 
 
  Identiy API provides access to a number of external consumer databases. The purposes of these API's are to assist the end user with additional data related to the Account records he/she is working with. First Available in 1.601 https://success.dealerteam.com/Middleware/API_Guide/Caller_Identification
-
-
-
-### [InboundEmailNotifications](/Miscellaneous/InboundEmailNotifications.md)
-
-
-
 
 
 
@@ -262,31 +192,10 @@ Mobility Deal Controller Extension
 
 
 
-### [PartAPI](/Miscellaneous/PartAPI.md)
-
-
- PartAPI - Service layer encapsulation for interaction with Parts
-
-
-
 ### [PartInventoryControl](/Miscellaneous/PartInventoryControl.md)
 
 
 
-
-
-
-### [PartInvoiceAPI](/Miscellaneous/PartInvoiceAPI.md)
-
-
-
-
-
-
-### [PartLocationMigrate](/Miscellaneous/PartLocationMigrate.md)
-
-
- @test PartPhysicalInventoryDomainLayer.testPartsMasterTriggerHandler Date            |Developer            |Work# Notes -- 2017.13.01      |Gaurav               |W-000892 Created batch class for bulk insertion of Part Physical Detail records
 
 
 
@@ -297,34 +206,6 @@ Mobility Deal Controller Extension
 
 
 
-### [PartsInvoicePrint](/Miscellaneous/PartsInvoicePrint.md)
-
-
- 		W-001569 @test PartInvoicingServiceLayer.testPartsInvoicePrint
-
-
-
-### [PartsInvoice_EXT](/Miscellaneous/PartsInvoice_EXT.md)
-
-
-
-
-
-
-### [PartsInvoice_Printing](/Miscellaneous/PartsInvoice_Printing.md)
-
-
-
-
-
-
-### [PartsPhysical_EXT](/Miscellaneous/PartsPhysical_EXT.md)
-
-
- PartsPhysical_EXT - Controller Extension to create and perform the physical inventory process @test PartPhysicalInventoryServiceLayer.testPartsMasterTriggerHandler dealer__PartsPhysicalInvenotry__c - Light object, no sharing or bulk API Access dealer__PartsPhysicalDetail - records of each part that is part of the physical (this can be the entire location inventory, specific Bin locations or a periodical / random selection of parts) General Steps to a Physical are as follows. 1) General the physical file based on type - location, bin, dollar or random. Or part# Sequence.  (Zero quantity suppressed) 2) Prepare the Count Sheets for Print / Or Scan 3) Perform the Physical (non software) 4) Process the count sheets - hand enter the values or process the scanner files 5) Enter any hand writes - parts found that do not have a record in the system 6) Variance Report on the values that the hand count differs from the inventory count. 7) Variance Report on the Cost differential betwen the current master and FIFO Value - Optional Step 8) Post the Variance, update the General Ledger and Post the updated Quantity to the Inventory 9) Prepare the physical audit report and attach to the Physical. 2016.08.30       |Gaurav               |Case# 00002013 Added code coverage for part master description change 2016.09.23       |Gaurav               |Case# 00002007 Added Notes field in query of Parts Physical Detail object's records 2017.01.13       |Gaurav               |W-000892 Added code to add Parts using Batch class and moved the logic into PartsPhysicalInventoryAPI class
-
-
-
 ### [PurchaseOrderRESTService](/Miscellaneous/PurchaseOrderRESTService.md)
 
 
@@ -332,77 +213,7 @@ Mobility Deal Controller Extension
 
 
 
-### [SROPrint](/Miscellaneous/SROPrint.md)
-
-
-
-
-
-
-### [SalesLead_EXT](/Miscellaneous/SalesLead_EXT.md)
-
-
- SalesLead_EXT - Cotnrols interaction wiht the salesup object
-
-
-
-### [SalesUp](/Miscellaneous/SalesUp.md)
-
-
-
-
-
-
-### [SalesUpDuplicateSearchLex_EXT](/Miscellaneous/SalesUpDuplicateSearchLex_EXT.md)
-
-
- SalesUpDuplicateSearchLex_EXT - Controls interaction with the salesup object Date            |Developer            |Work# Notes -- 2016.12.30       |Sneha                |Case#1819 Created controller to redirect to the same page on click of Search Again button of SalesUpDuplicateSearchLex page. 2017.01.04       |Sneha                | Modified controller to redirect to SalesUpDuplicateSearchLex from SalesUpNewLex page.
-
-
-
-### [SchedulableCarFaxHistoryReport](/Miscellaneous/SchedulableCarFaxHistoryReport.md)
-
-
-
-
-
-
-### [SchedulableInventoryMedia](/Miscellaneous/SchedulableInventoryMedia.md)
-
-
-
-
-
-
-### [SchedulableOutboundFileTransfer](/Miscellaneous/SchedulableOutboundFileTransfer.md)
-
-
-
-
-
-
 ### [SecureVDCSettings](/Miscellaneous/SecureVDCSettings.md)
-
-
-
-
-
-
-### [ServiceEstimatePrint](/Miscellaneous/ServiceEstimatePrint.md)
-
-
-
-
-
-
-### [ServiceRepairOrderPrint](/Miscellaneous/ServiceRepairOrderPrint.md)
-
-
- 		W-001569
-
-
-
-### [ServiceVehicleAPI](/Miscellaneous/ServiceVehicleAPI.md)
 
 
 
@@ -434,34 +245,6 @@ Mobility Deal Controller Extension
 
 
  Date            |Developer            |Work# Notes 13/01/17           Sneha Utture         ||W-000897 Added trigger handler Interface method and migrated AccountControl trigger on Account and ContactControl trigger on Contact
-
-
-
-### [VINDecodeRemote](/Miscellaneous/VINDecodeRemote.md)
-
-
- Date              |Developer             |Work 2016-07-11         Sneha                  T-00854 Date              |Developer             |Case 2016-07-11         Sneha                  C-00002224 To decode VIN when common data is null, and take basic data from the array of styles.
-
-
-
-### [VINDecoder](/Miscellaneous/VINDecoder.md)
-
-
-
-
-
-
-### [VINDecoder_DataOneSoftware](/Miscellaneous/VINDecoder_DataOneSoftware.md)
-
-
-
-
-
-
-### [WorkOrderPrintController](/Miscellaneous/WorkOrderPrintController.md)
-
-
-
 
 
 
@@ -504,13 +287,6 @@ Mobility Deal Controller Extension
 
 
 @description
-
-
-
-### [resetStockNumber](/Miscellaneous/resetStockNumber.md)
-
-
-
 
 
 ## Sales
@@ -563,6 +339,146 @@ Mobility Deal Controller Extension
 DealAPI provides service layer logic for processing requests related to the Deal Records
 
 
+
+### [DealForm_EXT](/Sales/DealForm_EXT.md)
+
+
+Mobility Deal Controller Extension
+
+
+
+### [DealPrintController](/Sales/DealPrintController.md)
+
+
+@description
+
+
+
+### [DealerTrade_EXT](/Sales/DealerTrade_EXT.md)
+
+
+@description
+
+
+
+### [DeskLog_EXT](/Sales/DeskLog_EXT.md)
+
+
+
+
+
+
+### [EmailADFGeneralHandler](/Sales/EmailADFGeneralHandler.md)
+
+
+
+
+
+
+### [EmailADFHandler](/Sales/EmailADFHandler.md)
+
+
+
+
+
+
+### [EmailADFVoiceHandler](/Sales/EmailADFVoiceHandler.md)
+
+
+
+
+
+
+### [EmailHandler](/Sales/EmailHandler.md)
+
+
+
+
+
+
+### [FormAPI](/Sales/FormAPI.md)
+
+
+
+
+
+
+### [InboundEmailNotifications](/Sales/InboundEmailNotifications.md)
+
+
+
+
+
+
+### [SalesLead_EXT](/Sales/SalesLead_EXT.md)
+
+
+ SalesLead_EXT - Cotnrols interaction wiht the salesup object
+
+
+
+### [SalesUp](/Sales/SalesUp.md)
+
+
+
+
+
+
+### [SalesUpDuplicateSearchLex_EXT](/Sales/SalesUpDuplicateSearchLex_EXT.md)
+
+
+ SalesUpDuplicateSearchLex_EXT - Controls interaction with the salesup object Date            |Developer            |Work# Notes -- 2016.12.30       |Sneha                |Case#1819 Created controller to redirect to the same page on click of Search Again button of SalesUpDuplicateSearchLex page. 2017.01.04       |Sneha                | Modified controller to redirect to SalesUpDuplicateSearchLex from SalesUpNewLex page.
+
+
+
+### [SchedulableCarFaxHistoryReport](/Sales/SchedulableCarFaxHistoryReport.md)
+
+
+
+
+
+
+### [SchedulableInventoryMedia](/Sales/SchedulableInventoryMedia.md)
+
+
+
+
+
+
+### [SchedulableOutboundFileTransfer](/Sales/SchedulableOutboundFileTransfer.md)
+
+
+
+
+
+
+### [VINDecodeRemote](/Sales/VINDecodeRemote.md)
+
+
+ Date              |Developer             |Work 2016-07-11         Sneha                  T-00854 Date              |Developer             |Case 2016-07-11         Sneha                  C-00002224 To decode VIN when common data is null, and take basic data from the array of styles.
+
+
+
+### [VINDecoder](/Sales/VINDecoder.md)
+
+
+
+
+
+
+### [VINDecoder_DataOneSoftware](/Sales/VINDecoder_DataOneSoftware.md)
+
+
+
+
+
+
+### [resetStockNumber](/Sales/resetStockNumber.md)
+
+
+
+
+
 ## Common
 
 ### [Cashier](/Common/Cashier.md)
@@ -587,9 +503,94 @@ This class performs core cashiering related actions.  Cashier.cls is used throug
 
 
 
+### [SROPrint](/Service/SROPrint.md)
+
+
+ SROPrint - controls the printing of Service Repair Orders. This file is used both by managed and non-managed code.
+
+
+
+### [ServiceEstimatePrint](/Service/ServiceEstimatePrint.md)
+
+
+ ServiceEstimatePrint - Print Class
+
+
+
 ### [ServiceRepairOrderAPI](/Service/ServiceRepairOrderAPI.md)
 
 
 Service Layer Encapsulation of interaction with the Repair Order Object.
+
+
+
+### [ServiceRepairOrderPrint](/Service/ServiceRepairOrderPrint.md)
+
+
+ 		W-001569
+
+
+
+### [ServiceVehicleAPI](/Service/ServiceVehicleAPI.md)
+
+
+
+
+
+
+### [WorkOrderPrintController](/Service/WorkOrderPrintController.md)
+
+
+
+
+
+## Parts
+
+### [PartAPI](/Parts/PartAPI.md)
+
+
+ PartAPI - Service layer encapsulation for interaction with Parts
+
+
+
+### [PartInvoiceAPI](/Parts/PartInvoiceAPI.md)
+
+
+
+
+
+
+### [PartLocationMigrate](/Parts/PartLocationMigrate.md)
+
+
+ @test PartPhysicalInventoryDomainLayer.testPartsMasterTriggerHandler Date            |Developer            |Work# Notes --
+
+
+
+### [PartsInvoicePrint](/Parts/PartsInvoicePrint.md)
+
+
+ 		W-001569
+
+
+
+### [PartsInvoice_EXT](/Parts/PartsInvoice_EXT.md)
+
+
+
+
+
+
+### [PartsInvoice_Printing](/Parts/PartsInvoice_Printing.md)
+
+
+
+
+
+
+### [PartsPhysical_EXT](/Parts/PartsPhysical_EXT.md)
+
+
+ PartsPhysical_EXT - Controller Extension to create and perform the physical inventory process @test PartPhysicalInventoryServiceLayer.testPartsMasterTriggerHandler dealer__PartsPhysicalInvenotry__c - Light object, no sharing or bulk API Access dealer__PartsPhysicalDetail - records of each part that is part of the physical (this can be the entire location inventory, specific Bin locations or a periodical / random selection of parts) General Steps to a Physical are as follows. 1) General the physical file based on type - location, bin, dollar or random. Or part# Sequence.  (Zero quantity suppressed) 2) Prepare the Count Sheets for Print / Or Scan 3) Perform the Physical (non software) 4) Process the count sheets - hand enter the values or process the scanner files 5) Enter any hand writes - parts found that do not have a record in the system 6) Variance Report on the values that the hand count differs from the inventory count. 7) Variance Report on the Cost differential betwen the current master and FIFO Value - Optional Step 8) Post the Variance, update the General Ledger and Post the updated Quantity to the Inventory 9) Prepare the physical audit report and attach to the Physical. 2016.08.30       |Gaurav               |Case# 00002013 Added code coverage for part master description change 2016.09.23       |Gaurav               |Case# 00002007 Added Notes field in query of Parts Physical Detail object's records 2017.01.13       |Gaurav               |W-000892 Added code to add Parts using Batch class and moved the logic into PartsPhysicalInventoryAPI class
 
 
