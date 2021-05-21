@@ -1,5 +1,5 @@
 * [HOME](./)
-- [Common](./Common)
-- [Sales](./Sales)
-- [Service](./Service)
+- [Common](./Common/)
+- [Sales](./Sales/index)
+- [Service](./Service/)
 
