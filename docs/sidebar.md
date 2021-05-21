@@ -1,6 +1,5 @@
-- [Introduction](introduction)
-- [Quick Start](quick-start)
-- [Common](#/?id=common)
-- [Sales](#/?id=sales)
-- [Service](#/?id=service)
-- **Links**
+* [HOME](./)
+- [Common](./Common)
+- [Sales](./Sales)
+- [Service](./Service)
+
