@@ -1,5 +1,4 @@
 * [HOME](./)
 - [Common](./Common/)
-- [Sales](./Sales/index)
+- [Sales](/#/./?id=sales)
 - [Service](./Service/)
-
