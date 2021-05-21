@@ -2,7 +2,7 @@
 - [Deprecated](./?id=Deprecated)
 - [Batch-Processing](./?id=Batch-Processing)
 - [Miscellaneous](./?id=Miscellaneous)
-- [Common](./?id=)
+- [Common](./?id=Common)
 - [Sales](./?id=Sales)
 - [Service](./?id=Service)
 - [Parts](./?id=Parts)
