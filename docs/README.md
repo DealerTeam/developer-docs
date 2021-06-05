@@ -22,54 +22,111 @@ Performs batch execution to refresh the vehicle history report of Service Vehicl
 Database Batchable interface used with the processing of Parts Physical Inventory workload.
 
 
-## Miscellaneous
+## Service
 
-### [BatchDeleteVehicleEquipment](/Miscellaneous/BatchDeleteVehicleEquipment.md)
-
-
-
-
-
-
-### [BatchMigrateVehicleEquipment](/Miscellaneous/BatchMigrateVehicleEquipment.md)
+### [BatchDeleteVehicleEquipment](/Service/BatchDeleteVehicleEquipment.md)
 
 
 
 
 
 
-### [BatchPopulateServiceIdOnVehicleInventory](/Miscellaneous/BatchPopulateServiceIdOnVehicleInventory.md)
-
-
-@description
+### [BatchMigrateVehicleEquipment](/Service/BatchMigrateVehicleEquipment.md)
 
 
 
-### [BatchUpdateEquippedField](/Miscellaneous/BatchUpdateEquippedField.md)
+
+
+
+### [BatchPopulateServiceIdOnVehicleInventory](/Service/BatchPopulateServiceIdOnVehicleInventory.md)
 
 
 @description
 
 
 
-### [BatchUpdatePartSaleMetric](/Miscellaneous/BatchUpdatePartSaleMetric.md)
+### [BatchUpdatePartSaleMetric](/Service/BatchUpdatePartSaleMetric.md)
 
 
 Handles Batch processing of parts inventory
 
 
 
-### [BatchUpdatePartSaleMetricExec](/Miscellaneous/BatchUpdatePartSaleMetricExec.md)
+### [BatchUpdatePartSaleMetricExec](/Service/BatchUpdatePartSaleMetricExec.md)
 
 
 @description
 
 
 
-### [BatchUpdateVehicleInternalCharges](/Miscellaneous/BatchUpdateVehicleInternalCharges.md)
+### [BatchUpdateVehicleInternalCharges](/Service/BatchUpdateVehicleInternalCharges.md)
 
 
 Batch Class to populate Vehicle Inventory internal charges fields from related SROs upon package installation
+
+
+
+### [ClaimAPI](/Service/ClaimAPI.md)
+
+
+@description
+
+
+
+### [ClaimPrintController](/Service/ClaimPrintController.md)
+
+
+@description
+
+
+
+### [SROPrint](/Service/SROPrint.md)
+
+
+ SROPrint - controls the printing of Service Repair Orders. This file is used both by managed and non-managed code.
+
+
+
+### [ServiceEstimatePrint](/Service/ServiceEstimatePrint.md)
+
+
+ ServiceEstimatePrint - Print Class
+
+
+
+### [ServiceRepairOrderAPI](/Service/ServiceRepairOrderAPI.md)
+
+
+Service Layer Encapsulation of interaction with the Repair Order Object.
+
+
+
+### [ServiceRepairOrderPrint](/Service/ServiceRepairOrderPrint.md)
+
+
+ 		W-001569
+
+
+
+### [ServiceVehicleAPI](/Service/ServiceVehicleAPI.md)
+
+
+
+
+
+
+### [WorkOrderPrintController](/Service/WorkOrderPrintController.md)
+
+
+
+
+
+## Miscellaneous
+
+### [BatchUpdateEquippedField](/Miscellaneous/BatchUpdateEquippedField.md)
+
+
+@description
 
 
 
@@ -164,20 +221,6 @@ Cleans records of invalid external Ids
 
 
 
-### [InventoryMediaService](/Miscellaneous/InventoryMediaService.md)
-
-
-
-
-
-
-### [InventoryMediaServiceMockCallout](/Miscellaneous/InventoryMediaServiceMockCallout.md)
-
-
-
-
-
-
 ### [InvocableADF](/Miscellaneous/InvocableADF.md)
 
 
@@ -199,35 +242,7 @@ Cleans records of invalid external Ids
 
 
 
-### [PartsInventoryRESTService](/Miscellaneous/PartsInventoryRESTService.md)
-
-
-
-
-
-
-### [PurchaseOrderRESTService](/Miscellaneous/PurchaseOrderRESTService.md)
-
-
-
-
-
-
 ### [SecureVDCSettings](/Miscellaneous/SecureVDCSettings.md)
-
-
-
-
-
-
-### [TestClassUtil](/Miscellaneous/TestClassUtil.md)
-
-
-
-
-
-
-### [TestFactory](/Miscellaneous/TestFactory.md)
 
 
 
@@ -410,6 +425,13 @@ Mobility Deal Controller Extension
 
 
 
+### [InventoryMediaService](/Sales/InventoryMediaService.md)
+
+
+
+
+
+
 ### [SalesLead_EXT](/Sales/SalesLead_EXT.md)
 
 
@@ -487,61 +509,26 @@ Mobility Deal Controller Extension
 This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
 
 
-## Service
+## Test
 
-### [ClaimAPI](/Service/ClaimAPI.md)
-
-
-@description
-
-
-
-### [ClaimPrintController](/Service/ClaimPrintController.md)
-
-
-@description
-
-
-
-### [SROPrint](/Service/SROPrint.md)
-
-
- SROPrint - controls the printing of Service Repair Orders. This file is used both by managed and non-managed code.
-
-
-
-### [ServiceEstimatePrint](/Service/ServiceEstimatePrint.md)
-
-
- ServiceEstimatePrint - Print Class
-
-
-
-### [ServiceRepairOrderAPI](/Service/ServiceRepairOrderAPI.md)
-
-
-Service Layer Encapsulation of interaction with the Repair Order Object.
-
-
-
-### [ServiceRepairOrderPrint](/Service/ServiceRepairOrderPrint.md)
-
-
- 		W-001569
-
-
-
-### [ServiceVehicleAPI](/Service/ServiceVehicleAPI.md)
+### [InventoryMediaServiceMockCallout](/Test/InventoryMediaServiceMockCallout.md)
 
 
 
 
 
 
-### [WorkOrderPrintController](/Service/WorkOrderPrintController.md)
+### [TestClassUtil](/Test/TestClassUtil.md)
 
 
 
+
+
+
+### [TestFactory](/Test/TestFactory.md)
+
+
+ // The TestFactory will pre-fill all the fields we typically need // You can use the methods like a void to populate SetupData TestFactory.createSObjectList(new Account(), 200, true); // Or return the object Account a = (Account)TestFactory.createSObject(new Account()); insert a; // You can also set values to be used. Any values set in the constructor will override the defaults Opportunity o = (Opportunity)TestFactory.createSObject(new Opportunity(AccountId = a.Id)); // You can also specify a specific set of overrides for different scenarios Account a = (Account)TestFactory.createSObject(new Account(), 'TestFactoryFieldData.AccountDefaults'); // Finally, get a bunch of records for testing bulk Account[] aList = (Account[])TestFactory.createSObjectList(new Account(), 200); // You can optionally insert records as created like this: // Note the final parameter of true. Account a = (Account) TestFactory.createSObject(new Account(), true); Contact c = (Contact) TestFactory.createSObject(new Contact(AccountID = a.Id), true);
 
 
 ## Parts
@@ -564,6 +551,13 @@ Service Layer Encapsulation of interaction with the Repair Order Object.
 
 
  @test PartPhysicalInventoryDomainLayer.testPartsMasterTriggerHandler Date            |Developer            |Work# Notes --
+
+
+
+### [PartsInventoryRESTService](/Parts/PartsInventoryRESTService.md)
+
+
+
 
 
 
@@ -592,5 +586,12 @@ Service Layer Encapsulation of interaction with the Repair Order Object.
 
 
  PartsPhysical_EXT - Controller Extension to create and perform the physical inventory process @test PartPhysicalInventoryServiceLayer.testPartsMasterTriggerHandler dealer__PartsPhysicalInvenotry__c - Light object, no sharing or bulk API Access dealer__PartsPhysicalDetail - records of each part that is part of the physical (this can be the entire location inventory, specific Bin locations or a periodical / random selection of parts) General Steps to a Physical are as follows. 1) General the physical file based on type - location, bin, dollar or random. Or part# Sequence.  (Zero quantity suppressed) 2) Prepare the Count Sheets for Print / Or Scan 3) Perform the Physical (non software) 4) Process the count sheets - hand enter the values or process the scanner files 5) Enter any hand writes - parts found that do not have a record in the system 6) Variance Report on the values that the hand count differs from the inventory count. 7) Variance Report on the Cost differential betwen the current master and FIFO Value - Optional Step 8) Post the Variance, update the General Ledger and Post the updated Quantity to the Inventory 9) Prepare the physical audit report and attach to the Physical. 2016.08.30       |Gaurav               |Case# 00002013 Added code coverage for part master description change 2016.09.23       |Gaurav               |Case# 00002007 Added Notes field in query of Parts Physical Detail object's records 2017.01.13       |Gaurav               |W-000892 Added code to add Parts using Batch class and moved the logic into PartsPhysicalInventoryAPI class
+
+
+
+### [PurchaseOrderRESTService](/Parts/PurchaseOrderRESTService.md)
+
+
+
 
 
