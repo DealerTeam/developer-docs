@@ -36,7 +36,43 @@
 ---
 ## Methods
 ### `getamList()` → `List<After_Market__c>`
+
+getter method for supplying printable after market items to deal forms
+
+#### Parameters
+|Param|Description|
+|-----|-----------|
+|`` | e |
+
+#### Return
+
+**Type**
+
+List<After_Market__c>
+
+**Description**
+
+List<after_market__c> List of form printable after market records
+
 ### `gettradeInWrapper()` → `List<payOffWrapper>`
+
+getter class for wrapping related  loanPayoff and trade records by appraisal
+
+#### Parameters
+|Param|Description|
+|-----|-----------|
+|`` | e |
+
+#### Return
+
+**Type**
+
+List<payOffWrapper>
+
+**Description**
+
+List<payOffWrapper> List of related loanPayoff and trade In records
+
 ---
 ## Inner Classes
 
