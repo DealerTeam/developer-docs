@@ -543,7 +543,7 @@ This class performs core cashiering related actions.  Cashier.cls is used throug
 ### [PartAPI](/Parts/PartAPI.md)
 
 
- PartAPI - Service layer encapsulation for interaction with Parts
+PartAPI - Service layer encapsulation for interaction with Parts
 
 
 
