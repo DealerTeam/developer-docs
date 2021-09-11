@@ -71,11 +71,11 @@ dealer__Parts_Inventory__c
 
 **Type**
 
-List<dealer__Parts_Inventory__c>
+List&lt;dealer__Parts_Inventory__c&gt;
 
 **Description**
 
-List<dealer__Parts_Invoice_Line__c> : returns a list of matched inventory
+List&lt;dealer__Parts_Invoice_Line__c&gt; : returns a list of matched inventory
 
 ### `searchInventory(String searchString)` → `List<dealer__Parts_Inventory__c>`
 
@@ -98,11 +98,11 @@ List<dealer__Parts_Invoice_Line__c> : returns a list of matched inventory
 
 **Type**
 
-List<dealer__Parts_Inventory__c>
+List&lt;dealer__Parts_Inventory__c&gt;
 
 **Description**
 
-List<dealer__Parts_Service_Pricing_Strategy__c>
+List&lt;dealer__Parts_Service_Pricing_Strategy__c&gt;
 
 ### `setLinePrice(String linedata)` → `boolean`
 

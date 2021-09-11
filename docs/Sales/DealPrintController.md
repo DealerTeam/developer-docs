@@ -48,11 +48,11 @@ getter method for supplying printable after market items to deal forms
 
 **Type**
 
-List<After_Market__c>
+List&lt;After_Market__c&gt;
 
 **Description**
 
-List<after_market__c> List of form printable after market records
+List&lt;after_market__c&gt; List of form printable after market records
 
 ### `gettradeInWrapper()` → `List<payOffWrapper>`
 
@@ -67,11 +67,11 @@ getter class for wrapping related  loanPayoff and trade records by appraisal
 
 **Type**
 
-List<payOffWrapper>
+List&lt;payOffWrapper&gt;
 
 **Description**
 
-List<payOffWrapper> List of related loanPayoff and trade In records
+List&lt;payOffWrapper&gt; List of related loanPayoff and trade In records
 
 ---
 ## Inner Classes

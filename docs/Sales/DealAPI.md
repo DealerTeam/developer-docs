@@ -11,7 +11,7 @@ Processes the closure of a Deal Record.  This method is invocable and can option
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`deals` |  List<Deal__c> |
+|`deals` |  List&lt;Deal__c&gt; |
 
 #### Return
 
@@ -32,7 +32,7 @@ This routine will close deals and mark associated records as closed/won
 |-----|-----------|
 |`Id` |  dealId |
 |`Id` |  dealId |
-|`deals` |  List<Deal__c> |
+|`deals` |  List&lt;Deal__c&gt; |
 
 #### Return
 
@@ -90,7 +90,7 @@ Creates Fees to be defaulted on a deal
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`deals` |  List<Deal__c> |
+|`deals` |  List&lt;Deal__c&gt; |
 
 #### Return
 

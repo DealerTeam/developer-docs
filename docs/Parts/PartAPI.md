@@ -41,7 +41,7 @@ Finds the matrix for a list of parts where cost is between the high and low cost
 
 **Type**
 
-List<Parts_Inventory__c>
+List&lt;Parts_Inventory__c&gt;
 
 **Description**
 
@@ -55,7 +55,7 @@ Queries the database for parts filtered by params @function - queryPartInventory
 |Param|Description|
 |-----|-----------|
 |`{Id}` |  location - location of parts to filter query |
-|`{List<Id>}` |  locationIds - multiple locations to filter |
+|`{List&lt;Id&gt;}` |  locationIds - multiple locations to filter |
 |`{Id}` |  part - part id to filter |
 |`{String}` |  manufacturer - part manufacturer to filter |
 
@@ -67,7 +67,7 @@ Decimal
 
 **Description**
 
-s {List<Parts_Inventory__c>} - list of parts matching returned by filtered query
+s {List&lt;Parts_Inventory__c&gt;} - list of parts matching returned by filtered query
 
 ### `matrix(String paymentMethod, Parts_Master__c master)` → `Decimal`
 ### `readInventory(Id location)` → `<Parts_Inventory__c>`
@@ -83,34 +83,34 @@ readInventory performs the SOQL call to query part inventory, returning a list o
 
 **Type**
 
-<Parts_Inventory__c>
+&lt;Parts_Inventory__c&gt;
 
 **Description**
 
-List<Parts_Inventory__c>
+List&lt;Parts_Inventory__c&gt;
 
 ### `readInventory(List <Id> locationIds)` → `<Parts_Inventory__c>`
 
-readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID's
+readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID&apos;s
 
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`List<Id>` |  List<Dealer_Location__c> |
+|`List&lt;Id&gt;` |  List&lt;Dealer_Location__c&gt; |
 
 #### Return
 
 **Type**
 
-<Parts_Inventory__c>
+&lt;Parts_Inventory__c&gt;
 
 **Description**
 
-List<Parts_Inventory__c>
+List&lt;Parts_Inventory__c&gt;
 
 ### `readInventory(Parts_Inventory__c part)` → `<Parts_Inventory__c>`
 
-readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID's
+readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID&apos;s
 
 #### Parameters
 |Param|Description|
@@ -121,31 +121,31 @@ readInventory performs the SOQL call to query part inventory, returning a list o
 
 **Type**
 
-<Parts_Inventory__c>
+&lt;Parts_Inventory__c&gt;
 
 **Description**
 
-List<Parts_Inventory__c>
+List&lt;Parts_Inventory__c&gt;
 
 ### `readInventory(List < Id > locationIds, String manufacturer)` → `< Parts_Inventory__c >`
 
-readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID's
+readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID&apos;s
 
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`List<Id>` |  List<Dealer_Location__c> |
+|`List&lt;Id&gt;` |  List&lt;Dealer_Location__c&gt; |
 |`String` |  manufacturer |
 
 #### Return
 
 **Type**
 
-< Parts_Inventory__c >
+&lt; Parts_Inventory__c &gt;
 
 **Description**
 
-List<Parts_Inventory__c>
+List&lt;Parts_Inventory__c&gt;
 
 ### `saleMetricHandler(Map < Id, Parts_Inventory__c > partInventoryMap)` → `Void`
 
@@ -154,7 +154,7 @@ matrixSearch - perform record processing sub function for the primary global met
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`{Map<Id,` |  Parts_Inventory__c>} - parts to process |
+|`{Map&lt;Id,` |  Parts_Inventory__c&gt;} - parts to process |
 
 ---
 ## Inner Classes

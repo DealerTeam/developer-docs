@@ -18,7 +18,7 @@
 
 **Type**
 
-List<dealer__Parts_Invoice_Line__c>
+List&lt;dealer__Parts_Invoice_Line__c&gt;
 
 **Description**
 
@@ -48,6 +48,6 @@ List<dealer__Parts_Invoice_Line__c>
 
 ### PartInvoiceAPI.PartInvoiceAPIException class
 
- ledger @param  partId    Part record Id @param  invoiceId Invoice Record Id @param  qtySold   Quantity sold via this transaction @return List<dealer__Parts_Ledger__c> the resulting ledger lines @notes
+ ledger @param  partId    Part record Id @param  invoiceId Invoice Record Id @param  qtySold   Quantity sold via this transaction @return List&lt;dealer__Parts_Ledger__c&gt; the resulting ledger lines @notes
 
 ---

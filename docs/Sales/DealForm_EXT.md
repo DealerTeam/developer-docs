@@ -86,11 +86,11 @@ Id
 
 **Type**
 
-List<dealer__Discount_Rebate__c>
+List&lt;dealer__Discount_Rebate__c&gt;
 
 **Description**
 
-List<dealer__Discount_Rebate__c>
+List&lt;dealer__Discount_Rebate__c&gt;
 
 ### `getInvoiceLogo()` → `String`
 #### Return
@@ -112,22 +112,22 @@ String
 
 **Type**
 
-List<SelectOption>
+List&lt;SelectOption&gt;
 
 **Description**
 
-List<SelectOption>
+List&lt;SelectOption&gt;
 
 ### `getNonTaxableFees()` → `List<dealer__Sales_Fee__c>`
 #### Return
 
 **Type**
 
-List<dealer__Sales_Fee__c>
+List&lt;dealer__Sales_Fee__c&gt;
 
 **Description**
 
-List<dealer__Sales_Fee__c>
+List&lt;dealer__Sales_Fee__c&gt;
 
 ### `getPayor1()` → `Account`
 ### `getPayor2()` → `Account`
@@ -162,11 +162,11 @@ boolean
 
 **Type**
 
-List<dealer__Sales_Fee__c>
+List&lt;dealer__Sales_Fee__c&gt;
 
 **Description**
 
-List<dealer__Sales_Fee__c>
+List&lt;dealer__Sales_Fee__c&gt;
 
 ### `getTotalAllowance()` → `Decimal`
 #### Return

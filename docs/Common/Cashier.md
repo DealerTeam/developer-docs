@@ -35,10 +35,10 @@ void
 
 **Type**
 
-List<SelectOption>
+List&lt;SelectOption&gt;
 
 **Description**
 
-List<SelectOption>
+List&lt;SelectOption&gt;
 
 ---

@@ -51,7 +51,7 @@
 ### `getInvoiceLogo()` → `String`
 ### `getLinesList()` → `List<Service_Job__c>`
 
- Get Lines "Loaded" List Params: ro.Id
+ Get Lines &quot;Loaded&quot; List Params: ro.Id
 
 ### `getMiscList()` → `List<Service_Misc_Charge__c>`
 

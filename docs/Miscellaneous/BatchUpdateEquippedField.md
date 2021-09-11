@@ -1,35 +1,48 @@
-# BatchCompletePhysical class
+# BatchUpdateEquippedField class
 
-Database Batchable interface used with the processing of Parts Physical Inventory workload.
+@description
 
 ---
 ## Constructors
-### `BatchCompletePhysical(String q)`
-
-The constructor sets the query string for this operation.
+### `BatchUpdateEquippedField(String q, String e, String f, String v)`
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`q` |  String Query to execute |
+|`` | e |
+|`` | f |
+|`` | v |
 
 ---
 ## Properties
 
-### `query` → `String`
+### `Entity` → `String`
 
-Query string to perform work on.
+@description
+
+### `ListRecForEmailId` → `List<id>`
+
+@description
+
+### `NewField` → `String`
+
+@description
+
+### `OldField` → `String`
+
+@description
+
+### `Query` → `String`
+
+@description
 
 ---
 ## Methods
 ### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`
-
-Iterates sObjects returned
-
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`BC` |  Database.BatchableContext |
-|`scope` |  List&lt;sObject&gt; |
+|`` | C |
+|`` | e |
 
 #### Return
 
@@ -42,13 +55,10 @@ void
 void
 
 ### `finish(Database.BatchableContext BC)` → `void`
-
-Finish interface for the Batchable context
-
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`BC` |  Database.BatchableContext |
+|`` | C |
 
 #### Return
 
@@ -61,12 +71,19 @@ void
 void
 
 ### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-
-Starts execution of the batchable interface
-
 #### Parameters
 |Param|Description|
 |-----|-----------|
-|`BC` |  BatchableContext |
+|`` | C |
+
+#### Return
+
+**Type**
+
+Database.QueryLocator
+
+**Description**
+
+Database.QueryLocator
 
 ---
