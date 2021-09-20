@@ -1,0 +1,2 @@
+# InstallScriptAPI class
+---
