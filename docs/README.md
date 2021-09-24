@@ -603,13 +603,6 @@ PartAPI - Service layer encapsulation for interaction with Parts
 
 
 
-### [PurchaseOrderAPI](/Parts/PurchaseOrderAPI.md)
-
-
-
-
-
-
 ### [PurchaseOrderRESTService](/Parts/PurchaseOrderRESTService.md)
 
 
