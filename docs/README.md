@@ -1,127 +1,12 @@
 # Classes
-## Deprecated
-
-### [B2CAccounts](/Deprecated/B2CAccounts.md)
-
-
-Deprecated - This routine has been scheduled for deprecation
-
-
-## Batch Processing
-
-### [BatchCarfaxHistoryReport](/Batch-Processing/BatchCarfaxHistoryReport.md)
-
-
-Performs batch execution to refresh the vehicle history report of Service Vehicles.
-
-
-
-### [BatchCompletePhysical](/Batch-Processing/BatchCompletePhysical.md)
-
-
-Database Batchable interface used with the processing of Parts Physical Inventory workload.
-
-
-## Service
-
-### [BatchDeleteVehicleEquipment](/Service/BatchDeleteVehicleEquipment.md)
-
-
-
-
-
-
-### [BatchMigrateVehicleEquipment](/Service/BatchMigrateVehicleEquipment.md)
-
-
-
-
-
-
-### [BatchPopulateServiceIdOnVehicleInventory](/Service/BatchPopulateServiceIdOnVehicleInventory.md)
-
-
-@description
-
-
-
-### [BatchUpdatePartSaleMetric](/Service/BatchUpdatePartSaleMetric.md)
-
-
-Handles Batch processing of parts inventory
-
-
-
-### [BatchUpdatePartSaleMetricExec](/Service/BatchUpdatePartSaleMetricExec.md)
-
-
-@description
-
-
-
-### [BatchUpdateVehicleInternalCharges](/Service/BatchUpdateVehicleInternalCharges.md)
-
-
-Batch Class to populate Vehicle Inventory internal charges fields from related SROs upon package installation
-
-
-
-### [ClaimAPI](/Service/ClaimAPI.md)
-
-
-@description
-
-
-
-### [ClaimPrintController](/Service/ClaimPrintController.md)
-
-
-@description
-
-
-
-### [SROPrint](/Service/SROPrint.md)
-
-
- SROPrint - controls the printing of Service Repair Orders. This file is used both by managed and non-managed code.
-
-
-
-### [ServiceEstimatePrint](/Service/ServiceEstimatePrint.md)
-
-
- ServiceEstimatePrint - Print Class
-
-
-
-### [ServiceRepairOrderAPI](/Service/ServiceRepairOrderAPI.md)
-
-
-Service Layer Encapsulation of interaction with the Repair Order Object.
-
-
-
-### [ServiceRepairOrderPrint](/Service/ServiceRepairOrderPrint.md)
-
-
- 		W-001569
-
-
-
-### [ServiceVehicleAPI](/Service/ServiceVehicleAPI.md)
-
-
-
-
-
-
-### [WorkOrderPrintController](/Service/WorkOrderPrintController.md)
-
-
-
-
-
 ## Miscellaneous
+
+### [Auction123RESTService](/Miscellaneous/Auction123RESTService.md)
+
+
+@description
+
+
 
 ### [BatchUpdateEquippedField](/Miscellaneous/BatchUpdateEquippedField.md)
 
@@ -309,6 +194,128 @@ Cleans records of invalid external Ids
 
 
 @description
+
+
+## Deprecated
+
+### [B2CAccounts](/Deprecated/B2CAccounts.md)
+
+
+Deprecated - This routine has been scheduled for deprecation
+
+
+## Batch Processing
+
+### [BatchCarfaxHistoryReport](/Batch-Processing/BatchCarfaxHistoryReport.md)
+
+
+Performs batch execution to refresh the vehicle history report of Service Vehicles.
+
+
+
+### [BatchCompletePhysical](/Batch-Processing/BatchCompletePhysical.md)
+
+
+Database Batchable interface used with the processing of Parts Physical Inventory workload.
+
+
+## Service
+
+### [BatchDeleteVehicleEquipment](/Service/BatchDeleteVehicleEquipment.md)
+
+
+
+
+
+
+### [BatchMigrateVehicleEquipment](/Service/BatchMigrateVehicleEquipment.md)
+
+
+
+
+
+
+### [BatchPopulateServiceIdOnVehicleInventory](/Service/BatchPopulateServiceIdOnVehicleInventory.md)
+
+
+@description
+
+
+
+### [BatchUpdatePartSaleMetric](/Service/BatchUpdatePartSaleMetric.md)
+
+
+Handles Batch processing of parts inventory
+
+
+
+### [BatchUpdatePartSaleMetricExec](/Service/BatchUpdatePartSaleMetricExec.md)
+
+
+@description
+
+
+
+### [BatchUpdateVehicleInternalCharges](/Service/BatchUpdateVehicleInternalCharges.md)
+
+
+Batch Class to populate Vehicle Inventory internal charges fields from related SROs upon package installation
+
+
+
+### [ClaimAPI](/Service/ClaimAPI.md)
+
+
+@description
+
+
+
+### [ClaimPrintController](/Service/ClaimPrintController.md)
+
+
+@description
+
+
+
+### [SROPrint](/Service/SROPrint.md)
+
+
+ SROPrint - controls the printing of Service Repair Orders. This file is used both by managed and non-managed code.
+
+
+
+### [ServiceEstimatePrint](/Service/ServiceEstimatePrint.md)
+
+
+ ServiceEstimatePrint - Print Class
+
+
+
+### [ServiceRepairOrderAPI](/Service/ServiceRepairOrderAPI.md)
+
+
+Service Layer Encapsulation of interaction with the Repair Order Object.
+
+
+
+### [ServiceRepairOrderPrint](/Service/ServiceRepairOrderPrint.md)
+
+
+ 		W-001569
+
+
+
+### [ServiceVehicleAPI](/Service/ServiceVehicleAPI.md)
+
+
+
+
+
+
+### [WorkOrderPrintController](/Service/WorkOrderPrintController.md)
+
+
+
 
 
 ## Sales
