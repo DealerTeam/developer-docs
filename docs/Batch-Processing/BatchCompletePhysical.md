@@ -8,8 +8,9 @@ Database Batchable interface used with the processing of Parts Physical Inventor
 
 The constructor sets the query string for this operation.
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`q` |  String Query to execute |
 
 ---
@@ -26,8 +27,9 @@ Query string to perform work on.
 Iterates sObjects returned
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`BC` |  Database.BatchableContext |
 |`scope` |  List&lt;sObject&gt; |
 
@@ -46,8 +48,9 @@ void
 Finish interface for the Batchable context
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`BC` |  Database.BatchableContext |
 
 #### Return
@@ -65,8 +68,9 @@ void
 Starts execution of the batchable interface
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`BC` |  BatchableContext |
 
 ---

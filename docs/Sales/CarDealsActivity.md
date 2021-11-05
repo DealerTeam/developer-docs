@@ -6,8 +6,9 @@
 ## Constructors
 ### `CarDealsActivity(string q)`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | q |
 
 ---
@@ -19,8 +20,9 @@
 ## Methods
 ### `execute(Database.BatchableContext BC,List<sobject> prescriberScope)` → `void`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 |`` | e |
 
@@ -37,8 +39,9 @@ void
 ### `finish(Database.BatchableCOntext BC)` → `void`
 ### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 ---

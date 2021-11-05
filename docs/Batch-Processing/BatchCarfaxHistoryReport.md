@@ -14,8 +14,9 @@ empty constructor
 Process the records
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`BC` |  Batchable Context |
 |`scope` |  List&lt;Sobject&gt; Scope |
 
@@ -34,8 +35,9 @@ void
 Finish interface, this runs at the end of the batchable run.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`BC` |  Batchable Context |
 
 #### Return
@@ -53,8 +55,9 @@ void
 forming batch requires query
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`BC` |  Batchable Context |
 
 ---

@@ -1,18 +1,44 @@
-# BatchPopulateServiceIdOnVehicleInventory class
+# BatchUpdateEquippedField class
 
 @description
 
 ---
 ## Constructors
-### `BatchPopulateServiceIdOnVehicleInventory()`
+### `BatchUpdateEquippedField(String q, String e, String f, String v)`
+#### Parameters
+
+| Param | Description |
+| ----- | ----------- |
+|`` | e |
+|`` | f |
+|`` | v |
+
 ---
 ## Properties
 
+### `Entity` → `String`
+
+@description
+
 ### `ListRecForEmailId` → `List<id>`
+
+@description
+
+### `NewField` → `String`
+
+@description
+
+### `OldField` → `String`
+
+@description
+
+### `Query` → `String`
+
+@description
 
 ---
 ## Methods
-### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> scope)` → `void`
+### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`
 #### Parameters
 
 | Param | Description |
@@ -53,5 +79,15 @@ void
 | Param | Description |
 | ----- | ----------- |
 |`` | C |
+
+#### Return
+
+**Type**
+
+Database.QueryLocator
+
+**Description**
+
+Database.QueryLocator
 
 ---

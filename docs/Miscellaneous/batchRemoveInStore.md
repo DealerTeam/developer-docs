@@ -1,13 +1,19 @@
-# BatchDeleteVehicleEquipment class
+# batchRemoveInStore class
+
+@description
+
 ---
 ## Constructors
-### `BatchDeleteVehicleEquipment()`
+### `batchRemoveInStore(String sObjectName)`
+#### Parameters
+
+| Param | Description |
+| ----- | ----------- |
+|`` | e |
+
 ---
 ## Methods
 ### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`
-
-Process the records
-
 #### Parameters
 
 | Param | Description |
@@ -43,9 +49,6 @@ void
 void
 
 ### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-
-forming batch requires query
-
 #### Parameters
 
 | Param | Description |

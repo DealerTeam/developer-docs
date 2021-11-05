@@ -6,8 +6,9 @@
 ## Constructors
 ### `DealerTrade_EXT(ApexPages.StandardController controller)`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | r |
 
 ---

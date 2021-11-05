@@ -6,8 +6,9 @@
 ## Methods
 ### `claimData(Id claimId)` → `claim`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | e |
 |`` | e |
 |`` | d |

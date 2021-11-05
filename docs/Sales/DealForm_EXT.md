@@ -66,8 +66,9 @@ decimal
 
 ### `createBlankDeal(String jsonPayload)` → `Id`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | d |
 
 #### Return

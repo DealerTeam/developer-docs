@@ -6,8 +6,9 @@
 ## Constructors
 ### `DealPrintController(ApexPages.StandardController controller)`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | r |
 
 ---
@@ -40,8 +41,9 @@
 getter method for supplying printable after market items to deal forms
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | e |
 
 #### Return
@@ -59,8 +61,9 @@ List&lt;after_market__c&gt; List of form printable after market records
 getter class for wrapping related  loanPayoff and trade records by appraisal
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | e |
 
 #### Return

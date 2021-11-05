@@ -6,8 +6,9 @@
 ## Constructors
 ### `ClaimPrintController(ApexPages.StandardController controller)`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | r |
 
 ---

@@ -10,8 +10,9 @@
  [invoiceLines description]
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`invoiceId` |  [description] |
 
 #### Return
@@ -29,8 +30,9 @@ List&lt;dealer__Parts_Invoice_Line__c&gt;
  	removeInvoiceLine - Removes an invoice line from the parts invoice, resets inventory and re-assigns stock.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`Id` |  of the invoice line requesting removal |
 
 ### `removeInvoiceLine(List<Parts_Invoice_Line__c> partInvoiceLines)` → `Boolean`
@@ -38,8 +40,9 @@ List&lt;dealer__Parts_Invoice_Line__c&gt;
  removeInvoiceLine - removes an invoice line or many by list of invoice lines
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`List` |  of Parts Invoice Lines |
 
 ### `updateInvoiceLine(Id lineId, Decimal quantity, Decimal salePrice, String comment)` → `Parts_Invoice_Line__c`

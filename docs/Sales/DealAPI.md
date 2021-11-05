@@ -9,8 +9,9 @@ DealAPI provides service layer logic for processing requests related to the Deal
 Processes the closure of a Deal Record.  This method is invocable and can optionally be included in custom process builder flows.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`deals` |  List&lt;Deal__c&gt; |
 
 #### Return
@@ -28,8 +29,9 @@ Void
 This routine will close deals and mark associated records as closed/won
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`Id` |  dealId |
 |`Id` |  dealId |
 |`deals` |  List&lt;Deal__c&gt; |
@@ -49,8 +51,9 @@ Void
 Creates a Deal using the Deal Data Structure.  This method will connect all sub-records such as Trade(s), Taxes, Service Contracts and After Market items.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`dealData` |  DealAPI.deal |
 
 #### Return
@@ -68,8 +71,9 @@ Deal__c
 Creates After Market items on the deal from a conversion on the sales up
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`pkId` |  Id |
 |`deal` |  Deal__c |
 
@@ -88,8 +92,9 @@ Void
 Creates Fees to be defaulted on a deal
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`deals` |  List&lt;Deal__c&gt; |
 
 #### Return
@@ -107,8 +112,9 @@ Void
 Retrieves Data relavent to a deal. Used mostly for deal forms.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`dealId` |  Id |
 
 #### Return
@@ -126,8 +132,9 @@ DealAPI.Deal
 Saves and calculates deal
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`String` |  dealId |
 
 #### Return
@@ -145,8 +152,9 @@ Deal__c
 Saves and calculates deal Assumes all fields on Deal__c were queried prior to entry.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`deal` |  Deal__c |
 
 #### Return

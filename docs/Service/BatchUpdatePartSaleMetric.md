@@ -12,8 +12,9 @@ Handles Batch processing of parts inventory
 Process the records
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 |`` | e |
 
@@ -29,8 +30,9 @@ void
 
 ### `finish(Database.BatchableContext BC)` → `void`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 #### Return
@@ -48,8 +50,9 @@ void
 forming batch requires query
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 ---

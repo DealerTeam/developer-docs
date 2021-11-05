@@ -9,8 +9,9 @@ Batch Class to populate Vehicle Inventory internal charges fields from related S
 Process each batch of records
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 |`` | t |
 
@@ -26,8 +27,9 @@ void
 
 ### `finish(Database.BatchableContext BC)` → `void`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 #### Return
@@ -45,8 +47,9 @@ void
 Collect the batches of records to be passed to execute
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 ---

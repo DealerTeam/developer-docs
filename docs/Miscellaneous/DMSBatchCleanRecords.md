@@ -1,7 +1,12 @@
-# BatchDeleteVehicleEquipment class
+# DMSBatchCleanRecords class
+
+Cleans records of invalid external Ids
+
 ---
 ## Constructors
-### `BatchDeleteVehicleEquipment()`
+### `DMSBatchCleanRecords(String Type, String objJSON)`
+
+constructor
 ---
 ## Methods
 ### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`

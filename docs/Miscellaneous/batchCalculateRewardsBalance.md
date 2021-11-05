@@ -1,13 +1,10 @@
-# BatchDeleteVehicleEquipment class
----
-## Constructors
-### `BatchDeleteVehicleEquipment()`
+# batchCalculateRewardsBalance class
+
+@description
+
 ---
 ## Methods
 ### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`
-
-Process the records
-
 #### Parameters
 
 | Param | Description |
@@ -43,13 +40,20 @@ void
 void
 
 ### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-
-forming batch requires query
-
 #### Parameters
 
 | Param | Description |
 | ----- | ----------- |
 |`` | C |
+
+#### Return
+
+**Type**
+
+Database.QueryLocator
+
+**Description**
+
+Database.QueryLocator
 
 ---

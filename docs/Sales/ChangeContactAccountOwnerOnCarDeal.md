@@ -6,8 +6,9 @@
 ## Constructors
 ### `ChangeContactAccountOwnerOnCarDeal(String query)`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | y |
 
 ---
@@ -25,8 +26,9 @@ void
 
 ### `finish(Database.BatchableContext BC)` → `void`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 #### Return
@@ -41,14 +43,16 @@ void
 
 ### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | C |
 
 ### `updateOwners(Map<String,String> con,Map<String,String> Acc)` → `void`
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`` | n |
 |`` | c |
 

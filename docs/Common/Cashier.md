@@ -9,8 +9,9 @@ This class performs core cashiering related actions.  Cashier.cls is used throug
 Performs an outbound single email to an external handler.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`parentRecordId` |  Record ID of the Transaction recording cashiering events |
 |`Id` |  parentRecordId description |
 |`` | d |
@@ -26,8 +27,9 @@ void
 void
 
 #### Throws
-|Exception|Description|
-|---------|-----------|
+
+| Exception | Description |
+| --------- | ----------- |
 |`` | n |
 
 ### `getPaymentMethods()` → `List<SelectOption>`

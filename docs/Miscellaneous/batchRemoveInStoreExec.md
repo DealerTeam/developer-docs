@@ -1,4 +1,4 @@
-# CarDealsActivityBatchable class
+# batchRemoveInStoreExec class
 
 @description
 

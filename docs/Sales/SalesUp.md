@@ -6,8 +6,9 @@
 Creates a sales up and related records
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`salesUp` |  wrapper containing all related objects needed for creation |
 
 #### Return

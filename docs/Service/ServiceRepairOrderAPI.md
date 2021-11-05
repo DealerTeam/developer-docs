@@ -10,8 +10,9 @@ Service Layer Encapsulation of interaction with the Repair Order Object.
 This method serves to create repair orders from deals.  These repair orders are often referred to as delivery repair orders.
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`dealObject` |  sObject Deal |
 
 #### Return
@@ -29,8 +30,9 @@ Returns the Service Repair Order sobject created.
 Tbhis method converts a Service Estimate to a Service Repair Order
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`estimateObject` |  The estimateObject parameter is a complete or at minimum stored Service Estimate including Record ID |
 
 #### Return

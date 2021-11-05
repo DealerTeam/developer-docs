@@ -20,8 +20,9 @@
  getInventory
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`inventorySearch` |  [String of the inventory record to search, this is a part#] |
 
 #### Return
@@ -63,8 +64,9 @@ dealer__Parts_Inventory__c
  matchedInventory
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`partno` |  : |
 
 #### Return
@@ -82,8 +84,9 @@ List&lt;dealer__Parts_Invoice_Line__c&gt; : returns a list of matched inventory
  PartsInvoice_EXT
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`controller` |  [description] |
 |`partId` |           [description] |
 |`invoiceId` |        [description] |

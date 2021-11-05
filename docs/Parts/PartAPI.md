@@ -13,8 +13,9 @@ createInventoryFromMaster provides an api interface and single point of entry fo
 Finds the matrix for a single part where cost is between the high and low cost on the matrix record and set list based on the multiplier
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`locationIds` |  locationIds description |
 |`part` |  part description |
 
@@ -33,8 +34,9 @@ return description
 Finds the matrix for a list of parts where cost is between the high and low cost on the matrix record and set list based on the multiplier
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`parts` |  parts description |
 
 #### Return
@@ -52,8 +54,9 @@ return description
 Queries the database for parts filtered by params @function - queryPartInventory
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`{Id}` |  location - location of parts to filter query |
 |`{List&lt;Id&gt;}` |  locationIds - multiple locations to filter |
 |`{Id}` |  part - part id to filter |
@@ -75,8 +78,9 @@ s {List&lt;Parts_Inventory__c&gt;} - list of parts matching returned by filtered
 readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on the Location ID
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`Id` |  Dealer_Location__c.Id |
 
 #### Return
@@ -94,8 +98,9 @@ List&lt;Parts_Inventory__c&gt;
 readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID&apos;s
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`List&lt;Id&gt;` |  List&lt;Dealer_Location__c&gt; |
 
 #### Return
@@ -113,8 +118,9 @@ List&lt;Parts_Inventory__c&gt;
 readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID&apos;s
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`sObject` |  Parts_Inventory__c |
 
 #### Return
@@ -132,8 +138,9 @@ List&lt;Parts_Inventory__c&gt;
 readInventory performs the SOQL call to query part inventory, returning a list of Parts_Inventory__c based on a list of Location ID&apos;s
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`List&lt;Id&gt;` |  List&lt;Dealer_Location__c&gt; |
 |`String` |  manufacturer |
 
@@ -152,8 +159,9 @@ List&lt;Parts_Inventory__c&gt;
 matrixSearch - perform record processing sub function for the primary global method @function - saleMetricHandler
 
 #### Parameters
-|Param|Description|
-|-----|-----------|
+
+| Param | Description |
+| ----- | ----------- |
 |`{Map&lt;Id,` |  Parts_Inventory__c&gt;} - parts to process |
 
 ---
