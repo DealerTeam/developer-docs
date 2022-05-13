@@ -1,19 +1,23 @@
-# ServiceRepairOrderAPI class
+# ServiceRepairOrderAPI
+
+`APIVERSION: 45`
+
+`STATUS: ACTIVE`
 
 Service Layer Encapsulation of interaction with the Repair Order Object.
 
----
+
+**Group** Service
+
 ## Methods
-### `createJobLinesFromDeal(Deal__c dealObject)` → `List<Service_Job__c>`
-### `createRepairOrderFromDeal(Deal__c dealObject)` → `Service_Repair_Order__c`
+### `static createRepairOrderFromDeal(Deal__c dealObject)`
 
 This method serves to create repair orders from deals.  These repair orders are often referred to as delivery repair orders.
 
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`dealObject` |  sObject Deal |
+|Param|Description|
+|---|---|
+|`dealObject`|sObject Deal|
 
 #### Return
 
@@ -25,15 +29,14 @@ Service_Repair_Order__c
 
 Returns the Service Repair Order sobject created.
 
-### `createRepairOrderFromEstimate(Service_Estimate__c estimateObject)` → `Service_Repair_Order__c`
+### `static createRepairOrderFromEstimate(Service_Estimate__c estimateObject)`
 
 Tbhis method converts a Service Estimate to a Service Repair Order
 
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`estimateObject` |  The estimateObject parameter is a complete or at minimum stored Service Estimate including Record ID |
+|Param|Description|
+|---|---|
+|`estimateObject`|The estimateObject parameter is a complete or at minimum stored Service Estimate including Record ID|
 
 #### Return
 
@@ -45,8 +48,13 @@ Service_Repair_Order__c
 
 Returns a Service Repair Order
 
----
-## Inner Classes
+### `static createJobLinesFromDeal(Deal__c dealObject)`
+#### Parameters
+|Param|Description|
+|---|---|
 
-### ServiceRepairOrderAPI.ServiceRepairOrderAPIException class
+---
+## Classes
+### ServiceRepairOrderAPIException
+
 ---

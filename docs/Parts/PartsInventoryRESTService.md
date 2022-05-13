@@ -1,5 +1,15 @@
-# PartsInventoryRESTService class
----
+# PartsInventoryRESTService
+
+`RESTRESOURCE`
+
+`APIVERSION: 45`
+
+`STATUS: ACTIVE`
+
+**Group** Parts
+
 ## Methods
-### `getParts()` → `List<Parts_Inventory__c>`
+### `static getParts()`
+
+`HTTPGET`
 ---

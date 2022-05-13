@@ -1,21 +1,15 @@
-# SchedulableCarFaxHistoryReport class
----
+# SchedulableCarFaxHistoryReport
+
+`APIVERSION: 49`
+
+`STATUS: ACTIVE`
+
+**Group** Sales
+
 ## Methods
-### `execute(SchedulableContext sc)` → `void`
+### `execute(SchedulableContext sc)`
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | c |
-
-#### Return
-
-**Type**
-
-void
-
-**Description**
-
-void
+|Param|Description|
+|---|---|
 
 ---

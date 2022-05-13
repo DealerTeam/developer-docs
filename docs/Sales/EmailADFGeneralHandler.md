@@ -1,5 +1,15 @@
-# EmailADFGeneralHandler class
----
+# EmailADFGeneralHandler
+
+`APIVERSION: 45`
+
+`STATUS: ACTIVE`
+
+**Group** Sales
+
 ## Methods
-### `handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope)` → `Messaging.InboundEmailResult`
+### `handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope)`
+#### Parameters
+|Param|Description|
+|---|---|
+
 ---

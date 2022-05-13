@@ -1,24 +1,47 @@
-# VINDecoder class
----
+# VINDecoder
+
+`APIVERSION: 45`
+
+`STATUS: ACTIVE`
+
+**Group** Sales
+
 ## Constructors
 ### `VINDecoder()`
 ---
-## Properties
+## Fields
 
 ### `decode` → `VINDecoder_DataOneSoftware.DecodeResponseStruct`
 
+`DEPRECATED` 
+
 ### `decodeError` → `String`
 
-### `modelKeys` → `< VINDecoder_DataOneSoftware.StyleData >`
+
+### `modelKeys` → `List<VINDecoder_DataOneSoftware.StyleData>`
+
+`DEPRECATED` 
 
 ### `res` → `VINDecoder_DataOneSoftware.DecodeResponseStruct`
 
+`DEPRECATED` 
+
 ---
 ## Methods
-### `DecodeVIN(String VIN)` → `void`
-### `StyleDat(String styleID)` → `VINDecoder_DataOneSoftware.`
----
-## Inner Classes
+### `DecodeVIN(String VIN)`
+#### Parameters
+|Param|Description|
+|---|---|
 
-### VINDecoder.VINDecoderException class
+### `StyleDat(String styleID)`
+
+`DEPRECATED`
+#### Parameters
+|Param|Description|
+|---|---|
+
+---
+## Classes
+### VINDecoderException
+
 ---

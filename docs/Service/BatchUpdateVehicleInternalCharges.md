@@ -1,55 +1,31 @@
-# BatchUpdateVehicleInternalCharges class
+# BatchUpdateVehicleInternalCharges
 
-Batch Class to populate Vehicle Inventory internal charges fields from related SROs upon package installation
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+BatchUpdateVehicleInternalCharges
+
+
+**DescriptionBatch** Class to populate Vehicle Inventory internal charges fields from related SROs upon package installation
+
+
+**Group** Service
+
 ## Methods
-### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> vehicleList)` → `void`
-
-Process each batch of records
-
+### `start(Database.BatchableContext BC)`
 #### Parameters
+|Param|Description|
+|---|---|
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-|`` | t |
-
-#### Return
-
-**Type**
-
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)` → `void`
+### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> vehicleList)`
 #### Parameters
+|Param|Description|
+|---|---|
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-
-#### Return
-
-**Type**
-
-void
-
-**Description**
-
-void
-
-### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-
-Collect the batches of records to be passed to execute
-
+### `finish(Database.BatchableContext BC)`
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
+|Param|Description|
+|---|---|
 
 ---

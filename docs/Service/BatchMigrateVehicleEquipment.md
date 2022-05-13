@@ -1,19 +1,29 @@
-# BatchMigrateVehicleEquipment class
----
+# BatchMigrateVehicleEquipment
+
+`APIVERSION: 49`
+
+`STATUS: ACTIVE`
+
+**Group** Service
+
 ## Constructors
 ### `BatchMigrateVehicleEquipment()`
 ---
 ## Methods
-### `execute(Database.BatchableContext BC, List<sObject> scope)` → `void`
+### `start(Database.BatchableContext BC)`
+#### Parameters
+|Param|Description|
+|---|---|
 
-Process the records
+### `execute(Database.BatchableContext BC, List<sObject> scope)`
+
+execute description
 
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-|`` | e |
+|Param|Description|
+|---|---|
+|`BC`||
+|`scope`||
 
 #### Return
 
@@ -25,31 +35,9 @@ void
 
 void
 
-### `finish(Database.BatchableContext BC)` → `void`
+### `finish(Database.BatchableContext BC)`
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-
-#### Return
-
-**Type**
-
-void
-
-**Description**
-
-void
-
-### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-
-forming batch requires query
-
-#### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
+|Param|Description|
+|---|---|
 
 ---

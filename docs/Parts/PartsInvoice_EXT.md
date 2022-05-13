@@ -1,29 +1,29 @@
-# PartsInvoice_EXT class
----
+# PartsInvoice_EXT
+
+`APIVERSION: 45`
+
+`STATUS: ACTIVE`
+
+**Group** Parts
+
 ## Methods
-### `CreateInvoice(String xmlString)` → `PageReference`
+### `static searchInventory(String searchString)`
 
- Create Parts Invoice from Quote Screen @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+`REMOTEACTION`
+#### Parameters
+|Param|Description|
+|---|---|
 
-### `CreatePartsQuote(String xmlString)` → `PageReference`
+### `static getInventory(String inventorySearch)`
 
- Creates parts quote from provided string @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+`REMOTEACTION`
 
-### `DeleteInvoiceLine(String partId)` → `Boolean`
-### `InvoiceAddPartLine(String xmlString)` → `dealer__Parts_Invoice_Line__c`
-
- invoiceAddPartLine - XML Payload passed to add invoice line to this existing invoice @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
-### `businessAccountContacts(String s)` → `List<Contact>`
-### `getInventory(String inventorySearch)` → `dealer__Parts_Inventory__c`
-
- getInventory
+getInventory
 
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`inventorySearch` |  [String of the inventory record to search, this is a part#] |
+|Param|Description|
+|---|---|
+|`inventorySearch`|[String of the inventory record to search, this is a part#]|
 
 #### Return
 
@@ -35,39 +35,22 @@ dealer__Parts_Inventory__c
 
 dealer__Parts_Inventory__c
 
-### `getMaster(String inventorySearch)` → `dealer__Parts_Master__c`
 
- getMaster: return parts master data @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+**Notes** matched invnentory record
 
-### `getPartsKitItems(String kitId)` → `List<dealer__Parts_Kit_Item__c>`
 
- getKitItems: return parts kit items for addition to invoices @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
-### `invoiceLine(String LineId)` → `dealer__Parts_Invoice_Line__c`
+### `static matchedInventory(String partno)`
 
- invoiceLine - get Line specific information via remoting @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+`REMOTEACTION`
 
-### `invoicePricing(String RecordId)` → `dealer__Parts_Invoice__c`
-
- invoicePricing - get Totals of this Invoice based on Parts Invoice ID, used when adding parts to ticket, w/o page refresh @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
-### `loadPartsInvoiceLines(String masterRecordId)` → `List<dealer__Parts_Invoice_Line__c>`
-
- loadPartsLines - Invoice @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
-### `loadPartsQuoteLines(String masterRecordId)` → `List<dealer__Parts_Quote_Line__c>`
-
- loadPartsLines - Quote @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
-
-### `matchedInventory(String partno)` → `List<dealer__Parts_Inventory__c>`
-
- matchedInventory
+matchedInventory
 
 #### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`partno` |  : |
+|Param|Description|
+|---|---|
+|`partno`|:|
 
 #### Return
 
@@ -79,46 +62,189 @@ List&lt;dealer__Parts_Inventory__c&gt;
 
 List&lt;dealer__Parts_Invoice_Line__c&gt; : returns a list of matched inventory
 
-### `searchInventory(String searchString)` → `List<dealer__Parts_Inventory__c>`
 
- PartsInvoice_EXT
+**Notes** 3/28/2016 | J.Kuljis | create a specific inventory part if one does not exist
+
+### `static getMaster(String inventorySearch)`
+
+`REMOTEACTION`
+
+getMaster: return parts master data   
+     * @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
 #### Parameters
+|Param|Description|
+|---|---|
 
-| Param | Description |
-| ----- | ----------- |
-|`controller` |  [description] |
-|`partId` |           [description] |
-|`invoiceId` |        [description] |
-|`invoiceLineId` |    [description] |
-|`quantityOrdered` |  [description] |
-|`requestedBy` |      [description] |
-|`orderType` |        [description] |
-|`mfg` |              [description] |
-|`roNumber` |  [description] |
+### `static getPartsKitItems(String kitId)`
 
-#### Return
+`REMOTEACTION`
 
-**Type**
+getKitItems: return parts kit items for addition to invoices
 
-List&lt;dealer__Parts_Inventory__c&gt;
+#### Parameters
+|Param|Description|
+|---|---|
 
-**Description**
 
-List&lt;dealer__Parts_Service_Pricing_Strategy__c&gt;
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
-### `setLinePrice(String linedata)` → `boolean`
+### `static loadPartsInvoiceLines(String masterRecordId)`
 
- updates parts invoice line with new price @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+`REMOTEACTION`
 
-### `setPL(String plID)` → `dealer__Parts_Service_Pricing_Strategy__c`
-### `setPLonInvoice(String ipl)` → `boolean`
-### `updateLineQty(String linedata)` → `dealer__Parts_Invoice_Line__c`
+loadPartsLines - Invoice
 
- updates parts invoice line with new data @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+#### Parameters
+|Param|Description|
+|---|---|
 
-### `updateShipToAddress(String jsonAddress)` → `Boolean`
 
- Updates customer shipping address from json string @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static loadPartsQuoteLines(String masterRecordId)`
+
+`REMOTEACTION`
+
+loadPartsLines - Quote
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static invoicePricing(String RecordId)`
+
+`REMOTEACTION`
+
+invoicePricing - get Totals of this Invoice based on Parts Invoice ID, used when adding parts to ticket, w/o page refresh
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static invoiceLine(String LineId)`
+
+`REMOTEACTION`
+
+invoiceLine - get Line specific information via remoting
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static InvoiceAddPartLine(String xmlString)`
+
+`REMOTEACTION`
+
+invoiceAddPartLine - XML Payload passed to add invoice line to this existing invoice
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static CreatePartsQuote(String xmlString)`
+
+`REMOTEACTION`
+
+Creates parts quote from provided string
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static updateLineQty(String linedata)`
+
+`REMOTEACTION`
+
+updates parts invoice line with new data
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static setLinePrice(String linedata)`
+
+`REMOTEACTION`
+
+updates parts invoice line with new price
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static setPL(String plID)`
+
+`REMOTEACTION`
+#### Parameters
+|Param|Description|
+|---|---|
+
+### `static setPLonInvoice(String ipl)`
+
+`REMOTEACTION`
+#### Parameters
+|Param|Description|
+|---|---|
+
+### `static CreateInvoice(String xmlString)`
+
+`REMOTEACTION`
+
+Create Parts Invoice from Quote Screen
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static DeleteInvoiceLine(String partId)`
+
+`REMOTEACTION`
+#### Parameters
+|Param|Description|
+|---|---|
+
+### `static updateShipToAddress(String jsonAddress)`
+
+`REMOTEACTION`
+
+Updates customer shipping address from json string
+
+#### Parameters
+|Param|Description|
+|---|---|
+
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+
+### `static businessAccountContacts(String s)`
+
+`REMOTEACTION`
+#### Parameters
+|Param|Description|
+|---|---|
 
 ---
