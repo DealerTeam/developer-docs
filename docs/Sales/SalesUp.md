@@ -8,9 +8,27 @@
 
 ## Methods
 ### `create(SalesUpWrapper salesUp)`
+
+Creates a sales up and related records
+
 #### Parameters
+
 |Param|Description|
 |---|---|
+|`salesUp`|wrapper containing all related objects needed for creation|
+
+#### Return
+
+**Type**
+
+dealer__Sales_Up__c
+
+**Description**
+
+return description
+
+
+**Method** create
 
 ---
 ## Classes
@@ -20,10 +38,6 @@ Wrapper class to hold sales up and all related objects needed by SalesUpAPI
 
 #### Constructors
 ##### `SalesUpWrapper(Account buyerAccount, Contact buyerContact, List&lt;Task&gt; tasks, List&lt;Desired_Vehicle__c&gt; desiredVehicles, List&lt;Traffic_Log__c&gt; trafficLogs, Sales_Up__c salesUp, Boolean bypassDupes)`
-###### Parameters
-|Param|Description|
-|---|---|
-
 ---
 #### Fields
 

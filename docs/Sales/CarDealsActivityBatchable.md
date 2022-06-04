@@ -1,15 +1,21 @@
-# CarDealsActivityBatchable class
+# CarDealsActivityBatchable
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** CarDealsActivityBatchable
+
+
+**Group** Sales
+
 ## Methods
-### `execute(SchedulableContext sc)` → `void`
+### `execute(SchedulableContext sc)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | c |
+|Param|Description|
+|---|---|
+|`sc`||
 
 #### Return
 

@@ -1,190 +1,135 @@
 # Classes
 ## Miscellaneous
 
-### [Auction123RESTService](/Misc/Auction123RESTService.md)
+### [Auction123RESTService](/Miscellaneous/Auction123RESTService.md)
 
 
 
-### [BatchPopulateServiceIdOnVehicleInventory](/Misc/BatchPopulateServiceIdOnVehicleInventory.md)
+### [BatchUpdateEquippedField](/Miscellaneous/BatchUpdateEquippedField.md)
 
 
 
-### [BatchUpdateEquippedField](/Misc/BatchUpdateEquippedField.md)
+### [CarfaxAPIMock](/Miscellaneous/CarfaxAPIMock.md)
 
 
 
-### [BatchUpdatePartSaleMetricExec](/Misc/BatchUpdatePartSaleMetricExec.md)
+### [DMSBatchCleanRecords](/Miscellaneous/DMSBatchCleanRecords.md)
 
+Cleans records of invalid external Ids
 
+### [DMSImportsRESTService](/Miscellaneous/DMSImportsRESTService.md)
 
-### [BirthDayRemainderScheduler](/Misc/BirthDayRemainderScheduler.md)
 
 
+### [DMSSyncBulkLoadBatch](/Miscellaneous/DMSSyncBulkLoadBatch.md)
 
-### [CarDealsActivity](/Misc/CarDealsActivity.md)
 
 
+### [EnterpriseAPIMock](/Miscellaneous/EnterpriseAPIMock.md)
 
-### [CarDealsActivityBatchable](/Misc/CarDealsActivityBatchable.md)
 
 
+### [EquipmentTable_EXT](/Miscellaneous/EquipmentTable_EXT.md)
 
-### [CarfaxAPIMock](/Misc/CarfaxAPIMock.md)
 
 
+### [EvalExpression](/Miscellaneous/EvalExpression.md)
 
-### [ChangeContactAccountOwnerOnCarDeal](/Misc/ChangeContactAccountOwnerOnCarDeal.md)
 
 
+### [FormAPIMock](/Miscellaneous/FormAPIMock.md)
 
-### [ChangeContactAccountOwnerOnCarDeal_Batch](/Misc/ChangeContactAccountOwnerOnCarDeal_Batch.md)
 
 
+### [GenericHistoryComponentController](/Miscellaneous/GenericHistoryComponentController.md)
 
-### [ClaimAPI](/Misc/ClaimAPI.md)
 
 
+### [IdentityApi](/Miscellaneous/IdentityApi.md)
 
-### [ClaimPrintController](/Misc/ClaimPrintController.md)
 
 
+### [ImpactFormController](/Miscellaneous/ImpactFormController.md)
 
-### [ContactsDuplicateSearch](/Misc/ContactsDuplicateSearch.md)
 
 
+### [InstallScript](/Miscellaneous/InstallScript.md)
 
-### [DMSBatchCleanRecords](/Misc/DMSBatchCleanRecords.md)
 
-DMSBatchCleanRecords
 
-### [DMSImportsRESTService](/Misc/DMSImportsRESTService.md)
+### [InstallScriptAPI](/Miscellaneous/InstallScriptAPI.md)
 
 
 
-### [DMSSyncBulkLoadBatch](/Misc/DMSSyncBulkLoadBatch.md)
+### [InstallScriptOrgAPI](/Miscellaneous/InstallScriptOrgAPI.md)
 
+Performs post install functions to setup the instance
 
+### [InvocableADF](/Miscellaneous/InvocableADF.md)
 
-### [DealForm_EXT](/Misc/DealForm_EXT.md)
 
-DealForm_EXT 
- * @group Sales
 
-### [DealPrintController](/Misc/DealPrintController.md)
+### [MockHttpResponseGenerator](/Miscellaneous/MockHttpResponseGenerator.md)
 
 
 
-### [DealerTrade_EXT](/Misc/DealerTrade_EXT.md)
+### [PartInventoryControl](/Miscellaneous/PartInventoryControl.md)
 
 
 
-### [DealershipLocationAPI](/Misc/DealershipLocationAPI.md)
+### [PartLocationMigrate](/Miscellaneous/PartLocationMigrate.md)
 
 
 
-### [EnterpriseAPIMock](/Misc/EnterpriseAPIMock.md)
+### [PartsPhysical_EXT](/Miscellaneous/PartsPhysical_EXT.md)
 
 
 
-### [EquipmentTable_EXT](/Misc/EquipmentTable_EXT.md)
+### [SalesUpDuplicateSearchLex_EXT](/Miscellaneous/SalesUpDuplicateSearchLex_EXT.md)
 
 
 
-### [FormAPIMock](/Misc/FormAPIMock.md)
+### [SecureVDCSettings](/Miscellaneous/SecureVDCSettings.md)
 
 
 
-### [GenericHistoryComponentController](/Misc/GenericHistoryComponentController.md)
+### [TestFactory](/Miscellaneous/TestFactory.md)
 
 
 
-### [IdentityApi](/Misc/IdentityApi.md)
+### [USPSHttpCalloutMock](/Miscellaneous/USPSHttpCalloutMock.md)
 
-Identiy API provides access to a number of external consumer databases.  
- * The purposes of these API&apos;s are to assist the end user with additional 
- * data related to the Account records he/she is working with. First Available in 1.601 https://success.dealerteam.com/Middleware/API_Guide/Caller_Identification
 
-### [ImpactFormController](/Misc/ImpactFormController.md)
 
+### [Utility](/Miscellaneous/Utility.md)
 
 
-### [InstallScript](/Misc/InstallScript.md)
 
-2016-06-30   |Jarrett Kuljis | Updated to create custom settings for Payment Methods on Install and insert new settings on update if none exist. 2016.10.25      |Abhishek Goel         |W-000572 Run batch class to update service lookup on Vehicle Inventory 
- * 2016.10.27      |Abhishek Goel         |W-000622 Update new equipped field with old mis-spelled equiped field for version &lt;= 1.582
+### [VINDecodeRemote](/Miscellaneous/VINDecodeRemote.md)
 
-### [InstallScriptAPI](/Misc/InstallScriptAPI.md)
 
 
+### [autoCompleteController](/Miscellaneous/autoCompleteController.md)
 
-### [InstallScriptOrgAPI](/Misc/InstallScriptOrgAPI.md)
 
 
+### [batchCalculateRewardsBalance](/Miscellaneous/batchCalculateRewardsBalance.md)
 
-### [InvocableADF](/Misc/InvocableADF.md)
 
 
+### [batchCalculateRewardsExec](/Miscellaneous/batchCalculateRewardsExec.md)
 
-### [MockHttpResponseGenerator](/Misc/MockHttpResponseGenerator.md)
 
 
+### [batchRemoveInStore](/Miscellaneous/batchRemoveInStore.md)
 
-### [PartInventoryControl](/Misc/PartInventoryControl.md)
 
 
+### [batchRemoveInStoreExec](/Miscellaneous/batchRemoveInStoreExec.md)
 
-### [SecureVDCSettings](/Misc/SecureVDCSettings.md)
 
 
-
-### [TestFactory](/Misc/TestFactory.md)
-
-// The TestFactory will pre-fill all the fields we typically need
-
-// You can use the methods like a void to populate SetupData TestFactory.createSObjectList(new Account(), 200, true);
-
-// Or return the object Account a = (Account)TestFactory.createSObject(new Account()); insert a;
-
-// You can also set values to be used. Any values set in the constructor will override the defaults Opportunity o = (Opportunity)TestFactory.createSObject(new Opportunity(AccountId = a.Id));
-
-// You can also specify a specific set of overrides for different scenarios Account a = (Account)TestFactory.createSObject(new Account(), &apos;TestFactoryFieldData.AccountDefaults&apos;);
-
-// Finally, get a bunch of records for testing bulk Account[] aList = (Account[])TestFactory.createSObjectList(new Account(), 200); // You can optionally insert records as created like this: // Note the final parameter of true. Account a = (Account) TestFactory.createSObject(new Account(), true); Contact c = (Contact) TestFactory.createSObject(new Contact(AccountID = a.Id), true);
-  @group Test
-
-### [USPSHttpCalloutMock](/Misc/USPSHttpCalloutMock.md)
-
-
-
-### [Utility](/Misc/Utility.md)
-
-Date            |Developer            |Work# Notes 13/01/17           Sneha Utture         ||W-000897 Added trigger handler Interface method and migrated AccountControl trigger on Account and ContactControl trigger on Contact
-
-### [VINDecodeRemote](/Misc/VINDecodeRemote.md)
-
-Date              |Developer             |Work 2016-07-11         Sneha                  T-00854 Date              |Developer             |Case 2016-07-11         Sneha                  C-00002224 To decode VIN when common data is null, and take basic data from the array of styles. @group Sales
-
-### [autoCompleteController](/Misc/autoCompleteController.md)
-
-
-
-### [batchCalculateRewardsBalance](/Misc/batchCalculateRewardsBalance.md)
-
-
-
-### [batchCalculateRewardsExec](/Misc/batchCalculateRewardsExec.md)
-
-
-
-### [batchRemoveInStore](/Misc/batchRemoveInStore.md)
-
-
-
-### [batchRemoveInStoreExec](/Misc/batchRemoveInStoreExec.md)
-
-
-
-### [cashierPageController](/Misc/cashierPageController.md)
+### [cashierPageController](/Miscellaneous/cashierPageController.md)
 
 
 ## Deprecated
@@ -211,18 +156,33 @@ Database Batchable interface used with the processing of Parts Physical Inventor
 
 
 
+### [BatchPopulateServiceIdOnVehicleInventory](/Service/BatchPopulateServiceIdOnVehicleInventory.md)
+
+
+
 ### [BatchUpdatePartSaleMetric](/Service/BatchUpdatePartSaleMetric.md)
 
-BatchUpdatePartSaleMetric
+Handles Batch processing of parts inventory
+
+### [BatchUpdatePartSaleMetricExec](/Service/BatchUpdatePartSaleMetricExec.md)
+
+
 
 ### [BatchUpdateVehicleInternalCharges](/Service/BatchUpdateVehicleInternalCharges.md)
 
-BatchUpdateVehicleInternalCharges
+
+
+### [ClaimAPI](/Service/ClaimAPI.md)
+
+
+
+### [ClaimPrintController](/Service/ClaimPrintController.md)
+
+
 
 ### [SROPrint](/Service/SROPrint.md)
 
-SROPrint - controls the printing of Service Repair Orders. 
-*               This file is used both by managed and non-managed code.
+SROPrint - controls the printing of Service Repair Orders.               This file is used both by managed and non-managed code.
 
 ### [ServiceEstimatePrint](/Service/ServiceEstimatePrint.md)
 
@@ -234,7 +194,7 @@ Service Layer Encapsulation of interaction with the Repair Order Object.
 
 ### [ServiceRepairOrderPrint](/Service/ServiceRepairOrderPrint.md)
 
-W-001569
+
 
 ### [ServiceVehicleAPI](/Service/ServiceVehicleAPI.md)
 
@@ -243,16 +203,47 @@ W-001569
 ### [WorkOrderPrintController](/Service/WorkOrderPrintController.md)
 
 
-## Common
-
-### [Cashier](/Common/Cashier.md)
-
-This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
 ## Sales
+
+### [BirthDayRemainderScheduler](/Sales/BirthDayRemainderScheduler.md)
+
+
+
+### [CarDealsActivity](/Sales/CarDealsActivity.md)
+
+
+
+### [CarDealsActivityBatchable](/Sales/CarDealsActivityBatchable.md)
+
+
+
+### [ChangeContactAccountOwnerOnCarDeal](/Sales/ChangeContactAccountOwnerOnCarDeal.md)
+
+
+
+### [ChangeContactAccountOwnerOnCarDeal_Batch](/Sales/ChangeContactAccountOwnerOnCarDeal_Batch.md)
+
+
+
+### [ContactsDuplicateSearch](/Sales/ContactsDuplicateSearch.md)
+
+
 
 ### [DealAPI](/Sales/DealAPI.md)
 
 DealAPI provides service layer logic for processing requests related to the Deal Records
+
+### [DealForm_EXT](/Sales/DealForm_EXT.md)
+
+Mobility Deal Controller Extension
+
+### [DealPrintController](/Sales/DealPrintController.md)
+
+
+
+### [DealerTrade_EXT](/Sales/DealerTrade_EXT.md)
+
+
 
 ### [DeskLog_EXT](/Sales/DeskLog_EXT.md)
 
@@ -282,6 +273,10 @@ DealAPI provides service layer logic for processing requests related to the Deal
 
 
 
+### [InventoryMediaService](/Sales/InventoryMediaService.md)
+
+
+
 ### [SalesLead_EXT](/Sales/SalesLead_EXT.md)
 
 SalesLead_EXT - Cotnrols interaction wiht the salesup object
@@ -289,10 +284,6 @@ SalesLead_EXT - Cotnrols interaction wiht the salesup object
 ### [SalesUp](/Sales/SalesUp.md)
 
 
-
-### [SalesUpDuplicateSearchLex_EXT](/Sales/SalesUpDuplicateSearchLex_EXT.md)
-
-SalesUpDuplicateSearchLex_EXT - Controls interaction with the salesup object Date            |Developer            |Work# Notes -- 2016.12.30       |Sneha                |Case#1819 Created controller to redirect to the same page on click of Search Again button of SalesUpDuplicateSearchLex page. 2017.01.04       |Sneha                | Modified controller to redirect to SalesUpDuplicateSearchLex from SalesUpNewLex page.
 
 ### [SchedulableCarFaxHistoryReport](/Sales/SchedulableCarFaxHistoryReport.md)
 
@@ -315,6 +306,16 @@ SalesUpDuplicateSearchLex_EXT - Controls interaction with the salesup object Dat
 
 
 ### [resetStockNumber](/Sales/resetStockNumber.md)
+
+
+## Common
+
+### [Cashier](/Common/Cashier.md)
+
+This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
+## 
+
+### [DealershipLocationAPI](//DealershipLocationAPI.md)
 
 
 ## Test
@@ -352,19 +353,10 @@ PartAPI - Service layer encapsulation for interaction with Parts
 
 
 
-### [PartsPhysical_EXT](/Parts/PartsPhysical_EXT.md)
-
-PartsPhysical_EXT - Controller Extension to create and perform the physical inventory process
-
 ### [PartsTapeRESTService](/Parts/PartsTapeRESTService.md)
 
 
 
 ### [PurchaseOrderRESTService](/Parts/PurchaseOrderRESTService.md)
-
-
-## Parts 2017.13.01      |Gaurav               |W-000892 Created batch class for bulk insertion of Part Physical Detail records
-
-### [PartLocationMigrate](/Parts-201713.01------|Gaurav---------------|W-000892-Created-batch-class-for-bulk-insertion-of-Part-Physical-Detail-records/PartLocationMigrate.md)
 
 

@@ -11,15 +11,21 @@
 ---
 ## Methods
 ### `start(Database.BatchableContext BC)`
+
+start
+
 #### Parameters
+
 |Param|Description|
 |---|---|
+|`BC`||
 
 ### `execute(Database.BatchableContext BC, List<sObject> scope)`
 
-execute description
+Process the records
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`BC`||
@@ -37,7 +43,19 @@ void
 
 ### `finish(Database.BatchableContext BC)`
 #### Parameters
+
 |Param|Description|
 |---|---|
+|`BC`||
+
+#### Return
+
+**Type**
+
+void
+
+**Description**
+
+void
 
 ---

@@ -1,10 +1,16 @@
-# ChangeContactAccountOwnerOnCarDeal_Batch class
+# ChangeContactAccountOwnerOnCarDeal_Batch
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** ChangeContactAccountOwnerOnCarDeal_Batch
+
+
+**Group** Sales
+
 ## Methods
-### `execute()` → `void`
+### `static execute()`
 #### Return
 
 **Type**

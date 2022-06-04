@@ -10,17 +10,11 @@
 ### `static searchInventory(String searchString)`
 
 `REMOTEACTION`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ### `static getInventory(String inventorySearch)`
 
 `REMOTEACTION`
-
-getInventory
-
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`inventorySearch`|[String of the inventory record to search, this is a part#]|
@@ -36,6 +30,9 @@ dealer__Parts_Inventory__c
 dealer__Parts_Inventory__c
 
 
+**Method** getInventory
+
+
 **Notes** matched invnentory record
 
 
@@ -44,13 +41,11 @@ dealer__Parts_Inventory__c
 ### `static matchedInventory(String partno)`
 
 `REMOTEACTION`
-
-matchedInventory
-
 #### Parameters
+
 |Param|Description|
 |---|---|
-|`partno`|:|
+|`partno`||
 
 #### Return
 
@@ -60,31 +55,28 @@ List&lt;dealer__Parts_Inventory__c&gt;
 
 **Description**
 
-List&lt;dealer__Parts_Invoice_Line__c&gt; : returns a list of matched inventory
+List dealer__Parts_Invoice_Line__c : returns a list of matched inventory
 
 
-**Notes** 3/28/2016 | J.Kuljis | create a specific inventory part if one does not exist
+**Method** matchedInventory
+
+
+**Notes** 3-28-2016  create a specific inventory part if one does not exist
 
 ### `static getMaster(String inventorySearch)`
 
 `REMOTEACTION`
 
-getMaster: return parts master data   
-     * @test PartPhysicalInventoryUILayer.testPartsInvoiceEXT
+**Method** getMaster: return parts master data
 
-#### Parameters
-|Param|Description|
-|---|---|
+
+**Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
 ### `static getPartsKitItems(String kitId)`
 
 `REMOTEACTION`
 
-getKitItems: return parts kit items for addition to invoices
-
-#### Parameters
-|Param|Description|
-|---|---|
+**Method** getKitItems: return parts kit items for addition to invoices
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -93,11 +85,7 @@ getKitItems: return parts kit items for addition to invoices
 
 `REMOTEACTION`
 
-loadPartsLines - Invoice
-
-#### Parameters
-|Param|Description|
-|---|---|
+**Method** loadPartsLines - Invoice
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -106,11 +94,7 @@ loadPartsLines - Invoice
 
 `REMOTEACTION`
 
-loadPartsLines - Quote
-
-#### Parameters
-|Param|Description|
-|---|---|
+**Method** loadPartsLines - Quote
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -119,11 +103,7 @@ loadPartsLines - Quote
 
 `REMOTEACTION`
 
-invoicePricing - get Totals of this Invoice based on Parts Invoice ID, used when adding parts to ticket, w/o page refresh
-
-#### Parameters
-|Param|Description|
-|---|---|
+**Method** invoicePricing - get Totals of this Invoice based on Parts Invoice ID, used when adding parts to ticket, w/o page refresh
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -132,11 +112,7 @@ invoicePricing - get Totals of this Invoice based on Parts Invoice ID, used when
 
 `REMOTEACTION`
 
-invoiceLine - get Line specific information via remoting
-
-#### Parameters
-|Param|Description|
-|---|---|
+**Method** invoiceLine - get Line specific information via remoting
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -145,11 +121,7 @@ invoiceLine - get Line specific information via remoting
 
 `REMOTEACTION`
 
-invoiceAddPartLine - XML Payload passed to add invoice line to this existing invoice
-
-#### Parameters
-|Param|Description|
-|---|---|
+**Method** invoiceAddPartLine - XML Payload passed to add invoice line to this existing invoice
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -160,10 +132,6 @@ invoiceAddPartLine - XML Payload passed to add invoice line to this existing inv
 
 Creates parts quote from provided string
 
-#### Parameters
-|Param|Description|
-|---|---|
-
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
@@ -172,10 +140,6 @@ Creates parts quote from provided string
 `REMOTEACTION`
 
 updates parts invoice line with new data
-
-#### Parameters
-|Param|Description|
-|---|---|
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -186,36 +150,20 @@ updates parts invoice line with new data
 
 updates parts invoice line with new price
 
-#### Parameters
-|Param|Description|
-|---|---|
-
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
 
 ### `static setPL(String plID)`
 
 `REMOTEACTION`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ### `static setPLonInvoice(String ipl)`
 
 `REMOTEACTION`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ### `static CreateInvoice(String xmlString)`
 
 `REMOTEACTION`
 
 Create Parts Invoice from Quote Screen
-
-#### Parameters
-|Param|Description|
-|---|---|
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -223,19 +171,11 @@ Create Parts Invoice from Quote Screen
 ### `static DeleteInvoiceLine(String partId)`
 
 `REMOTEACTION`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ### `static updateShipToAddress(String jsonAddress)`
 
 `REMOTEACTION`
 
 Updates customer shipping address from json string
-
-#### Parameters
-|Param|Description|
-|---|---|
 
 
 **Test** PartPhysicalInventoryUILayer.testPartsInvoiceEXT
@@ -243,8 +183,4 @@ Updates customer shipping address from json string
 ### `static businessAccountContacts(String s)`
 
 `REMOTEACTION`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---

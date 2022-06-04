@@ -1,15 +1,27 @@
-# InventoryMediaService class
----
+# InventoryMediaService
+
+`RESTRESOURCE`
+
+`APIVERSION: 47`
+
+`STATUS: ACTIVE`
+
+**Group** Sales
+
 ## Methods
-### `getImages()` → `List<Image>`
+### `static storeMedia(List<Image> images)`
 
- getMedia - Returns the associated images with a specific vehicle inventory record
+`HTTPPOST`
+### `static getImages()`
 
-### `storeMedia(List<Image> images)` → `void`
+`HTTPGET`
+
+getMedia - Returns the associated images with a specific vehicle inventory record
+
 ---
-## Inner Classes
+## Classes
+### Image
 
-### InventoryMediaService.Image class
----
-### InventoryMediaService.UploadResults class
+### UploadResults
+
 ---

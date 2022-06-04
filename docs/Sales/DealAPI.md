@@ -18,6 +18,7 @@ DealAPI provides service layer logic for processing requests related to the Deal
 Creates a Deal using the Deal Data Structure.  This method will connect all sub-records such as Trade(s), Taxes, Service Contracts and After Market items.
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`dealData`|DealAPI.deal|
@@ -37,6 +38,7 @@ Deal__c
 This routine will close deals and mark associated records as closed/won
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`deals`|List<Deal__c>|
@@ -58,6 +60,7 @@ Void
 Processes the closure of a Deal Record.  This method is invocable and can optionally be included in custom process builder flows.
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`deals`|List<Deal__c>|
@@ -77,6 +80,7 @@ Void
 Creates After Market items on the deal from a conversion on the sales up
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`pkId`|Id|
@@ -97,6 +101,7 @@ Void
 Retrieves Data relavent to a deal. Used mostly for deal forms.
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`dealId`|Id|
@@ -116,6 +121,7 @@ DealAPI.Deal
 Creates Fees to be defaulted on a deal
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`deals`|List<Deal__c>|
@@ -135,6 +141,7 @@ Void
 Saves and calculates deal
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`String`|dealId|
@@ -154,6 +161,7 @@ Deal__c
 Saves and calculates deal Assumes all fields on Deal__c were queried prior to entry.
 
 #### Parameters
+
 |Param|Description|
 |---|---|
 |`deal`|Deal__c|

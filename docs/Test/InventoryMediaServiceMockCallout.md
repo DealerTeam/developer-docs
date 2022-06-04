@@ -10,8 +10,4 @@
 
 ## Methods
 ### `respond(HttpRequest request)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---

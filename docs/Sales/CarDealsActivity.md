@@ -1,30 +1,47 @@
-# CarDealsActivity class
+# CarDealsActivity
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** CarDealsActivity
+
+
+**Group** Sales
+
 ## Constructors
 ### `CarDealsActivity(string q)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | q |
+|Param|Description|
+|---|---|
+|`q`||
+
+
+**Method** CarDealsActivity
 
 ---
-## Properties
+## Fields
 
 ### `Query` → `string`
 
+
 ---
 ## Methods
-### `execute(Database.BatchableContext BC,List<sobject> prescriberScope)` → `void`
+### `start(Database.BatchableContext BC)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-|`` | e |
+|Param|Description|
+|---|---|
+|`BC`||
+
+### `execute(Database.BatchableContext BC, List<sobject> prescriberScope)`
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`BC`||
+|`prescriberScope`||
 
 #### Return
 
@@ -36,12 +53,5 @@ void
 
 void
 
-### `finish(Database.BatchableCOntext BC)` → `void`
-### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-#### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-
+### `finish(Database.BatchableCOntext BC)`
 ---

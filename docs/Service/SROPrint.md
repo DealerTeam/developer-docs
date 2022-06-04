@@ -4,8 +4,7 @@
 
 `STATUS: ACTIVE`
 
-SROPrint - controls the printing of Service Repair Orders. 
-*               This file is used both by managed and non-managed code.
+SROPrint - controls the printing of Service Repair Orders.               This file is used both by managed and non-managed code.
 
 
 **Group** Service
@@ -14,10 +13,6 @@ SROPrint - controls the printing of Service Repair Orders.
 ### `SROPrint(ApexPages.StandardController controller)`
 
 Controller
-
-#### Parameters
-|Param|Description|
-|---|---|
 
 ---
 ## Fields
@@ -89,10 +84,10 @@ Controller
 ### `getServicePartsList()`
 ### `getMiscList()`
 
-Get Misc Lines     Params: ro.Id
+Get Misc Lines
 
 ### `getLinesList()`
 
-Get Lines &quot;Loaded&quot; List     Params: ro.Id
+Get Lines "Loaded" List
 
 ---

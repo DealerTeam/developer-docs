@@ -8,10 +8,6 @@
 
 ## Constructors
 ### `WorkOrderPrintController(ApexPages.StandardController controller)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---
 ## Properties
 

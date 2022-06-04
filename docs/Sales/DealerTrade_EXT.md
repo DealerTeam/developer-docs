@@ -1,26 +1,34 @@
-# DealerTrade_EXT class
+# DealerTrade_EXT
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** DealerTrade_EXT
+
+
+**Group** Sales
+
 ## Constructors
 ### `DealerTrade_EXT(ApexPages.StandardController controller)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | r |
+|Param|Description|
+|---|---|
+|`controller`||
+
+
+**Method** DealerTrade_EXT
 
 ---
 ## Properties
 
 ### `dt` → `Dealer_Trade__c`
 
-@description
 
 ---
 ## Methods
-### `getInvoiceLogo()` → `String`
+### `getInvoiceLogo()`
 #### Return
 
 **Type**
@@ -31,11 +39,11 @@ String
 
 String
 
+
+**Method** getInvoiceLogo
+
 ---
-## Inner Classes
-
-### DealerTrade_EXT.DealerTradeException class
-
-@description
+## Classes
+### DealerTradeException
 
 ---

@@ -1,30 +1,21 @@
-# ClaimAPI class
+# ClaimAPI
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** ClaimAPI
+
+
+**Group** Service
+
 ## Methods
-### `claimData(Id claimId)` → `claim`
+### `static claimData(Id claimId)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | e |
-|`` | e |
-|`` | d |
-|`` | d |
-|`` | e |
-|`` | e |
-|`` | e |
-|`` | d |
-|`` | e |
-|`` | d |
-|`` | s |
-|`` | d |
-|`` | e |
-|`` | d |
-|`` | d |
-|`` | d |
+|Param|Description|
+|---|---|
+|`claimId`||
 
 #### Return
 
@@ -36,14 +27,15 @@ claim
 
 claim
 
----
-## Inner Classes
 
-### ClaimAPI.claim class
+**Method** claimData
+
+---
+## Classes
+### claim
 
 Wrapper class for claim data and related records.
 
----
 #### Constructors
 ##### `claim()`
 ---
@@ -51,29 +43,39 @@ Wrapper class for claim data and related records.
 
 ##### `appraisal` → `Appraisal__c`
 
-##### `cis` → `List<dealer__ClaimItem__c>`
+
+##### `cis` → `List&lt;dealer__ClaimItem__c&gt;`
+
 
 ##### `claimEquipment` → `Equipment__c`
 
+
 ##### `claimHeader` → `claim__c`
+
 
 ##### `customer` → `Account`
 
+
 ##### `employee` → `User`
+
 
 ##### `equipment` → `EquipmentInventory__c`
 
+
 ##### `location` → `dealer_Location__c`
+
 
 ##### `serviceVehicle` → `Service_Vehicle__c`
 
+
 ##### `sro` → `Service_Repair_Order__c`
+
 
 ##### `vehicle` → `Vehicle_Inventory__c`
 
----
-### ClaimAPI.claimAPIException class
 
-@description
+---
+
+### claimAPIException
 
 ---

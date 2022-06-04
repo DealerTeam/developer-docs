@@ -4,17 +4,10 @@
 
 `STATUS: ACTIVE`
 
-W-001569
-
-
 **Group** Service
 
 ## Constructors
 ### `ServiceRepairOrderPrint(ApexPages.standardController sc)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---
 ## Properties
 

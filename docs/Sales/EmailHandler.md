@@ -8,8 +8,4 @@
 
 ## Methods
 ### `handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---

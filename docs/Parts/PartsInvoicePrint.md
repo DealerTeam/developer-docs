@@ -11,10 +11,6 @@
 
 ## Constructors
 ### `PartsInvoicePrint(ApexPages.standardController sc)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---
 ## Properties
 

@@ -8,8 +8,4 @@
 
 ## Methods
 ### `static mergeForms(Id dealId, List<Form__c> forms)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---

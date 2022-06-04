@@ -1,25 +1,32 @@
-# ClaimPrintController class
+# ClaimPrintController
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** ClaimPrintController
+
+
+**Group** Service
+
 ## Constructors
 ### `ClaimPrintController(ApexPages.StandardController controller)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | r |
+|Param|Description|
+|---|---|
+|`controller`||
+
+
+**Method** ClaimPrintController
 
 ---
 ## Properties
 
 ### `InvoiceLogo` → `String`
 
-@description
 
 ### `claimW` → `ClaimAPI.claim`
 
-@description
 
 ---

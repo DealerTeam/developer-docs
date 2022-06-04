@@ -1,24 +1,41 @@
-# BatchPopulateServiceIdOnVehicleInventory class
+# BatchPopulateServiceIdOnVehicleInventory
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** BatchPopulateServiceIdOnVehicleInventory
+
+
+**Group** Service
+
 ## Constructors
 ### `BatchPopulateServiceIdOnVehicleInventory()`
+
+**Method** BatchPopulateServiceIdOnVehicleInventory
+
 ---
-## Properties
+## Fields
 
 ### `ListRecForEmailId` → `List<id>`
 
+
 ---
 ## Methods
-### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> scope)` → `void`
+### `start(Database.BatchableContext BC)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-|`` | e |
+|Param|Description|
+|---|---|
+|`BC`||
+
+### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> scope)`
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`BC`||
+|`scope`||
 
 #### Return
 
@@ -30,12 +47,12 @@ void
 
 void
 
-### `finish(Database.BatchableContext BC)` → `void`
+### `finish(Database.BatchableContext BC)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -46,12 +63,5 @@ void
 **Description**
 
 void
-
-### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
-#### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
 
 ---

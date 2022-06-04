@@ -1,15 +1,21 @@
-# BirthDayRemainderScheduler class
+# BirthDayRemainderScheduler
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** BirthDayRemainderScheduler
+
+
+**Group** Sales
+
 ## Methods
-### `execute(SchedulableContext SC)` → `void`
+### `execute(SchedulableContext SC)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
+|Param|Description|
+|---|---|
+|`SC`||
 
 #### Return
 

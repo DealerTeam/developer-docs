@@ -29,17 +29,9 @@
 ---
 ## Methods
 ### `DecodeVIN(String VIN)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ### `StyleDat(String styleID)`
 
 `DEPRECATED`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---
 ## Classes
 ### VINDecoderException

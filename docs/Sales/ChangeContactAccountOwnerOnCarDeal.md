@@ -1,19 +1,45 @@
-# ChangeContactAccountOwnerOnCarDeal class
+# ChangeContactAccountOwnerOnCarDeal
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** ChangeContactAccountOwnerOnCarDeal
+
+
+**Group** Sales
+
 ## Constructors
 ### `ChangeContactAccountOwnerOnCarDeal(String query)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | y |
+|Param|Description|
+|---|---|
+|`query`||
+
+
+**Method** ChangeContactAccountOwnerOnCarDeal
 
 ---
 ## Methods
-### `execute(Database.BatchableContext BC, List<sObject> batch)` → `void`
+### `start(Database.BatchableContext BC)`
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`BC`||
+
+#### Return
+
+**Type**
+
+Database.QueryLocator
+
+**Description**
+
+
+
+### `execute(Database.BatchableContext BC, List<sObject> batch)`
 #### Return
 
 **Type**
@@ -24,12 +50,13 @@ void
 
 void
 
-### `finish(Database.BatchableContext BC)` → `void`
+### `updateOwners(Map<String,String> con, Map<String,String> Acc)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
+|Param|Description|
+|---|---|
+|`con`||
+|`Acc`||
 
 #### Return
 
@@ -41,20 +68,15 @@ void
 
 void
 
-### `start(Database.BatchableContext BC)` → `Database.QueryLocator`
+
+**Method** updateOwners
+
+### `finish(Database.BatchableContext BC)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | C |
-
-### `updateOwners(Map<String,String> con,Map<String,String> Acc)` → `void`
-#### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | n |
-|`` | c |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 

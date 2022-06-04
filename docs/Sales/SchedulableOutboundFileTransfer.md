@@ -8,8 +8,4 @@
 
 ## Methods
 ### `execute(SchedulableContext sc)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---

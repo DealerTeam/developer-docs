@@ -11,10 +11,6 @@ ServiceEstimatePrint - Print Class
 
 ## Constructors
 ### `ServiceEstimatePrint(ApexPages.standardController sc)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---
 ## Properties
 

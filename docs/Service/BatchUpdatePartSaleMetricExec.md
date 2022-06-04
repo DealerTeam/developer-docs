@@ -1,15 +1,24 @@
-# BatchUpdatePartSaleMetricExec class
+# BatchUpdatePartSaleMetricExec
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** BatchUpdatePartSaleMetricExec
+
+
+**Test** PartAnalyticsSystemLayer.testBatchScheduledEvent
+
+
+**Group** Service
+
 ## Methods
-### `execute(SchedulableContext sc)` → `void`
+### `execute(SchedulableContext sc)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | c |
+|Param|Description|
+|---|---|
+|`sc`||
 
 #### Return
 

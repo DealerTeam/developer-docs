@@ -9,13 +9,6 @@
 ## Constructors
 ### `PartsInvoice_Printing(ApexPages.StandardController controller)`
 
-Constructor
-
-#### Parameters
-|Param|Description|
-|---|---|
-
-
 **Test** PartInvoicingServiceLayer.testPIP
 
 ---
@@ -48,4 +41,20 @@ Constructor
 ---
 ## Methods
 ### `getInvoiceLogo()`
+
+Handles finding logo from documents and returning the url as a string
+
+#### Return
+
+**Type**
+
+String
+
+**Description**
+
+s String - the url of the logo image
+
+
+**Test** PartInvoicingServiceLayer.testPIP
+
 ---

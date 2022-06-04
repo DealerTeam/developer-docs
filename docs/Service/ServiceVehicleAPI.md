@@ -8,10 +8,6 @@
 
 ## Methods
 ### `static svData(Id svId)`
-#### Parameters
-|Param|Description|
-|---|---|
-
 ---
 ## Classes
 ### ServiceVehicleException

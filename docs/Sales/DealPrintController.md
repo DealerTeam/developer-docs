@@ -1,50 +1,57 @@
-# DealPrintController class
+# DealPrintController
 
-@description
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
+
+**Class** DealPrintController
+
+
+**Group** Sales
+
 ## Constructors
 ### `DealPrintController(ApexPages.StandardController controller)`
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-|`` | r |
+|Param|Description|
+|---|---|
+|`controller`||
+
+
+**Method** DealPrintController
 
 ---
 ## Properties
 
 ### `InvoiceLogo` → `String`
 
-@description
 
 ### `amList` → `List<After_Market__c>`
 
+
 ### `amListNonTaxable` → `List<After_Market__c>`
+
 
 ### `amListTaxable` → `List<After_Market__c>`
 
+
 ### `dealW` → `DealAPI.Deal`
 
-@description
 
 ### `hasTradeIn` → `Boolean`
 
+
 ### `tradeInWrapper` → `List<payOffWrapper>`
+
 
 ### `tradeVehicle` → `Vehicle_Inventory__c`
 
+
 ---
 ## Methods
-### `getamList()` → `List<After_Market__c>`
+### `getamList()`
 
 getter method for supplying printable after market items to deal forms
-
-#### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | e |
 
 #### Return
 
@@ -56,15 +63,12 @@ List&lt;After_Market__c&gt;
 
 List&lt;after_market__c&gt; List of form printable after market records
 
-### `gettradeInWrapper()` → `List<payOffWrapper>`
+
+**Method** getAmList
+
+### `gettradeInWrapper()`
 
 getter class for wrapping related  loanPayoff and trade records by appraisal
-
-#### Parameters
-
-| Param | Description |
-| ----- | ----------- |
-|`` | e |
 
 #### Return
 
@@ -76,15 +80,20 @@ List&lt;payOffWrapper&gt;
 
 List&lt;payOffWrapper&gt; List of related loanPayoff and trade In records
 
----
-## Inner Classes
 
-### DealPrintController.payOffWrapper class
+**Method** gettradeInWrapper
+
 ---
+## Classes
+### payOffWrapper
 #### Properties
 
 ##### `TradeIn` → `dealer__Trade_In__c`
 
+
 ##### `loanPayOff` → `dealer__LoanPayoff__c`
+
+
+---
 
 ---
