@@ -61,10 +61,6 @@ Cleans records of invalid external Ids
 
 
 
-### [InstallScriptOrgAPI](/Miscellaneous/InstallScriptOrgAPI.md)
-
-Performs post install functions to setup the instance
-
 ### [InvocableADF](/Miscellaneous/InvocableADF.md)
 
 
@@ -318,6 +314,11 @@ This class performs core cashiering related actions.  Cashier.cls is used throug
 ### [DealershipLocationAPI](//DealershipLocationAPI.md)
 
 
+## Setup
+
+### [InstallScriptOrgAPI](/Setup/InstallScriptOrgAPI.md)
+
+Performs post install functions to setup the instance
 ## Test
 
 ### [InventoryMediaServiceMockCallout](/Test/InventoryMediaServiceMockCallout.md)
