@@ -34,4 +34,16 @@ Performs post install functions to setup the instance
 createDeafultPaymentMethodGroup is used to populate a Default Payment Method Group for Location based cashiering.
 
 ### `erpSetupTableImport()`
+
+`DEPRECATED`
+### `static erpSetupTableSync(String tableName)`
+
+Performs call outs to the Accounting Setup Tables and syncs them to the Local sObjects
+
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`String`|Setup Name.  Note, this is a specific String Match|
+
 ---
