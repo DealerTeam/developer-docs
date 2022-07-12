@@ -297,6 +297,10 @@ SalesLead_EXT - Cotnrols interaction wiht the salesup object
 
 
 
+### [VINDecoderDataObject](/Sales/VINDecoderDataObject.md)
+
+
+
 ### [VINDecoder_DataOneSoftware](/Sales/VINDecoder_DataOneSoftware.md)
 
 
