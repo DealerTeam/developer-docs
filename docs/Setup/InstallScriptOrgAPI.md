@@ -28,6 +28,7 @@ Performs post install functions to setup the instance
 ### `static createFixedOperationOrgDefaults()`
 ### `static createDefaultCashFinanceCompany()`
 ### `static createDefaultPriceStrategy()`
+### `static setUserLocation()`
 ### `static createDefaultFinanceCompany()`
 ### `static createDeafultPaymentMethodGroup()`
 
