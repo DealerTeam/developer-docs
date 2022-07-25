@@ -4,7 +4,8 @@
 
 `STATUS: ACTIVE`
 
-SROPrint - controls the printing of Service Repair Orders.               This file is used both by managed and non-managed code.
+SROPrint - controls the printing of Service Repair Orders.
+              This file is used both by managed and non-managed code.
 
 
 **Group** Service

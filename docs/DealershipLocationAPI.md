@@ -4,6 +4,8 @@
 
 `STATUS: ACTIVE`
 
+
+
 **Class** DealershipLocationAPI
 
 
@@ -85,6 +87,8 @@ List&lt;CoveredSystem&gt;
 ---
 ## Classes
 ### CoveredSystem
+
+
 #### Properties
 
 ##### `duration` → `String`
@@ -100,7 +104,11 @@ List&lt;CoveredSystem&gt;
 
 ### DealershipLocationAPIException
 
+
+
 ### Fee
+
+
 #### Properties
 
 ##### `feeCode` → `String`
