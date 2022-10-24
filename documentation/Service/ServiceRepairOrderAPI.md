@@ -1,15 +1,11 @@
----
-title: "ServiceRepairOrderAPI"
-excerpt: "brief description of page contents that show up on previews"
-category: "6352fe1671210600810e4ae1"
----
+
 # ServiceRepairOrderAPI
 
 `APIVERSION: 45`
 
 `STATUS: ACTIVE`
 
-Service Layer Encapsulation of interaction with the Repair Order Object.
+Service Layer Test Description.
 
 
 **Group** Service
