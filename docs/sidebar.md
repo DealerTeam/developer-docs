@@ -1,8 +1,10 @@
-* [HOME](./)
-- [Deprecated](./?id=Deprecated)
-- [Batch-Processing](./?id=Batch-Processing)
-- [Miscellaneous](./?id=Miscellaneous)
-- [Common](./?id=Common)
-- [Sales](./?id=Sales)
-- [Service](./?id=Service)
-- [Parts](./?id=Parts)
+# sidebar
+
+* [HOME](../)
+* [Deprecated]()
+* [Batch-Processing]()
+* [Miscellaneous]()
+* [Common]()
+* [Sales]()
+* [Service]()
+* [Parts]()
