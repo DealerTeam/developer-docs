@@ -1,0 +1,5 @@
+# PartsPhysical\_EXT
+
+`APIVERSION: 52`
+
+`STATUS: ACTIVE`
