@@ -4,8 +4,10 @@
 
 `STATUS: ACTIVE`
 
+**Implemented types**
+
+[InstallHandler](InstallHandler)
+
 ## Methods
-
 ### `onInstall(InstallContext context)`
-
-***
+---

@@ -3,31 +3,28 @@
 `APIVERSION: 45`
 
 `STATUS: ACTIVE`
-
 ## Methods
-
 ### `static callerIdentification(String searchNumber)`
-
 #### Parameters
 
-| Param          | Description |
-| -------------- | ----------- |
-| `searchNumber` | description |
+|Param|Description|
+|---|---|
+|`searchNumber`|description|
 
 #### Return
 
 **Type**
 
-List\<caller>
+List&lt;caller&gt;
 
 **Description**
 
 description
 
+
 **Method** callerIdentification
 
 ### `static performCallout(String api, String searchParameter)`
-
 #### Return
 
 **Type**
@@ -38,44 +35,56 @@ String
 
 body
 
+
 **Method** performCallout
 
-***
-
+---
 ## Classes
-
 ### caller
-
 #### Properties
 
-**`FirstName` → `String`**
+##### `FirstName` → `String`
 
-**`LastName` → `String`**
 
-**`MiddleName` → `String`**
+##### `LastName` → `String`
 
-**`PersonMailingCity` → `String`**
 
-**`PersonMailingCountry` → `String`**
+##### `MiddleName` → `String`
 
-**`PersonMailingPostalCode` → `String`**
 
-**`PersonMailingState` → `String`**
+##### `PersonMailingCity` → `String`
 
-**`PersonMailingStreet` → `String`**
 
-**`Salutation` → `String`**
+##### `PersonMailingCountry` → `String`
 
-**`Suffix` → `String`**
 
-**`do_not_call` → `boolean`**
+##### `PersonMailingPostalCode` → `String`
 
-**`is_connected` → `boolean`**
 
-**`is_valid` → `boolean`**
+##### `PersonMailingState` → `String`
 
-**`line_type` → `String`**
 
-***
+##### `PersonMailingStreet` → `String`
 
-***
+
+##### `Salutation` → `String`
+
+
+##### `Suffix` → `String`
+
+
+##### `do_not_call` → `boolean`
+
+
+##### `is_connected` → `boolean`
+
+
+##### `is_valid` → `boolean`
+
+
+##### `line_type` → `String`
+
+
+---
+
+---

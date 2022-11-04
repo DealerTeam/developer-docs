@@ -6,6 +6,11 @@
 
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+
+
 **Group** Service
 
 ## Constructors

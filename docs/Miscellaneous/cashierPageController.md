@@ -4,38 +4,39 @@
 
 `STATUS: ACTIVE`
 
+
+
 **Class** cashierPageController
 
 ## Constructors
-
 ### `cashierPageController(ApexPages.standardController sc)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `sc`  |             |
+|Param|Description|
+|---|---|
+|`sc`||
+
 
 **Method** cashierPageController
 
-***
-
+---
 ## Properties
 
 ### `cashierRecord` → `dealer__Cashering__c`
 
+
 ### `customer` → `Account`
+
 
 ### `location` → `Dealer_Location__c`
 
+
 ### `logoUrl` → `String`
 
-***
 
+---
 ## Methods
-
 ### `getLogo()`
-
 #### Return
 
 **Type**
@@ -45,47 +46,48 @@ String
 **Description**
 
 String
+
 
 **Method** getLogo
 
 ### `queryLocation(Id locId)`
-
 #### Parameters
 
-| Param   | Description |
-| ------- | ----------- |
-| `locId` |             |
+|Param|Description|
+|---|---|
+|`locId`||
 
 #### Return
 
 **Type**
 
-List\<Dealer\_Location\_\_c>
+List&lt;Dealer_Location__c&gt;
 
 **Description**
 
-List\<Dealer\_Location\_\_c>
+List&lt;Dealer_Location__c&gt;
+
 
 **Method** queryLocation
 
 ### `queryAccount(Id acctId)`
-
 #### Parameters
 
-| Param    | Description |
-| -------- | ----------- |
-| `acctId` |             |
+|Param|Description|
+|---|---|
+|`acctId`||
 
 #### Return
 
 **Type**
 
-List\<Account>
+List&lt;Account&gt;
 
 **Description**
 
-List\<Account>
+List&lt;Account&gt;
+
 
 **Method** queryAccount
 
-***
+---

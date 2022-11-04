@@ -6,17 +6,22 @@
 
 `STATUS: ACTIVE`
 
+
+
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+
+
 **Class** batchCalculateRewardsBalance
 
 ## Methods
-
 ### `start(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -27,17 +32,17 @@ Database.QueryLocator
 **Description**
 
 Database.QueryLocator
+
 
 **Method** start
 
 ### `execute(Database.BatchableContext BC, List<sObject> scope)`
-
 #### Parameters
 
-| Param   | Description |
-| ------- | ----------- |
-| `BC`    |             |
-| `scope` |             |
+|Param|Description|
+|---|---|
+|`BC`||
+|`scope`||
 
 #### Return
 
@@ -48,16 +53,16 @@ void
 **Description**
 
 void
+
 
 **Method** execute
 
 ### `finish(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -69,6 +74,7 @@ void
 
 void
 
+
 **Method** finish
 
-***
+---

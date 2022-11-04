@@ -106,6 +106,11 @@ List&lt;CoveredSystem&gt;
 
 
 
+**Inheritance**
+
+DealershipLocationAPIException
+
+
 ### Fee
 
 

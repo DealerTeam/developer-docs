@@ -4,17 +4,20 @@
 
 `STATUS: ACTIVE`
 
-## Constructors
+**Implemented types**
 
+[IExpression](IExpression)
+
+## Constructors
 ### `EvalExpression(String expression)`
 
 Creates a new expression instance from an expression string.
 
 #### Parameters
 
-| Param        | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| `expression` | the expression. E.g. `'2.4*sin(3)/(2-4)'` or `'sin(y)>0 & max(z, 3)>3'` |
+|Param|Description|
+|---|---|
+|`expression`|the expression. E.g. `'2.4*sin(3)/(2-4)'` or `'sin(y)>0 & max(z, 3)>3'`|
 
 ### `EvalExpression(String expression, Map<String,Object> variables)`
 
@@ -22,10 +25,10 @@ Creates a new expression instance from an expression string with the given varia
 
 #### Parameters
 
-| Param        | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| `expression` | the expression. E.g. `'2.4*sin(3)/(2-4)'` or `'sin(y)>0 & max(z, 3)>3'` |
-| `variables`  | a mapping of variables                                                  |
+|Param|Description|
+|---|---|
+|`expression`|the expression. E.g. `'2.4*sin(3)/(2-4)'` or `'sin(y)>0 & max(z, 3)>3'`|
+|`variables`|a mapping of variables|
 
 ### `EvalExpression(String expression, MathContext mc)`
 
@@ -33,10 +36,10 @@ Creates a new expression instance from an expression string with a default MathC
 
 #### Parameters
 
-| Param        | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| `expression` | the expression. E.g. `'2.4*sin(3)/(2-4)'` or `'sin(y)>0 & max(z, 3)>3'` |
-| `mc`         | an instance of MathContext                                              |
+|Param|Description|
+|---|---|
+|`expression`|the expression. E.g. `'2.4*sin(3)/(2-4)'` or `'sin(y)>0 & max(z, 3)>3'`|
+|`mc`|an instance of MathContext|
 
 ### `EvalExpression(String expression, Map<String,Object> variables, MathContext mc)`
 
@@ -44,16 +47,14 @@ Creates a new expression instance from an expression string with the given varia
 
 #### Parameters
 
-| Param        | Description                                                         |
-| ------------ | ------------------------------------------------------------------- |
-| `expression` | the expression, eg: `2.4*sin(3)/(2-4)` or `sin(y)>0 && max(z, 3)>3` |
-| `variables`  | a mapping of variables                                              |
-| `mc`         | an instance of MathContext                                          |
+|Param|Description|
+|---|---|
+|`expression`|the expression, eg: `2.4*sin(3)/(2-4)` or `sin(y)>0 && max(z, 3)>3`|
+|`variables`|a mapping of variables|
+|`mc`|an instance of MathContext|
 
-***
-
+---
 ## Methods
-
 ### `eval()`
 
 Evaluates the expression.
@@ -74,9 +75,9 @@ Sets the precision for expression evaluation
 
 #### Parameters
 
-| Param       | Description       |
-| ----------- | ----------------- |
-| `precision` | the new precision |
+|Param|Description|
+|---|---|
+|`precision`|the new precision|
 
 #### Return
 
@@ -94,9 +95,9 @@ Sets the rounding mode for expression evaluation
 
 #### Parameters
 
-| Param      | Description           |
-| ---------- | --------------------- |
-| `rounding` | the new rounding mode |
+|Param|Description|
+|---|---|
+|`rounding`|the new rounding mode|
 
 #### Return
 
@@ -114,10 +115,10 @@ Sets a variable value.
 
 #### Parameters
 
-| Param      | Description         |
-| ---------- | ------------------- |
-| `variable` | the variable to set |
-| `value`    | the variable value  |
+|Param|Description|
+|---|---|
+|`variable`|the variable to set|
+|`value`|the variable value|
 
 #### Return
 
@@ -135,10 +136,10 @@ Sets a variable value.
 
 #### Parameters
 
-| Param      | Description         |
-| ---------- | ------------------- |
-| `variable` | The variable to set |
-| `value`    | The variable value  |
+|Param|Description|
+|---|---|
+|`variable`|The variable to set|
+|`value`|The variable value|
 
 #### Return
 
@@ -156,9 +157,9 @@ Matches a value from the passed value set for variables replacement.
 
 #### Parameters
 
-| Param     | Description      |
-| --------- | ---------------- |
-| `sObject` | populated fields |
+|Param|Description|
+|---|---|
+|`sObject`|populated fields|
 
 #### Return
 
@@ -170,24 +171,20 @@ EvalExpression
 
 the matched expression for chaining
 
-***
-
+---
 ## Classes
-
 ### MathContext
-
 #### Constructors
-
-**`MathContext(Integer precision, RoundingMode roundingMode)`**
-
-***
-
+##### `MathContext(Integer precision, RoundingMode roundingMode)`
+---
 #### Fields
 
-**`precision` → `Integer`**
+##### `precision` → `Integer`
 
-**`roundingMode` → `RoundingMode`**
 
-***
+##### `roundingMode` → `RoundingMode`
 
-***
+
+---
+
+---

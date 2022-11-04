@@ -6,31 +6,38 @@
 
 Cleans records of invalid external Ids
 
+
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+, 
+[Database.AllowsCallouts](Database.AllowsCallouts)
+
+
 **Class** DMSBatchCleanRecords
+
 
 **Test** TestDMSImports
 
 ## Constructors
-
 ### `DMSBatchCleanRecords(String Type, String objJSON)`
 
 constructor
 
+
 **Method** DMSBatchCleanRecords description
 
-***
-
+---
 ## Methods
-
 ### `start(Database.BatchableContext BC)`
 
 forming batch requires query
 
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 ### `execute(Database.BatchableContext BC, List<sObject> scope)`
 
@@ -38,10 +45,10 @@ Process the records
 
 #### Parameters
 
-| Param   | Description |
-| ------- | ----------- |
-| `BC`    |             |
-| `scope` |             |
+|Param|Description|
+|---|---|
+|`BC`||
+|`scope`||
 
 #### Return
 
@@ -54,12 +61,11 @@ void
 void
 
 ### `finish(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -71,4 +77,4 @@ void
 
 void
 
-***
+---

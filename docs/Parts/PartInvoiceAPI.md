@@ -4,35 +4,34 @@
 
 `STATUS: ACTIVE`
 
+
+
 **Group** Parts
 
 ## Methods
-
 ### `static invoice(Id invoiceId)`
-
 ### `static createInvoice(Parts_Invoice__c ivs)`
-
 ### `static addInvoiceLine(Id invoiceId, Id jobLineId, Id partId, Decimal quantity, Decimal salePrice, String comment)`
-
 ### `static addMiscLines(List<Parts_Invoice_Line__c> lines)`
 
 creates miscellaneous invoice lines, this must be limited to a single parent invoice
 
 #### Parameters
 
-| Param   | Description       |
-| ------- | ----------------- |
-| `lines` | lines description |
+|Param|Description|
+|---|---|
+|`lines`|lines description|
 
 #### Return
 
 **Type**
 
-List\<Parts\_Invoice\_Line\_\_c>
+List&lt;Parts_Invoice_Line__c&gt;
 
 **Description**
 
 return description
+
 
 **Method** addMiscLines
 
@@ -42,33 +41,33 @@ update existing miscellaneous invoice lines, this must be limited to a single pa
 
 #### Parameters
 
-| Param   | Description       |
-| ------- | ----------------- |
-| `lines` | lines description |
+|Param|Description|
+|---|---|
+|`lines`|lines description|
 
 #### Return
 
 **Type**
 
-List\<Parts\_Invoice\_Line\_\_c>
+List&lt;Parts_Invoice_Line__c&gt;
 
 **Description**
 
 return description
 
+
 **Method** updateMiscLines
 
 ### `static addInvoiceLines(List<Parts_Invoice_Line__c> lines)`
-
 ### `static removeInvoiceLine(Id invoiceLineId)`
 
 removeInvoiceLine - Removes an invoice line from the parts invoice, resets inventory and re-assigns stock.
 
 #### Parameters
 
-| Param | Description                            |
-| ----- | -------------------------------------- |
-| `Id`  | of the invoice line requesting removal |
+|Param|Description|
+|---|---|
+|`Id`|of the invoice line requesting removal|
 
 ### `static removeInvoiceLine(List<Parts_Invoice_Line__c> partInvoiceLines)`
 
@@ -76,9 +75,9 @@ removeInvoiceLine - removes an invoice line or many by list of invoice lines
 
 #### Parameters
 
-| Param  | Description            |
-| ------ | ---------------------- |
-| `List` | of Parts Invoice Lines |
+|Param|Description|
+|---|---|
+|`List`|of Parts Invoice Lines|
 
 ### `static updateInvoiceLine(List<InvoiceLineWrapper> lines)`
 
@@ -86,42 +85,41 @@ processes updates to a collectino of invoice lines
 
 #### Parameters
 
-| Param       | Description           |
-| ----------- | --------------------- |
-| `lineId`    | lineId description    |
-| `quantity`  | quantity description  |
-| `salePrice` | salePrice description |
-| `comment`   | comment description   |
+|Param|Description|
+|---|---|
+|`lineId`|lineId description|
+|`quantity`|quantity description|
+|`salePrice`|salePrice description|
+|`comment`|comment description|
 
 #### Return
 
 **Type**
 
-List\<Parts\_Invoice\_Line\_\_c>
+List&lt;Parts_Invoice_Line__c&gt;
 
 **Description**
 
 return description
 
 ### `static updateInvoiceLine(Id lineId, Decimal quantity, Decimal salePrice, String comment)`
-
 ### `static invoiceLines(Id invoiceId)`
-
 #### Parameters
 
-| Param       | Description |
-| ----------- | ----------- |
-| `invoiceId` | description |
+|Param|Description|
+|---|---|
+|`invoiceId`|description|
 
 #### Return
 
 **Type**
 
-List\<dealer\_\_Parts\_Invoice\_Line\_\_c>
+List&lt;dealer__Parts_Invoice_Line__c&gt;
 
 **Description**
 
 description
+
 
 **Method** invoiceLines
 
@@ -133,41 +131,40 @@ Method used to call supported methods via invocable apex
 
 #### Parameters
 
-| Param    | Description        |
-| -------- | ------------------ |
-| `params` | params description |
+|Param|Description|
+|---|---|
+|`params`|params description|
 
 #### Return
 
 **Type**
 
-List\<InvocableResponse>
+List&lt;InvocableResponse&gt;
 
 **Description**
 
 return description
 
+
 **Method** invoke
 
-***
-
+---
 ## Classes
-
 ### InvocableParams
 
 Wrapper to hold all invocable variable inputs needed for invoke method
 
 #### Fields
 
-**`methodName` → `String`**
+##### `methodName` → `String`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-**`partLines` → `List&lt;Parts_Invoice_Line__c&gt;`**
+##### `partLines` → `List&lt;Parts_Invoice_Line__c&gt;`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-***
+---
 
 ### InvocableResponse
 
@@ -175,38 +172,57 @@ Wrapper to hold data returned by invocable
 
 #### Fields
 
-**`message` → `String`**
+##### `message` → `String`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-**`partLines` → `List&lt;Parts_Invoice_Line__c&gt;`**
+##### `partLines` → `List&lt;Parts_Invoice_Line__c&gt;`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-**`status` → `String`**
+##### `status` → `String`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-***
+---
 
 ### InvoiceLineWrapper
-
 #### Fields
 
-**`comment` → `String`**
+##### `comment` → `String`
 
-**`corePrice` → `Decimal`**
 
-**`lineId` → `Id`**
+##### `corePrice` → `Decimal`
 
-**`quantity` → `Decimal`**
 
-**`salePrice` → `Decimal`**
+##### `ledgers` → `List&lt;Parts_Ledger__c&gt;`
 
-**`taxable` → `Boolean`**
 
-***
+##### `lineId` → `Id`
+
+
+##### `quantity` → `Decimal`
+
+
+##### `quantityFilled` → `Decimal`
+
+
+##### `salePrice` → `Decimal`
+
+
+##### `status` → `String`
+
+
+##### `taxable` → `Boolean`
+
+
+---
 
 ### PartInvoiceAPIException
 
-***
+**Inheritance**
+
+PartInvoiceAPIException
+
+
+---

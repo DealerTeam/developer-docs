@@ -5,39 +5,37 @@
 `APIVERSION: 45`
 
 `STATUS: ACTIVE`
-
 ## Constructors
-
 ### `SecureVDCSettings()`
 
-## `DEPRECATED`
-
+`DEPRECATED`
+---
 ## Properties
 
 ### `OrgByDefault` → `dealer__OrganizationDefaults__c`
 
-`DEPRECATED`
+`DEPRECATED` 
 
-***
-
+---
 ## Methods
-
 ### `static getOrgByDefault(String csValue)`
 
 `DEPRECATED`
-
 ### `static active()`
 
 `DEPRECATED`
-
 ### `static toggleBigObject(Boolean onoff)`
 
-## `DEPRECATED`
-
+`DEPRECATED`
+---
 ## Classes
-
 ### SecureVDCException
 
 `DEPRECATED`
 
-***
+**Inheritance**
+
+SecureVDCException
+
+
+---

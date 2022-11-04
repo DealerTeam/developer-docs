@@ -3,23 +3,21 @@
 `APIVERSION: 45`
 
 `STATUS: ACTIVE`
-
 ## Constructors
-
 ### `VINDecodeRemote()`
-
-***
-
+---
 ## Methods
-
 ### `getdecodeResults()`
-
 ### `static decodedVin(String vin)`
 
-## `REMOTEACTION`
-
+`REMOTEACTION`
+---
 ## Classes
+### VINDECODE_Exception
 
-### VINDECODE\_Exception
+**Inheritance**
 
-***
+VINDECODE_Exception
+
+
+---

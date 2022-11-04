@@ -4,40 +4,42 @@
 
 `STATUS: ACTIVE`
 
+
+
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+
+
 **Class** batchRemoveInStore
 
 ## Constructors
-
 ### `batchRemoveInStore(String sObjectName)`
-
 #### Parameters
 
-| Param         | Description |
-| ------------- | ----------- |
-| `sObjectName` |             |
+|Param|Description|
+|---|---|
+|`sObjectName`||
+
 
 **Method** batchRemoveInStore
 
-***
-
+---
 ## Methods
-
 ### `start(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 ### `execute(Database.BatchableContext BC, List<sObject> scope)`
-
 #### Parameters
 
-| Param   | Description |
-| ------- | ----------- |
-| `BC`    |             |
-| `scope` |             |
+|Param|Description|
+|---|---|
+|`BC`||
+|`scope`||
 
 #### Return
 
@@ -50,12 +52,11 @@ void
 void
 
 ### `finish(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -67,4 +68,4 @@ void
 
 void
 
-***
+---

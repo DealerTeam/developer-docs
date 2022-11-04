@@ -4,47 +4,56 @@
 
 `STATUS: ACTIVE`
 
+
+
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+, 
+[Database.Stateful](Database.Stateful)
+
+
 **Class** BatchUpdateEquippedField
 
 ## Constructors
-
 ### `BatchUpdateEquippedField(String q, String e, String f, String v)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `e`   |             |
-| `f`   |             |
-| `v`   |             |
+|Param|Description|
+|---|---|
+|`e`||
+|`f`||
+|`v`||
+
 
 **Method** BatchUpdateEquippedField
 
-***
-
+---
 ## Fields
 
 ### `Entity` → `String`
 
+
 ### `ListRecForEmailId` → `List<id>`
+
 
 ### `NewField` → `String`
 
+
 ### `OldField` → `String`
+
 
 ### `Query` → `String`
 
-***
 
+---
 ## Methods
-
 ### `start(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -57,13 +66,12 @@ Database.QueryLocator
 Database.QueryLocator
 
 ### `execute(Database.BatchableContext BC, List<sObject> scope)`
-
 #### Parameters
 
-| Param   | Description |
-| ------- | ----------- |
-| `BC`    |             |
-| `scope` |             |
+|Param|Description|
+|---|---|
+|`BC`||
+|`scope`||
 
 #### Return
 
@@ -76,12 +84,11 @@ void
 void
 
 ### `finish(Database.BatchableContext BC)`
-
 #### Parameters
 
-| Param | Description |
-| ----- | ----------- |
-| `BC`  |             |
+|Param|Description|
+|---|---|
+|`BC`||
 
 #### Return
 
@@ -93,4 +100,4 @@ void
 
 void
 
-***
+---

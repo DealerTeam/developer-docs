@@ -3,9 +3,7 @@
 `APIVERSION: 51`
 
 `STATUS: ACTIVE`
-
 ## Methods
-
 ### `static setRecentPrinter(String printerName)`
 
 `REMOTEACTION`
@@ -14,9 +12,9 @@ saved the provided printer to the user's custom setting
 
 #### Parameters
 
-| Param         | Description             |
-| ------------- | ----------------------- |
-| `printerName` | printerName description |
+|Param|Description|
+|---|---|
+|`printerName`|printerName description|
 
 #### Return
 
@@ -28,6 +26,7 @@ string
 
 return description
 
+
 **Method** setRecentPrinter
 
-***
+---

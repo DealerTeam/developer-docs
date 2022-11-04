@@ -7,6 +7,13 @@
 Performs batch execution to refresh the vehicle history report of Service Vehicles.
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+, 
+[Database.AllowsCallouts](Database.AllowsCallouts)
+
+
 **Group** Batch Processing
 
 ## Constructors

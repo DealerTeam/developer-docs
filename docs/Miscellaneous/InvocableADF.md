@@ -3,31 +3,27 @@
 `APIVERSION: 48`
 
 `STATUS: ACTIVE`
-
 ## Methods
-
 ### `static InvocableRouter(List<InputParams> inputs)`
 
-## `INVOCABLEMETHOD`
-
+`INVOCABLEMETHOD`
+---
 ## Classes
-
 ### InputParams
-
 #### Fields
 
-**`recipientEmail` → `String`**
+##### `recipientEmail` → `String`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-**`salesUp` → `Sales_Up__c`**
+##### `salesUp` → `Sales_Up__c`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-**`trans` → `String`**
+##### `trans` → `String`
 
-`INVOCABLEVARIABLE`
+`INVOCABLEVARIABLE` 
 
-***
+---
 
-***
+---

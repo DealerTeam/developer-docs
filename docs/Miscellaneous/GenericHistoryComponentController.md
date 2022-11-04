@@ -3,51 +3,53 @@
 `APIVERSION: 45`
 
 `STATUS: ACTIVE`
-
 ## Fields
 
 ### `historyFieldPicklistValues` → `List<Schema.PicklistEntry>`
 
+
 ### `myObjectFieldMap` → `Map<String,Schema.SObjectField>`
+
 
 ### `mySObjectTypeMap` → `Map<String,Schema.SObjectType>`
 
+
 ### `objectHistory` → `objectHistoryLine[]`
 
-***
 
+---
 ## Properties
 
 ### `myObject` → `SObject`
 
+
 ### `objectLabel` → `String`
+
 
 ### `recordLimit` → `Integer`
 
-***
 
+---
 ## Methods
-
 ### `getObjectHistory()`
-
 ### `static returnFieldLabel(String fieldName)`
-
-***
-
+---
 ## Classes
-
 ### objectHistoryLine
-
 #### Properties
 
-**`action` → `String`**
+##### `action` → `String`
 
-**`theDate` → `String`**
 
-**`userId` → `Id`**
+##### `theDate` → `String`
 
-**`who` → `String`**
 
-***
+##### `userId` → `Id`
 
-***
+
+##### `who` → `String`
+
+
+---
+
+---

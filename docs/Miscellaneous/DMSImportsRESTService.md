@@ -6,14 +6,14 @@
 
 `STATUS: ACTIVE`
 
+
+
 **Class** DMSImportsRESTService
 
 ## Methods
-
 ### `static createRecords()`
 
 `HTTPPUT`
-
 #### Return
 
 **Type**
@@ -24,8 +24,10 @@ String
 
 String
 
+
 **Method** createRecords
 
 ### `static deleteRecord()`
 
-## `HTTPDELETE`
+`HTTPDELETE`
+---

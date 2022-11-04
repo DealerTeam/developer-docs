@@ -1,4 +1,4 @@
-# SalesUpDuplicateSearchLex\_EXT
+# SalesUpDuplicateSearchLex_EXT
 
 `APIVERSION: 45`
 

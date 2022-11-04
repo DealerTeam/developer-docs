@@ -4,8 +4,10 @@
 
 `STATUS: ACTIVE`
 
+**Implemented types**
+
+[HttpCalloutMock](HttpCalloutMock)
+
 ## Methods
-
 ### `respond(HTTPRequest req)`
-
-***
+---
