@@ -121,7 +121,7 @@
     * [FormAPI](docs/Sales/formapi.md)
     * [InboundEmailNotifications](docs/Sales/inboundemailnotifications.md)
     * [InventoryMediaService](docs/Sales/inventorymediaservice.md)
-    * [SalesUp](docs/Sales/salesup.md)
+    * [SalesUp](docs/Sales/SalesUp.md)
     * [SalesLead\_EXT](docs/Sales/saleslead\_ext.md)
     * [SalesUpDuplicateSearchLex\_EXT](docs/Sales/salesupduplicatesearchlex\_ext.md)
     * [SchedulableCarFaxHistoryReport](docs/Sales/schedulablecarfaxhistoryreport.md)
