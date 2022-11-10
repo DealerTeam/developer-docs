@@ -245,6 +245,12 @@ Service Layer Encapsulation of interaction with the Repair Order Object.
 
 
 
+### [DealAPI](/Sales/DealAPI.md)
+
+DealAPI provides service layer logic for processing requests related to the Deal Records
+
+
+
 ### [DealForm_EXT](/Sales/DealForm_EXT.md)
 
 Mobility Deal Controller Extension
