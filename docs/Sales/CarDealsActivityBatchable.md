@@ -6,6 +6,11 @@
 
 
 
+**Implemented types**
+
+[Schedulable](Schedulable)
+
+
 **Class** CarDealsActivityBatchable
 
 

@@ -48,4 +48,9 @@ execute dynamic SOQL using user supplied input for filter and return criteria&lt
 ## Classes
 ### IllegalArgumentException
 
+**Inheritance**
+
+IllegalArgumentException
+
+
 ---

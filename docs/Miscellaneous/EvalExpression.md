@@ -3,6 +3,11 @@
 `APIVERSION: 45`
 
 `STATUS: ACTIVE`
+
+**Implemented types**
+
+[IExpression](IExpression)
+
 ## Constructors
 ### `EvalExpression(String expression)`
 

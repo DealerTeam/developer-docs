@@ -1,16 +1,23 @@
-# VINDecodeRemote class
+# VINDecodeRemote
 
- Date              |Developer             |Work 2016-07-11         Sneha                  T-00854 Date              |Developer             |Case 2016-07-11         Sneha                  C-00002224 To decode VIN when common data is null, and take basic data from the array of styles.
+`APIVERSION: 45`
 
----
+`STATUS: ACTIVE`
 ## Constructors
 ### `VINDecodeRemote()`
 ---
 ## Methods
-### `decodedVin(String vin)` → `Map<String,Object>`
-### `getdecodeResults()` → `String`
----
-## Inner Classes
+### `getdecodeResults()`
+### `static decodedVin(String vin)`
 
-### VINDecodeRemote.VINDECODE_Exception class
+`REMOTEACTION`
+---
+## Classes
+### VINDECODE_Exception
+
+**Inheritance**
+
+VINDECODE_Exception
+
+
 ---

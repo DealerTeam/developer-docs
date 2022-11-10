@@ -33,4 +33,9 @@
 
 `DEPRECATED`
 
+**Inheritance**
+
+SecureVDCException
+
+
 ---

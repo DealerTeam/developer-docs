@@ -8,6 +8,11 @@
 
 
 
+**Implemented types**
+
+[HttpCalloutMock](HttpCalloutMock)
+
+
 **Group** Test
 
 ## Methods

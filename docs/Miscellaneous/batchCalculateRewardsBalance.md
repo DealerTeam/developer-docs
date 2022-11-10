@@ -8,6 +8,11 @@
 
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+
+
 **Class** batchCalculateRewardsBalance
 
 ## Methods

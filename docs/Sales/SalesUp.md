@@ -42,42 +42,18 @@ Wrapper class to hold sales up and all related objects needed by SalesUpAPI
 ##### `SalesUpWrapper(Account buyerAccount, Contact buyerContact, List&lt;Task&gt; tasks, List&lt;Desired_Vehicle__c&gt; desiredVehicles, List&lt;Traffic_Log__c&gt; trafficLogs, Sales_Up__c salesUp, Boolean bypassDupes)`
 ---
 #### Fields
+##### Other
 
-##### `BuyerAccount` → `Account`
+* `BuyerAccount` → `Account` (*Inherited*)   - List of tasks to be created and related to the sales up
+* `BuyerContact` → `Contact` (*Inherited*)   - when buyer contact is populated and contact is of type person account buyer account will also be populated
+* `BypassDuplicateMatching` → `Boolean` (*Inherited*)   - Determines whether or not duplicate matching rules will apply for related accounts and contacts
+* `SalesUp` → `Sales_Up__c` (*Inherited*)   - Sales up record to be created
+* `TrafficLogs` → `List&lt;Traffic_Log__c&gt;` (*Inherited*)   - List of traffic logs to be created and related to the sales up
+---
+##### Related Objects
 
-
-List of tasks to be created and related to the sales up
-
-##### `BuyerContact` → `Contact`
-
-
-when buyer contact is populated and contact is of type person account buyer account will also be populated
-
-##### `BypassDuplicateMatching` → `Boolean`
-
-
-Determines whether or not duplicate matching rules will apply for related accounts and contacts
-
-##### `DesiredVehicles` → `List&lt;Desired_Vehicle__c&gt;`
-
-
-List of Desired Vehicles to be created and related to the sales up
-
-##### `SalesUp` → `Sales_Up__c`
-
-
-Sales up record to be created
-
-##### `Tasks` → `List&lt;Task&gt;`
-
-
-List of tasks to be created and related to the sales up
-
-##### `TrafficLogs` → `List&lt;Traffic_Log__c&gt;`
-
-
-List of traffic logs to be created and related to the sales up
-
+* `DesiredVehicles` → `List&lt;Desired_Vehicle__c&gt;` (*Inherited*)  
+* `Tasks` → `List&lt;Task&gt;` (*Inherited*)  
 ---
 
 ---

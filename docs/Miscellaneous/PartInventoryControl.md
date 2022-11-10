@@ -89,6 +89,11 @@ Process the matched matched list to provide valid cost
 ## Classes
 ### InventoryControlException
 
+**Inheritance**
+
+InventoryControlException
+
+
 ### invControl
 #### Constructors
 ##### `invControl(Decimal invValue, List&lt;dealer__Part_Inventory_History__c&gt; invHistory)`

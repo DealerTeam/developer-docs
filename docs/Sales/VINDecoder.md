@@ -38,4 +38,9 @@
 ## Classes
 ### VINDecoderException
 
+**Inheritance**
+
+VINDecoderException
+
+
 ---

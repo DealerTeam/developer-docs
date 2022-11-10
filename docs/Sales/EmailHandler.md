@@ -6,6 +6,11 @@
 
 
 
+**Implemented types**
+
+[Messaging.InboundEmailHandler](Messaging.InboundEmailHandler)
+
+
 **Group** Sales
 
 ## Methods

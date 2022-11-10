@@ -81,4 +81,9 @@ String value of the configuration file.
 ## Classes
 ### UtilityException
 
+**Inheritance**
+
+UtilityException
+
+
 ---

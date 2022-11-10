@@ -172,4 +172,9 @@ matrixSearch - perform record processing sub function for the primary global met
 PartAPIException extends the standard exception handler
 
 
+**Inheritance**
+
+PartAPIException
+
+
 ---

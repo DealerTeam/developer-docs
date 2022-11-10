@@ -96,6 +96,10 @@ Wrapper to hold all invocable variable inputs needed for invoke method
 
 `INVOCABLEVARIABLE` 
 
+##### `repairOrder` → `Service_Repair_Order__c`
+
+`INVOCABLEVARIABLE` 
+
 ---
 
 ### InvocableResponse
@@ -123,5 +127,10 @@ Wrapper to hold data returned by invocable
 ---
 
 ### ServiceRepairOrderAPIException
+
+**Inheritance**
+
+ServiceRepairOrderAPIException
+
 
 ---

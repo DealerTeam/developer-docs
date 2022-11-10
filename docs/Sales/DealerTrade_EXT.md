@@ -50,4 +50,9 @@ String
 
 
 
+**Inheritance**
+
+DealerTradeException
+
+
 ---

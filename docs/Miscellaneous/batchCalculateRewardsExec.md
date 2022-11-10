@@ -7,6 +7,11 @@
 `STATUS: ACTIVE`
 
 
+
+**Implemented types**
+
+[Schedulable](Schedulable)
+
 ## Methods
 ### `execute(SchedulableContext sc)`
 #### Parameters

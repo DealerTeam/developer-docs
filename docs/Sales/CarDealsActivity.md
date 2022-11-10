@@ -6,6 +6,11 @@
 
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sobject&gt;](Database.Batchable&lt;sobject&gt;)
+
+
 **Class** CarDealsActivity
 
 

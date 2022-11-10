@@ -14,6 +14,11 @@
 ## Classes
 ### ServiceVehicleException
 
+**Inheritance**
+
+ServiceVehicleException
+
+
 ### sv
 
 Wrapper class for sv data and related records.

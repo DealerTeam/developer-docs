@@ -195,13 +195,22 @@ Wrapper to hold data returned by invocable
 ##### `corePrice` → `Decimal`
 
 
+##### `ledgers` → `List&lt;Parts_Ledger__c&gt;`
+
+
 ##### `lineId` → `Id`
 
 
 ##### `quantity` → `Decimal`
 
 
+##### `quantityFilled` → `Decimal`
+
+
 ##### `salePrice` → `Decimal`
+
+
+##### `status` → `String`
 
 
 ##### `taxable` → `Boolean`
@@ -210,5 +219,10 @@ Wrapper to hold data returned by invocable
 ---
 
 ### PartInvoiceAPIException
+
+**Inheritance**
+
+PartInvoiceAPIException
+
 
 ---

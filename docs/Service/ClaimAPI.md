@@ -80,4 +80,9 @@ Wrapper class for claim data and related records.
 
 ### claimAPIException
 
+**Inheritance**
+
+claimAPIException
+
+
 ---

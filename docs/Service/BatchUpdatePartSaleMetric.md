@@ -7,6 +7,11 @@
 Handles Batch processing of parts inventory
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+
+
 **Class** BatchUpdatePartSaleMetric
 
 

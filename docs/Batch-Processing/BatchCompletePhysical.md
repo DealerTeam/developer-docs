@@ -7,6 +7,11 @@
 Database Batchable interface used with the processing of Parts Physical Inventory workload.
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+
+
 **Group** Batch Processing
 
 ## Constructors

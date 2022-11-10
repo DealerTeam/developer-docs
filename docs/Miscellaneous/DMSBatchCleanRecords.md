@@ -7,6 +7,13 @@
 Cleans records of invalid external Ids
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+, 
+[Database.AllowsCallouts](Database.AllowsCallouts)
+
+
 **Class** DMSBatchCleanRecords
 
 

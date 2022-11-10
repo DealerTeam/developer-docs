@@ -6,6 +6,13 @@
 
 
 
+**Implemented types**
+
+[Database.Batchable&lt;sObject&gt;](Database.Batchable&lt;sObject&gt;)
+, 
+[Database.Stateful](Database.Stateful)
+
+
 **Class** ChangeContactAccountOwnerOnCarDeal
 
 
