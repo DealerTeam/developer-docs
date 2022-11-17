@@ -1,7 +1,6 @@
 # Table of contents
 
 * [docs](README.md)
-  * [DealershipLocationAPI](docs/DealershipLocationAPI.md)
   * [Accounting](docs/accounting/README.md)
     * [DMSRecordController](docs/Accounting/DMSRecordController.md)
     * [ERPSelector](docs/Accounting/ERPSelector.md)
@@ -13,7 +12,8 @@
     * [BatchCompletePhysical](docs/Batch-Processing/BatchCompletePhysical.md)
   * [Common](docs/common/README.md)
     * [Cashier](docs/Common/Cashier.md)
-    * [CashierControlHandler](docs/common/CashierControlHandler.md)
+    * [CashierControlHandler](docs/Common/CashierControlHandler.md)
+    * [DealershipLocationAPI](docs/Common/DealershipLocationAPI.md)
   * [Deprecated](docs/deprecated/README.md)
     * [B2CAccounts](docs/Deprecated/B2CAccounts.md)
   * [ERP](docs/erp/README.md)
