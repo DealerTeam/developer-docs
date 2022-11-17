@@ -364,9 +364,8 @@ SalesLead_EXT - Cotnrols interaction wiht the salesup object
 This class performs core cashiering related actions.  Cashier.cls is used throughout the invocing processes.
 
 
-## 
 
-### [DealershipLocationAPI](//DealershipLocationAPI.md)
+### [DealershipLocationAPI](/Common/DealershipLocationAPI.md)
 
 
 
