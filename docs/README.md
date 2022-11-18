@@ -124,15 +124,15 @@ Cleans records of invalid external Ids
 Deprecated - This routine has been scheduled for deprecation
 
 
-## Batch Processing
+## Batchable
 
-### [BatchCarfaxHistoryReport](/Batch-Processing/BatchCarfaxHistoryReport.md)
+### [BatchCarfaxHistoryReport](/Batchable/BatchCarfaxHistoryReport.md)
 
 Performs batch execution to refresh the vehicle history report of Service Vehicles.
 
 
 
-### [BatchCompletePhysical](/Batch-Processing/BatchCompletePhysical.md)
+### [BatchCompletePhysical](/Batchable/BatchCompletePhysical.md)
 
 Database Batchable interface used with the processing of Parts Physical Inventory workload.
 
@@ -162,6 +162,7 @@ Handles Batch processing of parts inventory
 
 ### [BatchUpdatePartSaleMetricExec](/Service/BatchUpdatePartSaleMetricExec.md)
 
+Handles Batch processing of parts inventory
 
 
 
