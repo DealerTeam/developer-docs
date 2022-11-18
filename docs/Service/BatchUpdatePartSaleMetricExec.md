@@ -4,6 +4,7 @@
 
 `STATUS: ACTIVE`
 
+Handles Batch processing of parts inventory
 
 
 **Implemented types**
@@ -14,7 +15,7 @@
 **Class** BatchUpdatePartSaleMetricExec
 
 
-**Test** PartAnalyticsSystemLayer.testBatchScheduledEvent
+**Test** [PartAnalyticsSystemLayer](PartAnalyticsSystemLayer)
 
 
 **Group** Service
