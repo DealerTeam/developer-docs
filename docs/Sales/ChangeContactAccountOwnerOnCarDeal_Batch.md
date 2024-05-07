@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # ChangeContactAccountOwnerOnCarDeal_Batch
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -12,15 +11,11 @@
 **Group** Sales
 
 ## Methods
-### `static execute()`
-#### Return
+### `global static void execute()`
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

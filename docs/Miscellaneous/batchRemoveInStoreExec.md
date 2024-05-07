@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # batchRemoveInStoreExec
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -14,21 +13,17 @@
 **Class** batchRemoveInStoreExec
 
 ## Methods
-### `execute(SchedulableContext sc)`
+### `global void execute(SchedulableContext sc)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`sc`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

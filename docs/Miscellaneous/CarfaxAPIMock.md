@@ -1,15 +1,14 @@
+---
+layout: default
+---
 # CarfaxAPIMock
 
 `ISTEST`
-
-`APIVERSION: 51`
-
-`STATUS: ACTIVE`
 
 **Implemented types**
 
 [HttpCalloutMock](HttpCalloutMock)
 
 ## Methods
-### `respond(HttpRequest request)`
+### `global HttpResponse respond(HttpRequest request)`
 ---

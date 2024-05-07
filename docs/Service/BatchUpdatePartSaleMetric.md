@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BatchUpdatePartSaleMetric
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 Handles Batch processing of parts inventory
 
@@ -21,10 +20,16 @@ Handles Batch processing of parts inventory
 **Group** Service
 
 ## Constructors
-### `BatchUpdatePartSaleMetric()`
+### `global BatchUpdatePartSaleMetric()`
+---
+## Fields
+
+### `private query` → `String`
+
+
 ---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 
 forming batch requires query
 
@@ -34,7 +39,7 @@ forming batch requires query
 |---|---|
 |`BC`||
 
-### `execute(Database.BatchableContext BC, List<sObject> scope)`
+### `global void execute(Database BC, List<sObject> scope)`
 
 Process the records
 
@@ -45,31 +50,23 @@ Process the records
 |`BC`||
 |`scope`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

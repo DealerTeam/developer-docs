@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # DealForm_EXT
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 Mobility Deal Controller Extension
 
@@ -13,222 +12,178 @@ Mobility Deal Controller Extension
 **Group** Sales
 
 ## Constructors
-### `DealForm_EXT(ApexPages.StandardController controller)`
+### `global DealForm_EXT(ApexPages controller)`
 
 Constructor
 
-### `DealForm_EXT()`
+### `global DealForm_EXT()`
 
 **Method** DealForm_EXT
 
 ---
 ## Fields
 
-### `urlParams` → `Map<String,String>`
+### `global urlParams` → `Map<String,String>`
 
 
 ---
 ## Properties
 
-### `TradeTaxCredit` → `Decimal`
+### `global dealId` → `String`
 
 
-### `deal` → `dealer__Deal__c`
+### `global vehRetailPrice` → `Decimal`
 
 
-### `dealId` → `String`
+### `global deal` → `dealer__Deal__c`
 
 
-### `selectedKits` → `List<dealer__After_Market__c>`
+### `global sup` → `dealer__Sales_Up__c`
 
 
-### `serviceContractPremium` → `Decimal`
+### `global TradeTaxCredit` → `Decimal`
+
+
+### `global serviceContractPremium` → `Decimal`
 
 
 Forms Variables
 
-### `soldOnProposal` → `List<dealer__Service_Contract__c>`
+### `global soldOnProposal` → `List<dealer__Service_Contract__c>`
 
 
 getter for service contracts sold on proposal
 
-### `sup` → `dealer__Sales_Up__c`
+### `global tradeInList` → `List<dealer__Trade_In__c>`
 
 
-### `tradeInList` → `List<dealer__Trade_In__c>`
-
-
-### `vehRetailPrice` → `Decimal`
+### `global selectedKits` → `List<dealer__After_Market__c>`
 
 
 ---
 ## Methods
-### `getVehRetail()`
-#### Return
+### `global Decimal getVehRetail()`
+#### Returns
 
-**Type**
-
-Decimal
-
-**Description**
-
-Decimal
+|Type|Description|
+|---|---|
+|`Decimal`|Decimal|
 
 
 **Method** getVehRetail
 
-### `calcTradeTaxCredit()`
-#### Return
+### `global decimal calcTradeTaxCredit()`
+#### Returns
 
-**Type**
-
-decimal
-
-**Description**
-
-decimal
+|Type|Description|
+|---|---|
+|`decimal`|decimal|
 
 
 **Method** calcTradeTaxCredit description
 
-### `getAutoGrantPayor()`
+### `global Account getAutoGrantPayor()`
 
 **Method** getAutoGrantPayor
 
-### `getPayor1()`
+### `global Account getPayor1()`
 
 **Method** getPayor1
 
-### `getPayor2()`
-### `getPayor3()`
-### `getServiceContractTotal()`
-#### Return
+### `global Account getPayor2()`
+### `global Account getPayor3()`
+### `global Decimal getServiceContractTotal()`
+#### Returns
 
-**Type**
-
-Decimal
-
-**Description**
-
-Decimal
+|Type|Description|
+|---|---|
+|`Decimal`|Decimal|
 
 
 **Method** getServiceContractTotal
 
-### `getLeadSourcePicklist()`
-### `getLeadTypePicklist()`
-#### Return
+### `global List<SelectOption> getLeadSourcePicklist()`
+### `global List<SelectOption> getLeadTypePicklist()`
+#### Returns
 
-**Type**
-
-List&lt;SelectOption&gt;
-
-**Description**
-
-List&lt;SelectOption&gt;
+|Type|Description|
+|---|---|
+|`List<SelectOption>`|List<SelectOption>|
 
 
 **Method** getLeadTypePicklist
 
-### `getDiscounts()`
-#### Return
+### `global List<dealer__Discount_Rebate__c> getDiscounts()`
+#### Returns
 
-**Type**
-
-List&lt;dealer__Discount_Rebate__c&gt;
-
-**Description**
-
-List&lt;dealer__Discount_Rebate__c&gt;
+|Type|Description|
+|---|---|
+|`List<dealer__Discount_Rebate__c>`|List<dealer__Discount_Rebate__c>|
 
 
 **Method** getDiscounts
 
-### `getTaxableFees()`
-#### Return
+### `global List<dealer__Sales_Fee__c> getTaxableFees()`
+#### Returns
 
-**Type**
-
-List&lt;dealer__Sales_Fee__c&gt;
-
-**Description**
-
-List&lt;dealer__Sales_Fee__c&gt;
+|Type|Description|
+|---|---|
+|`List<dealer__Sales_Fee__c>`|List<dealer__Sales_Fee__c>|
 
 
 **Method** getTaxableFees
 
-### `getNonTaxableFees()`
-#### Return
+### `global List<dealer__Sales_Fee__c> getNonTaxableFees()`
+#### Returns
 
-**Type**
-
-List&lt;dealer__Sales_Fee__c&gt;
-
-**Description**
-
-List&lt;dealer__Sales_Fee__c&gt;
+|Type|Description|
+|---|---|
+|`List<dealer__Sales_Fee__c>`|List<dealer__Sales_Fee__c>|
 
 
 **Method** getNonTaxableFees
 
-### `getTotalTradeGross()`
-#### Return
+### `global Decimal getTotalTradeGross()`
+#### Returns
 
-**Type**
-
-Decimal
-
-**Description**
-
-Decimal
+|Type|Description|
+|---|---|
+|`Decimal`|Decimal|
 
 
 **Method** getTotalTradeGross description
 
-### `getTotalAllowance()`
-#### Return
+### `global Decimal getTotalAllowance()`
+#### Returns
 
-**Type**
-
-Decimal
-
-**Description**
-
-Decimal
+|Type|Description|
+|---|---|
+|`Decimal`|Decimal|
 
 
 **Method** getTotalAllowance
 
-### `getShowTradeAllowance()`
-#### Return
+### `global boolean getShowTradeAllowance()`
+#### Returns
 
-**Type**
-
-boolean
-
-**Description**
-
-boolean
+|Type|Description|
+|---|---|
+|`boolean`|boolean|
 
 
 **Method** getShowTradeAllowance
 
-### `getInvoiceLogo()`
-#### Return
+### `global String getInvoiceLogo()`
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String
+|Type|Description|
+|---|---|
+|`String`|String|
 
 
 **Method** getInvoiceLogo
 
-### `static createBlankDeal(String jsonPayload)`
+### `global static Id createBlankDeal(String jsonPayload)`
 
 `REMOTEACTION`
 #### Parameters
@@ -237,15 +192,11 @@ String
 |---|---|
 |`jsonPayload`||
 
-#### Return
+#### Returns
 
-**Type**
-
-Id
-
-**Description**
-
-Id
+|Type|Description|
+|---|---|
+|`Id`|Id|
 
 
 **Method** createBlankDeal

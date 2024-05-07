@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # DMSBatchCleanRecords
-
-`APIVERSION: 47`
-
-`STATUS: ACTIVE`
 
 Cleans records of invalid external Ids
 
@@ -20,7 +19,7 @@ Cleans records of invalid external Ids
 **Test** TestDMSImports
 
 ## Constructors
-### `DMSBatchCleanRecords(String Type, String objJSON)`
+### `global DMSBatchCleanRecords(String Type, String objJSON)`
 
 constructor
 
@@ -28,8 +27,23 @@ constructor
 **Method** DMSBatchCleanRecords description
 
 ---
+## Fields
+
+### `private query` → `String`
+
+
+---
+## Properties
+
+### `public ObjectAPIName` → `String`
+
+
+### `public DMSObjJSON` → `String`
+
+
+---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 
 forming batch requires query
 
@@ -39,7 +53,7 @@ forming batch requires query
 |---|---|
 |`BC`||
 
-### `execute(Database.BatchableContext BC, List<sObject> scope)`
+### `global void execute(Database BC, List<sObject> scope)`
 
 Process the records
 
@@ -50,31 +64,23 @@ Process the records
 |`BC`||
 |`scope`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

@@ -1,28 +1,23 @@
+---
+layout: default
+---
 # Auction123RESTService
 
 `RESTRESOURCE`
-
-`APIVERSION: 52`
-
-`STATUS: ACTIVE`
 
 
 
 **Class** Auction123RESTService
 
 ## Methods
-### `static getData()`
+### `global static String getData()`
 
 `HTTPPOST`
-#### Return
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String
+|Type|Description|
+|---|---|
+|`String`|String|
 
 
 **Method** Retrieves Data JSON

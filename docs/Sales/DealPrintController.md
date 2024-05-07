@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # DealPrintController
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -12,7 +11,7 @@
 **Group** Sales
 
 ## Constructors
-### `DealPrintController(ApexPages.StandardController controller)`
+### `global DealPrintController(ApexPages controller)`
 #### Parameters
 
 |Param|Description|
@@ -25,65 +24,62 @@
 ---
 ## Properties
 
-### `InvoiceLogo` → `String`
+### `global amListTaxable` → `List<After_Market__c>`
+
+`DEPRECATED` 
+
+### `global amListNonTaxable` → `List<After_Market__c>`
+
+`DEPRECATED` 
+
+### `global dealW` → `DealAPI`
 
 
-### `amList` → `List<After_Market__c>`
+### `global InvoiceLogo` → `String`
 
 
-### `amListNonTaxable` → `List<After_Market__c>`
+### `global amList` → `List<After_Market__c>`
 
 
-### `amListTaxable` → `List<After_Market__c>`
+### `global tradeInWrapper` → `List<payOffWrapper>`
 
 
-### `dealW` → `DealAPI.Deal`
+### `global hasTradeIn` → `Boolean`
 
 
-### `hasTradeIn` → `Boolean`
+### `global tradeVehicle` → `Vehicle_Inventory__c`
 
 
-### `printedForm` → `Form__c`
+### `global printedForm` → `Form__c`
 
 
-### `tradeInWrapper` → `List<payOffWrapper>`
-
-
-### `tradeVehicle` → `Vehicle_Inventory__c`
+### `public dealId` → `Id`
 
 
 ---
 ## Methods
-### `getamList()`
+### `global List<After_Market__c> getamList()`
 
 getter method for supplying printable after market items to deal forms
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;After_Market__c&gt;
-
-**Description**
-
-List&lt;after_market__c&gt; List of form printable after market records
+|Type|Description|
+|---|---|
+|`List<After_Market__c>`|List<after_market__c> List of form printable after market records|
 
 
 **Method** getAmList
 
-### `gettradeInWrapper()`
+### `global List<payOffWrapper> gettradeInWrapper()`
 
 getter class for wrapping related  loanPayoff and trade records by appraisal
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;payOffWrapper&gt;
-
-**Description**
-
-List&lt;payOffWrapper&gt; List of related loanPayoff and trade In records
+|Type|Description|
+|---|---|
+|`List<payOffWrapper>`|List<payOffWrapper> List of related loanPayoff and trade In records|
 
 
 **Method** gettradeInWrapper
@@ -91,12 +87,15 @@ List&lt;payOffWrapper&gt; List of related loanPayoff and trade In records
 ---
 ## Classes
 ### payOffWrapper
+#### Constructors
+##### `private payOffWrapper(dealer__Trade_In__c trades, dealer__LoanPayoff__c payOffs)`
+---
 #### Properties
 
-##### `TradeIn` → `dealer__Trade_In__c`
+##### `global TradeIn` → `dealer__Trade_In__c`
 
 
-##### `loanPayOff` → `dealer__LoanPayoff__c`
+##### `global loanPayOff` → `dealer__LoanPayoff__c`
 
 
 ---

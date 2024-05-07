@@ -1,13 +1,12 @@
+---
+layout: default
+---
 # PartInventoryControl
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 ## Constructors
-### `PartInventoryControl()`
+### `global PartInventoryControl()`
 ---
 ## Methods
-### `static methodValid(String s)`
+### `global static boolean methodValid(String s)`
 
 True / False to check if the inventory method requested exists
 
@@ -17,20 +16,16 @@ True / False to check if the inventory method requested exists
 |---|---|
 |`String`|:	The string to check if matched against the global enumeration of available methods|
 
-#### Return
+#### Returns
 
-**Type**
-
-boolean
-
-**Description**
-
-Boolean 	:	True if method exists, false if it does not
+|Type|Description|
+|---|---|
+|`boolean`|Boolean 	:	True if method exists, false if it does not|
 
 
 **Test** PartPhysicalServiceLayer.testPartInventoryControl
 
-### `static inventoryCostPremise(String method, Id inventoryId, Decimal qtyRequested)`
+### `global static List<dealer__Part_Inventory_History__c> inventoryCostPremise(String method, Id inventoryId, Decimal qtyRequested)`
 
 List of inventory history purchase events that will be used to prepare the cost valuations
 
@@ -42,27 +37,23 @@ List of inventory history purchase events that will be used to prepare the cost 
 |`Id`|:	Part Inventory record Id|
 |`Decimal`|:	number of items requested.  This can force span across multiple purchase events|
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;dealer__Part_Inventory_History__c&gt;
-
-**Description**
-
-List 	:	List of inventory history events that corrospond to the purchase events.
+|Type|Description|
+|---|---|
+|`List<dealer__Part_Inventory_History__c>`|List 	:	List of inventory history events that corrospond to the purchase events.|
 
 
 **Test** PartPhysicalServiceLayer.testPartInventoryControl
 
-### `static inventoryControlMethod()`
+### `global static String inventoryControlMethod()`
 
 Get Cost Method as Defined in the Custom Setting
 
 
 **Test** PartPhysicalServiceLayer.testPartInventoryControl
 
-### `static costBasis(Id partId, Decimal qtyRequested)`
+### `global static invControl costBasis(Id partId, Decimal qtyRequested)`
 
 Process the matched matched list to provide valid cost
 
@@ -79,33 +70,33 @@ Process the matched matched list to provide valid cost
 
 **Test** PartPhysicalServiceLayer.testPartInventoryControl
 
-### `static setTransactionEventId(invControl i, Id eId)`
-### `static reversePartSale(Id eId)`
+### `global static invControl setTransactionEventId(invControl i, Id eId)`
+### `global static Boolean reversePartSale(Id eId)`
 ---
 ## Enums
 ### Methods
 
 ---
 ## Classes
+### invControl
+#### Constructors
+##### `global invControl(Decimal invValue, List&lt;dealer__Part_Inventory_History__c&gt; invHistory)`
+---
+#### Properties
+
+##### `global value` → `Decimal`
+
+
+##### `global history` → `List&lt;dealer__Part_Inventory_History__c&gt;`
+
+
+---
+
 ### InventoryControlException
 
 **Inheritance**
 
 InventoryControlException
 
-
-### invControl
-#### Constructors
-##### `invControl(Decimal invValue, List&lt;dealer__Part_Inventory_History__c&gt; invHistory)`
----
-#### Properties
-
-##### `history` → `List&lt;dealer__Part_Inventory_History__c&gt;`
-
-
-##### `value` → `Decimal`
-
-
----
 
 ---

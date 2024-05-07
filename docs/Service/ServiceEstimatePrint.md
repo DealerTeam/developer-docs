@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # ServiceEstimatePrint
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 ServiceEstimatePrint - Print Class
 
@@ -10,52 +9,68 @@ ServiceEstimatePrint - Print Class
 **Group** Service
 
 ## Constructors
-### `ServiceEstimatePrint(ApexPages.standardController sc)`
+### `global ServiceEstimatePrint(ApexPages sc)`
 ---
 ## Properties
 
-### `estimateRecord` → `Service_Estimate__c`
+### `public symbol` → `String`
+
+
+### `global estimateRecord` → `Service_Estimate__c`
 
 
 ---
 ## Methods
-### `getEstimate()`
-### `generateDocument()`
+### `global estimate getEstimate()`
+### `global estimate generateDocument()`
+### `private static Service_Estimate__c queryHeader(Id estId)`
+### `private static List<Service_Estimate_Line__c> queryLines(Id estId)`
+### `private static List<Service_Estimate_SubLine__c> querySubLines(Set<Id> lineIds)`
+### `private static Account queryAccount(Id acctId)`
+### `private static Service_Vehicle__c queryVehicle(Id vehId)`
+### `private static Dealer_Location__c queryLocation(Id locId)`
+### `private static String logo_url(Id locationId)`
 ---
 ## Classes
 ### estimate
+#### Constructors
+##### `private estimate(Id estimateId)`
+---
 #### Properties
 
-##### `customer` → `Account`
+##### `global logoUrl` → `String`
 
 
-##### `header` → `Service_Estimate__c`
+##### `global location` → `Dealer_Location__c`
 
 
-##### `lines` → `List&lt;line&gt;`
+##### `global customer` → `Account`
 
 
-##### `location` → `Dealer_Location__c`
+##### `global vehicle` → `Service_Vehicle__c`
 
 
-##### `logoUrl` → `String`
+##### `global printDateTime` → `DateTime`
 
 
-##### `printDateTime` → `DateTime`
+##### `global header` → `Service_Estimate__c`
 
 
-##### `vehicle` → `Service_Vehicle__c`
+##### `global lines` → `List&lt;line&gt;`
 
 
 ---
 
 ### line
+#### Constructors
+##### `private line(Service_Estimate_Line__c sl, List&lt;Service_Estimate_SubLine__c&gt; allSubLines)`
+---
 #### Properties
 
-##### `data` → `Service_Estimate_Line__c`
+##### `global data` → `Service_Estimate_Line__c`
 
 
-##### `subdata` → `List&lt;Service_Estimate_SubLine__c&gt;`
+##### `global subdata` → `List&lt;Service_Estimate_SubLine__c&gt;`
 
 
 ---

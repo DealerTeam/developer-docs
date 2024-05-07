@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # InboundEmailNotifications
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -14,5 +13,5 @@
 **Group** Sales
 
 ## Methods
-### `handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope)`
+### `global Messaging handleInboundEmail(Messaging email, Messaging envelope)`
 ---

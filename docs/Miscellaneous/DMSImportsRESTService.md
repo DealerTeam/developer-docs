@@ -1,33 +1,49 @@
+---
+layout: default
+---
 # DMSImportsRESTService
 
 `RESTRESOURCE`
-
-`APIVERSION: 46`
-
-`STATUS: ACTIVE`
 
 
 
 **Class** DMSImportsRESTService
 
 ## Methods
-### `static createRecords()`
+### `global static String createRecords()`
 
 `HTTPPUT`
-#### Return
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String
+|Type|Description|
+|---|---|
+|`String`|String|
 
 
 **Method** createRecords
 
-### `static deleteRecord()`
+### `global static String deleteRecord()`
 
 `HTTPDELETE`
+---
+## Classes
+### objectWrapper
+
+
+#### Fields
+
+##### `public objectApiName` → `String`
+
+
+##### `public objectJSON` → `String`
+
+
+##### `public recordCount` → `Integer`
+
+
+##### `public action` → `String`
+
+
+---
+
 ---

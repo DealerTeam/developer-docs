@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # EmailADFGeneralHandler
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -13,6 +12,12 @@
 
 **Group** Sales
 
+## Properties
+
+### `public adfResult` → `Boolean`
+
+
+---
 ## Methods
-### `handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope)`
+### `global Messaging handleInboundEmail(Messaging email, Messaging envelope)`
 ---

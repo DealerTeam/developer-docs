@@ -1,14 +1,13 @@
+---
+layout: default
+---
 # VINDecodeRemote
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 ## Constructors
-### `VINDecodeRemote()`
+### `global VINDecodeRemote()`
 ---
 ## Methods
-### `getdecodeResults()`
-### `static decodedVin(String vin)`
+### `global String getdecodeResults()`
+### `global static Map<String,Object> decodedVin(String vin)`
 
 `REMOTEACTION`
 ---

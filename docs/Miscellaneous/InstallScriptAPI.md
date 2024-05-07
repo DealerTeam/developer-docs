@@ -1,5 +1,12 @@
+---
+layout: default
+---
 # InstallScriptAPI
 
-`APIVERSION: 45`
+`DEPRECATED`
 
-`STATUS: ACTIVE`
+InstallScriptAPI was initially used to perform post install script actions.
+
+
+**Notes** This Class is now deprecated in favor of InstallScriptOrgAPI
+

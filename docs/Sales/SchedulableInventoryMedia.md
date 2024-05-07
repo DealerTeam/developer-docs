@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # SchedulableInventoryMedia
-
-`APIVERSION: 48`
-
-`STATUS: ACTIVE`
 
 
 
@@ -14,5 +13,5 @@
 **Group** Sales
 
 ## Methods
-### `execute(SchedulableContext sc)`
+### `global void execute(SchedulableContext sc)`
 ---

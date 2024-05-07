@@ -1,60 +1,74 @@
+---
+layout: default
+---
 # PartsInvoice_Printing
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
 **Group** Parts
 
 ## Constructors
-### `PartsInvoice_Printing(ApexPages.StandardController controller)`
+### `global PartsInvoice_Printing(ApexPages controller)`
 
 **Test** PartInvoicingServiceLayer.testPIP
 
 ---
+## Fields
+
+### `private FIRST_BREAK` → `Integer`
+
+
+### `private SUBSEQ_BREAKS` → `Integer`
+
+
+---
 ## Properties
 
-### `DMSDefaults` → `dealer__DMS_Settings__c`
+### `global pageBrokenInvoiceLines` → `List<dealer__Parts_Invoice_Line__c>`
 
 
-### `account` → `Account`
+### `global invoice` → `dealer__Parts_Invoice__c`
 
 
-### `contact` → `Contact`
+### `global invoiceLineItems` → `dealer__Parts_Invoice_Line__c`
 
 
-### `invoice` → `dealer__Parts_Invoice__c`
+### `global account` → `Account`
 
 
-### `invoiceLineItems` → `dealer__Parts_Invoice_Line__c[]`
+### `global contact` → `Contact`
 
 
-### `pageBrokenInvoiceLines` → `List<dealer__Parts_Invoice_Line__c[]>`
+### `global currencyCode` → `String`
 
 
-### `printDateTime` → `string`
+### `global printDateTime` → `string`
 
 
-### `userLoc` → `dealer__Dealer_Location__c`
+### `global DMSDefaults` → `dealer__DMS_Settings__c`
+
+
+### `global userLoc` → `dealer__Dealer_Location__c`
 
 
 ---
 ## Methods
-### `getInvoiceLogo()`
+### `global String getInvoiceLogo()`
 
 Handles finding logo from documents and returning the url as a string
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`String`|s String - the url of the logo image|
 
-String
 
-**Description**
+**Test** PartInvoicingServiceLayer.testPIP
 
-s String - the url of the logo image
+### `private void prepareInvoiceLinesForPrinting()`
+
+Arrange lines with page breaks for printing
 
 
 **Test** PartInvoicingServiceLayer.testPIP

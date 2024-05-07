@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # batchRemoveInStore
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -14,7 +13,7 @@
 **Class** batchRemoveInStore
 
 ## Constructors
-### `batchRemoveInStore(String sObjectName)`
+### `global batchRemoveInStore(String sObjectName)`
 #### Parameters
 
 |Param|Description|
@@ -25,15 +24,21 @@
 **Method** batchRemoveInStore
 
 ---
+## Fields
+
+### `private sObjectName` → `String`
+
+
+---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-### `execute(Database.BatchableContext BC, List<sObject> scope)`
+### `global void execute(Database BC, List<sObject> scope)`
 #### Parameters
 
 |Param|Description|
@@ -41,31 +46,23 @@
 |`BC`||
 |`scope`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

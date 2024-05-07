@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # DealershipLocationAPI
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -13,30 +12,29 @@
 
 ## Fields
 
-### `CoveredSystems` → `List<CoveredSystem>`
+### `global Fees` → `List<Fee>`
 
 
-### `Fees` → `List<Fee>`
+### `public AuraFee` → `List<AuraFee>`
+
+
+### `global CoveredSystems` → `List<CoveredSystem>`
 
 
 ---
 ## Methods
-### `static formLogoURL(Id locationId)`
+### `global static String formLogoURL(Id locationId)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`locationId`||
 
-#### Return
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String
+|Type|Description|
+|---|---|
+|`String`|String|
 
 
 **Method** formLogoURL
@@ -44,60 +42,178 @@ String
 
 **Descriptoin** 
 
-### `static getLocationFees(Id LocationId)`
+### `public static Map<Id,String> formLogoUrlByLocation(List<Dealer_Location__c> locations)`
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`List`|<Dealer_Location__c>|
+
+#### Returns
+
+|Type|Description|
+|---|---|
+|`Map<Id,String>`|Map<Id,String>|
+
+
+**Method** formLogoUrlByLocation
+
+### `public static String createLocationFees(Dealer_Location__c dealerLocation, String feeJSON)`
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`dealerLocation`||
+|`feeJSON`||
+
+#### Returns
+
+|Type|Description|
+|---|---|
+|`String`|String|
+
+
+**Method** createLocationFees
+
+### `global static List<Fee> getLocationFees(Id LocationId)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`LocationId`||
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;Fee&gt;
-
-**Description**
-
-List&lt;Fee&gt;
+|Type|Description|
+|---|---|
+|`List<Fee>`|List<Fee>|
 
 
 **Method** getLocationFees
 
-### `static getCoveredSystems(Id LocationId)`
+### `public static List<AuraFee> getLocationFeesLWC(Id LocationId)`
+### `public static Dealer_Location__c editFee(Dealer_Location__c location, String feeJSON)`
+#### Parameters
+
+|Param|Description|
+|---|---|
+|`location`||
+|`feeJSON`||
+
+#### Returns
+
+|Type|Description|
+|---|---|
+|`Dealer_Location__c`|Dealer_Location__c|
+
+
+**Method** editFee
+
+### `global static List<CoveredSystem> getCoveredSystems(Id LocationId)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`LocationId`||
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;CoveredSystem&gt;
-
-**Description**
-
-List&lt;CoveredSystem&gt;
+|Type|Description|
+|---|---|
+|`List<CoveredSystem>`|List<CoveredSystem>|
 
 
 **Method** getCoveredSystems
 
 ---
 ## Classes
+### Fee
+
+
+#### Properties
+
+##### `global feeName` → `String`
+
+
+##### `global feeDescription` → `String`
+
+
+##### `global feeCode` → `String`
+
+
+##### `global feeDefaultAmountByFormulaField` → `String`
+
+
+##### `global feeDefaultOnDealsByFormulaField` → `String`
+
+
+##### `global feeDefaultByFormulaField` → `String`
+
+
+##### `global feeDefaultAmount` → `Decimal`
+
+
+##### `global feeDefaultOnDeals` → `Boolean`
+
+
+##### `global feeTaxable` → `Boolean`
+
+
+---
+
+### AuraFee
+#### Properties
+
+##### `public feeName` → `String`
+
+`AURAENABLED` 
+
+##### `public feeDescription` → `String`
+
+`AURAENABLED` 
+
+##### `public feeCode` → `String`
+
+`AURAENABLED` 
+
+##### `public feeDefaultAmountByFormulaField` → `String`
+
+`AURAENABLED` 
+
+##### `public feeDefaultOnDealsByFormulaField` → `String`
+
+`AURAENABLED` 
+
+##### `public feeDefaultByFormulaField` → `String`
+
+`AURAENABLED` 
+
+##### `public feeDefaultAmount` → `String`
+
+`AURAENABLED` 
+
+##### `public feeDefaultOnDeals` → `String`
+
+`AURAENABLED` 
+
+##### `public feeTaxable` → `String`
+
+`AURAENABLED` 
+
+---
+
 ### CoveredSystem
 
 
 #### Properties
 
-##### `duration` → `String`
+##### `global systemCovered` → `String`
 
 
-##### `systemCovered` → `String`
+##### `global duration` → `String`
 
 
-##### `warrantyType` → `String`
+##### `global warrantyType` → `String`
 
 
 ---
@@ -110,39 +226,5 @@ List&lt;CoveredSystem&gt;
 
 DealershipLocationAPIException
 
-
-### Fee
-
-
-#### Properties
-
-##### `feeCode` → `String`
-
-
-##### `feeDefaultAmount` → `Decimal`
-
-
-##### `feeDefaultAmountByFormulaField` → `String`
-
-
-##### `feeDefaultByFormulaField` → `String`
-
-
-##### `feeDefaultOnDeals` → `Boolean`
-
-
-##### `feeDefaultOnDealsByFormulaField` → `String`
-
-
-##### `feeDescription` → `String`
-
-
-##### `feeName` → `String`
-
-
-##### `feeTaxable` → `Boolean`
-
-
----
 
 ---

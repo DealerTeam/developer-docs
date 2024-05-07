@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BatchCarfaxHistoryReport
-
-`APIVERSION: 49`
-
-`STATUS: ACTIVE`
 
 Performs batch execution to refresh the vehicle history report of Service Vehicles.
 
@@ -17,13 +16,22 @@ Performs batch execution to refresh the vehicle history report of Service Vehicl
 **Group** Batch Processing
 
 ## Constructors
-### `BatchCarfaxHistoryReport()`
+### `global BatchCarfaxHistoryReport()`
 
 empty constructor
 
 ---
+## Fields
+
+### `private query` → `String`
+
+
+### `private days` → `Integer`
+
+
+---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 
 forming batch requires query
 
@@ -33,7 +41,7 @@ forming batch requires query
 |---|---|
 |`BC`|Batchable Context|
 
-### `execute(Database.BatchableContext BC, List<sObject> scope)`
+### `global void execute(Database BC, List<sObject> scope)`
 
 Process the records
 
@@ -44,17 +52,13 @@ Process the records
 |`BC`|Batchable Context|
 |`scope`|List<Sobject> Scope|
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 
 Finish interface, this runs at the end of the batchable run.
 
@@ -64,14 +68,10 @@ Finish interface, this runs at the end of the batchable run.
 |---|---|
 |`BC`|Batchable Context|
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

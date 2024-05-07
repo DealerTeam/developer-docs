@@ -1,17 +1,16 @@
+---
+layout: default
+---
 # PartsTapeRESTService
 
 `RESTRESOURCE`
-
-`APIVERSION: 52`
-
-`STATUS: ACTIVE`
 
 
 
 **Group** Parts
 
 ## Methods
-### `static processTape()`
+### `global static String processTape()`
 
 `HTTPPOST`
 ---

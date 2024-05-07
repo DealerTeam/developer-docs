@@ -1,28 +1,26 @@
+---
+layout: default
+---
 # PurchaseOrderRESTService
 
 `RESTRESOURCE`
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
 **Group** Parts
 
+## Constructors
+### `public PurchaseOrderRESTService()`
+---
 ## Methods
-### `static createPurchaseOrder()`
+### `global static Id createPurchaseOrder()`
 
 `HTTPPOST`
-#### Return
+#### Returns
 
-**Type**
-
-Id
-
-**Description**
-
-s Id of purchase order created
+|Type|Description|
+|---|---|
+|`Id`|s Id of purchase order created|
 
 
 **Method** createPurchaseOrder
@@ -30,29 +28,25 @@ s Id of purchase order created
 
 **Test** PartOrderingServiceLayer.testPORESTService
 
-### `static updatePurchaseOrder()`
+### `global static String updatePurchaseOrder()`
 
 `HTTPPUT`
 
 Can update Purchase Order OR create new lines for a purchase order Can use HTTP Put to do the
 
-#### Return
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String of JSON serialized PO
+|Type|Description|
+|---|---|
+|`String`|String of JSON serialized PO|
 
 
 **Test** PartOrderingServiceLayer.testPORESTService
 
-### `static processPurchaseOrder()`
+### `global static String processPurchaseOrder()`
 
 `HTTPPATCH`
-### `static deletePOLines()`
+### `global static Void deletePOLines()`
 
 `HTTPDELETE`
 
@@ -60,5 +54,14 @@ Handle httpdelete for PO Lines
 
 
 **Test** PartOrderingServiceLayer.testPORESTService
+
+---
+## Classes
+### PurchaseOrderRestServiceException
+
+**Inheritance**
+
+PurchaseOrderRestServiceException
+
 
 ---

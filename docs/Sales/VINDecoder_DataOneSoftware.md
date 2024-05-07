@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # VINDecoder_DataOneSoftware
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -10,155 +9,18 @@
 
 ## Fields
 
-### `errorCodes` → `Map<String,String>`
+### `global errorCodes` → `Map<String,String>`
 
 
 ---
 ## Classes
-### BasicData
-#### Properties
-
-##### `body_subtype` → `String`
-
-
-##### `body_type` → `String`
-
-
-##### `brake_system` → `String`
-
-
-##### `country_of_manufacture` → `String`
-
-
-##### `doors` → `Integer`
-
-
-##### `drive_type` → `String`
-
-
-##### `make` → `String`
-
-
-##### `market` → `String`
-
-
-##### `model` → `String`
-
-
-##### `model_number` → `String`
-
-
-##### `package_code` → `String`
-
-
-##### `plant` → `String`
-
-
-##### `restraint_type` → `String`
-
-
-##### `trim` → `String`
-
-
-##### `vehicle_type` → `String`
-
-
-##### `year` → `Integer`
-
-
----
-
-### ColorData
-#### Constructors
-##### `ColorData()`
----
-#### Properties
-
-##### `exterior_colors` → `List&lt;ExteriorColors&gt;`
-
-
-##### `interior_colors` → `List&lt;InteriorColors&gt;`
-
-
-##### `roof_colors` → `List&lt;RoofColors&gt;`
-
-
----
-
-### CommonData
-#### Properties
-
-##### `basic_data` → `BasicData`
-
-
-##### `engines` → `EngineList[]`
-
-
-##### `epa_fuel_efficiency` → `EPAFuelEfficiencyList[]`
-
-
-##### `installed_equipment` → `InstalledEquipmentList[]`
-
-
-##### `optional_equipment` → `OptionalEquipmentList[]`
-
-
-##### `pricing` → `Pricing`
-
-
-##### `transmissions` → `TransmissionList[]`
-
-
-##### `warranties` → `WarrantyList[]`
-
-
----
-
-### CommonPacks
-#### Properties
-
-##### `basic_data` → `String`
-
-
-##### `colors` → `String`
-
-
-##### `engines` → `String`
-
-
-##### `fuel_efficiency` → `String`
-
-
-##### `installed_equipment` → `String`
-
-
-##### `optional_equipment` → `String`
-
-
-##### `pricing` → `String`
-
-
-##### `safety_equipment` → `String`
-
-
-##### `specifications` → `String`
-
-
-##### `transmissions` → `String`
-
-
-##### `warranties` → `String`
-
-
----
-
 ### DecodeRequestStruct
 #### Fields
 
-##### `decoder_settings` → `DecoderSettings`
+##### `global decoder_settings` → `DecoderSettings`
 
 
-##### `query_requests` → `QueryRequests`
+##### `global query_requests` → `QueryRequests`
 
 
 ---
@@ -166,10 +28,10 @@
 ### DecodeResponseStruct
 #### Fields
 
-##### `decoder_messages` → `DecoderMessages`
+##### `global decoder_messages` → `DecoderMessages`
 
 
-##### `query_responses` → `QueryResponses`
+##### `global query_responses` → `QueryResponses`
 
 
 ---
@@ -177,340 +39,16 @@
 ### DecoderMessages
 #### Properties
 
-##### `decoder_error_list` → `List&lt;String&gt;`
+##### `global service_provider` → `String`
 
 
-##### `decoder_errors` → `String`
+##### `global decoder_version` → `String`
 
 
-##### `decoder_version` → `String`
+##### `global decoder_errors` → `String`
 
 
-##### `service_provider` → `String`
-
-
----
-
-### DecoderSettings
-#### Fields
-
-##### `common_data_packs` → `CommonPacks`
-
-
-##### `style_data_packs` → `StylePacks`
-
-
----
-#### Properties
-
-##### `common_data` → `String`
-
-
-##### `display` → `String`
-
-
-##### `styles` → `String`
-
-
----
-
-### EPAFuelEfficiencyList
-#### Properties
-
-##### `city` → `String`
-
-
-##### `combined` → `String`
-
-
-##### `engine_id` → `String`
-
-
-##### `fuel_grade` → `String`
-
-
-##### `fuel_type` → `String`
-
-
-##### `highway` → `String`
-
-
-##### `transmission_id` → `String`
-
-
----
-
-### EngineList
-#### Properties
-
-##### `aspiration` → `String`
-
-
-##### `availability` → `String`
-
-
-##### `block_type` → `String`
-
-
-##### `bore` → `String`
-
-
-##### `brand` → `String`
-
-
-##### `cam_type` → `String`
-
-
-##### `compression` → `String`
-
-
-##### `cylinders` → `String`
-
-
-##### `displacement` → `String`
-
-
-##### `engine_id` → `String`
-
-
-##### `fuel_induction` → `String`
-
-
-##### `fuel_quality` → `String`
-
-
-##### `fuel_type` → `String`
-
-
-##### `invoice_price` → `String`
-
-
-##### `marketing_name` → `String`
-
-
-##### `max_hp` → `String`
-
-
-##### `max_hp_at` → `String`
-
-
-##### `max_payload` → `String`
-
-
-##### `max_torque` → `String`
-
-
-##### `max_torque_at` → `String`
-
-
-##### `msrp` → `String`
-
-
-##### `name` → `String`
-
-
-##### `oil_capacity` → `String`
-
-
-##### `order_code` → `String`
-
-
-##### `redline` → `String`
-
-
-##### `stroke` → `String`
-
-
-##### `valve_timing` → `String`
-
-
-##### `valves` → `String`
-
-
----
-
-### EngineParameters
-#### Properties
-
-##### `block_type` → `String`
-
-
-##### `cylinders` → `String`
-
-
-##### `description` → `String`
-
-
-##### `displacement` → `String`
-
-
-##### `fuel_type` → `String`
-
-
----
-
-### ExtColor
-#### Properties
-
-##### `color_code` → `String`
-
-
-##### `description` → `String`
-
-
----
-
-### ExteriorColors
-#### Properties
-
-##### `generic_color_name` → `String`
-
-
-##### `mfr_code` → `String`
-
-
-##### `mfr_color_name` → `String`
-
-
-##### `primary_rgb_code` → `RGB`
-
-
-##### `secondary_rgb_code` → `RGB`
-
-
-##### `two_tone` → `String`
-
-
----
-
-### InstalledEquipmentDetails
-#### Properties
-
-##### `name` → `String`
-
-
-##### `values` → `List&lt;String&gt;`
-
-
----
-
-### InstalledEquipmentList
-#### Properties
-
-##### `category` → `String`
-
-
-##### `equipment` → `List&lt;InstalledEquipmentDetails&gt;`
-
-
----
-
-### IntColor
-#### Properties
-
-##### `color_code` → `String`
-
-
-##### `description` → `String`
-
-
----
-
-### InteriorColors
-#### Properties
-
-##### `generic_color_name` → `String`
-
-
-##### `mfr_code` → `String`
-
-
-##### `mfr_color_name` → `String`
-
-
-##### `primary_rgb_code` → `RGB`
-
-
-##### `secondary_rgb_code` → `RGB`
-
-
-##### `two_tone` → `String`
-
-
----
-
-### OptionalEquipmentDetails
-#### Properties
-
-##### `description` → `String`
-
-
-##### `install_type` → `String`
-
-
-##### `installed` → `String`
-
-
-##### `invoice_price` → `String`
-
-
-##### `msrp` → `String`
-
-
-##### `name` → `String`
-
-
-##### `option_id` → `String`
-
-
-##### `order_code` → `String`
-
-
----
-
-### OptionalEquipmentList
-#### Properties
-
-##### `category` → `String`
-
-
-##### `options` → `List&lt;OptionalEquipmentDetails&gt;`
-
-
----
-
-### Pricing
-#### Properties
-
-##### `destination_charge` → `String`
-
-
-##### `gas_guzzler_tax` → `String`
-
-
-##### `invoice_price` → `String`
-
-
-##### `msrp` → `String`
-
-
----
-
-### QueryError
-#### Properties
-
-##### `error_code` → `String`
-
-
-##### `error_message` → `String`
-
-
----
-
-### QueryRequests
-#### Fields
-
-##### `unique_request` → `RequestData`
+##### `global decoder_error_list` → `List&lt;String&gt;`
 
 
 ---
@@ -518,199 +56,270 @@
 ### QueryResponses
 #### Fields
 
-##### `unique_request` → `ResponseData`
-
-
----
-
-### RGB
-#### Properties
-
-##### `b` → `String`
-
-
-##### `g` → `String`
-
-
-##### `hex` → `String`
-
-
-##### `r` → `String`
-
-
----
-
-### RequestData
-#### Fields
-
-##### `engine` → `EngineParameters`
-
-
-##### `exterior_color` → `ExtColor`
-
-
-##### `interior_color` → `IntColor`
-
-
-##### `transmission` → `TransmissionParameters`
-
-
----
-#### Properties
-
-##### `bedlength` → `String`
-
-
-##### `body_type` → `String`
-
-
-##### `doors` → `String`
-
-
-##### `drive_type` → `String`
-
-
-##### `installed_equipment_descriptions` → `String`
-
-
-##### `invoice` → `String`
-
-
-##### `make` → `String`
-
-
-##### `model` → `String`
-
-
-##### `model_number` → `String`
-
-
-##### `msrp` → `String`
-
-
-##### `optional_equipment_codes` → `String`
-
-
-##### `package_code` → `String`
-
-
-##### `trim` → `String`
-
-
-##### `vehicle_type` → `String`
-
-
-##### `vin` → `String`
-
-
-##### `wheelbase` → `String`
-
-
-##### `year` → `String`
+##### `global unique_request` → `ResponseData`
 
 
 ---
 
 ### ResponseData
 #### Constructors
-##### `ResponseData()`
+##### `global ResponseData()`
 ---
 #### Properties
 
-##### `common_data` → `CommonData`
+##### `global transaction_id` → `String`
 
 
-##### `query_error` → `QueryError`
+##### `global query_error` → `QueryError`
 
 
-##### `styles` → `StyleData[]`
+##### `global styles` → `StyleData`
 
 
-##### `transaction_id` → `String`
+##### `global common_data` → `CommonData`
 
 
 ---
 
-### RoofColors
+### QueryError
+#### Properties
+
+##### `global error_code` → `String`
+
+
+##### `global error_message` → `String`
+
+
+---
+
+### CommonData
+#### Properties
+
+##### `global basic_data` → `BasicData`
+
+
+##### `global pricing` → `Pricing`
+
+
+##### `global engines` → `EngineList`
+
+
+##### `global transmissions` → `TransmissionList`
+
+
+##### `global warranties` → `WarrantyList`
+
+
+##### `global epa_fuel_efficiency` → `EPAFuelEfficiencyList`
+
+
+##### `global optional_equipment` → `OptionalEquipmentList`
+
+
+##### `global installed_equipment` → `InstalledEquipmentList`
+
+
+---
 
 ### StyleData
 #### Constructors
-##### `StyleData()`
+##### `global StyleData()`
 ---
 #### Properties
 
-##### `basic_data` → `BasicData`
+##### `global name` → `String`
 
 
-##### `colors` → `ColorData`
+##### `global vehicle_id` → `String`
 
 
-##### `complete` → `String`
+##### `global complete` → `String`
 
 
-##### `engines` → `EngineList[]`
+##### `global basic_data` → `BasicData`
 
 
-##### `epa_fuel_efficiency` → `EPAFuelEfficiencyList[]`
+##### `global pricing` → `Pricing`
 
 
-##### `installed_equipment` → `InstalledEquipmentList[]`
+##### `global engines` → `EngineList`
 
 
-##### `name` → `String`
+##### `global transmissions` → `TransmissionList`
 
 
-##### `optional_equipment` → `OptionalEquipmentList[]`
+##### `global warranties` → `WarrantyList`
 
 
-##### `pricing` → `Pricing`
+##### `global epa_fuel_efficiency` → `EPAFuelEfficiencyList`
 
 
-##### `transmissions` → `TransmissionList[]`
+##### `global optional_equipment` → `OptionalEquipmentList`
 
 
-##### `vehicle_id` → `String`
+##### `global installed_equipment` → `InstalledEquipmentList`
 
 
-##### `warranties` → `WarrantyList[]`
+##### `global colors` → `ColorData`
 
 
 ---
 
-### StylePacks
+### BasicData
 #### Properties
 
-##### `basic_data` → `String`
+##### `global market` → `String`
 
 
-##### `colors` → `String`
+##### `global year` → `Integer`
 
 
-##### `engines` → `String`
+##### `global make` → `String`
 
 
-##### `fuel_efficiency` → `String`
+##### `global model` → `String`
 
 
-##### `installed_equipment` → `String`
+##### `global trim` → `String`
 
 
-##### `optional_equipment` → `String`
+##### `global vehicle_type` → `String`
 
 
-##### `pricing` → `String`
+##### `global body_type` → `String`
 
 
-##### `safety_equipment` → `String`
+##### `global body_subtype` → `String`
 
 
-##### `specifications` → `String`
+##### `global doors` → `Integer`
 
 
-##### `transmissions` → `String`
+##### `global model_number` → `String`
 
 
-##### `warranties` → `String`
+##### `global package_code` → `String`
+
+
+##### `global drive_type` → `String`
+
+
+##### `global brake_system` → `String`
+
+
+##### `global restraint_type` → `String`
+
+
+##### `global country_of_manufacture` → `String`
+
+
+##### `global plant` → `String`
+
+
+---
+
+### Pricing
+#### Properties
+
+##### `global msrp` → `String`
+
+
+##### `global invoice_price` → `String`
+
+
+##### `global destination_charge` → `String`
+
+
+##### `global gas_guzzler_tax` → `String`
+
+
+---
+
+### EngineList
+#### Properties
+
+##### `global name` → `String`
+
+
+##### `global brand` → `String`
+
+
+##### `global engine_id` → `String`
+
+
+##### `global availability` → `String`
+
+
+##### `global aspiration` → `String`
+
+
+##### `global block_type` → `String`
+
+
+##### `global bore` → `String`
+
+
+##### `global cam_type` → `String`
+
+
+##### `global compression` → `String`
+
+
+##### `global cylinders` → `String`
+
+
+##### `global displacement` → `String`
+
+
+##### `global fuel_induction` → `String`
+
+
+##### `global fuel_quality` → `String`
+
+
+##### `global fuel_type` → `String`
+
+
+##### `global msrp` → `String`
+
+
+##### `global invoice_price` → `String`
+
+
+##### `global marketing_name` → `String`
+
+
+##### `global max_hp` → `String`
+
+
+##### `global max_hp_at` → `String`
+
+
+##### `global max_payload` → `String`
+
+
+##### `global max_torque` → `String`
+
+
+##### `global max_torque_at` → `String`
+
+
+##### `global oil_capacity` → `String`
+
+
+##### `global order_code` → `String`
+
+
+##### `global redline` → `String`
+
+
+##### `global stroke` → `String`
+
+
+##### `global valve_timing` → `String`
+
+
+##### `global valves` → `String`
 
 
 ---
@@ -718,48 +327,34 @@
 ### TransmissionList
 #### Properties
 
-##### `availability` → `String`
+##### `global name` → `String`
 
 
-##### `brand` → `String`
+##### `global brand` → `String`
 
 
-##### `detail_type` → `String`
+##### `global msrp` → `String`
 
 
-##### `gears` → `String`
+##### `global transmission_id` → `String`
 
 
-##### `invoice_price` → `String`
+##### `global availability` → `String`
 
 
-##### `item_type` → `String`
+##### `global item_type` → `String`
 
 
-##### `msrp` → `String`
+##### `global detail_type` → `String`
 
 
-##### `name` → `String`
+##### `global gears` → `String`
 
 
-##### `order_code` → `String`
+##### `global invoice_price` → `String`
 
 
-##### `transmission_id` → `String`
-
-
----
-
-### TransmissionParameters
-#### Properties
-
-##### `description` → `String`
-
-
-##### `trans_speeds` → `String`
-
-
-##### `trans_type` → `String`
+##### `global order_code` → `String`
 
 
 ---
@@ -767,16 +362,420 @@
 ### WarrantyList
 #### Properties
 
-##### `item_type` → `String`
+##### `global name` → `String`
 
 
-##### `miles` → `String`
+##### `global item_type` → `String`
 
 
-##### `months` → `String`
+##### `global months` → `String`
 
 
-##### `name` → `String`
+##### `global miles` → `String`
+
+
+---
+
+### EPAFuelEfficiencyList
+#### Properties
+
+##### `global engine_id` → `String`
+
+
+##### `global transmission_id` → `String`
+
+
+##### `global fuel_type` → `String`
+
+
+##### `global fuel_grade` → `String`
+
+
+##### `global city` → `String`
+
+
+##### `global highway` → `String`
+
+
+##### `global combined` → `String`
+
+
+---
+
+### OptionalEquipmentList
+#### Properties
+
+##### `global category` → `String`
+
+
+##### `global options` → `List&lt;OptionalEquipmentDetails&gt;`
+
+
+---
+
+### OptionalEquipmentDetails
+#### Properties
+
+##### `global name` → `String`
+
+
+##### `global option_id` → `String`
+
+
+##### `global order_code` → `String`
+
+
+##### `global installed` → `String`
+
+
+##### `global install_type` → `String`
+
+
+##### `global invoice_price` → `String`
+
+
+##### `global msrp` → `String`
+
+
+##### `global description` → `String`
+
+
+---
+
+### InstalledEquipmentList
+#### Properties
+
+##### `global category` → `String`
+
+
+##### `global equipment` → `List&lt;InstalledEquipmentDetails&gt;`
+
+
+---
+
+### InstalledEquipmentDetails
+#### Properties
+
+##### `global name` → `String`
+
+
+##### `global values` → `List&lt;String&gt;`
+
+
+---
+
+### ColorData
+#### Constructors
+##### `global ColorData()`
+---
+#### Properties
+
+##### `global exterior_colors` → `List&lt;ExteriorColors&gt;`
+
+
+##### `global interior_colors` → `List&lt;InteriorColors&gt;`
+
+
+##### `global roof_colors` → `List&lt;RoofColors&gt;`
+
+
+---
+
+### ExteriorColors
+#### Properties
+
+##### `global mfr_code` → `String`
+
+
+##### `global two_tone` → `String`
+
+
+##### `global generic_color_name` → `String`
+
+
+##### `global mfr_color_name` → `String`
+
+
+##### `global primary_rgb_code` → `RGB`
+
+
+##### `global secondary_rgb_code` → `RGB`
+
+
+---
+
+### InteriorColors
+#### Properties
+
+##### `global mfr_code` → `String`
+
+
+##### `global two_tone` → `String`
+
+
+##### `global generic_color_name` → `String`
+
+
+##### `global mfr_color_name` → `String`
+
+
+##### `global primary_rgb_code` → `RGB`
+
+
+##### `global secondary_rgb_code` → `RGB`
+
+
+---
+
+### RoofColors
+
+### RGB
+#### Properties
+
+##### `global r` → `String`
+
+
+##### `global g` → `String`
+
+
+##### `global b` → `String`
+
+
+##### `global hex` → `String`
+
+
+---
+
+### QueryRequests
+#### Fields
+
+##### `global unique_request` → `RequestData`
+
+
+---
+
+### RequestData
+#### Fields
+
+##### `global engine` → `EngineParameters`
+
+
+##### `global transmission` → `TransmissionParameters`
+
+
+##### `global interior_color` → `IntColor`
+
+
+##### `global exterior_color` → `ExtColor`
+
+
+---
+#### Properties
+
+##### `global vin` → `String`
+
+
+##### `global year` → `String`
+
+
+##### `global make` → `String`
+
+
+##### `global model` → `String`
+
+
+##### `global trim` → `String`
+
+
+##### `global model_number` → `String`
+
+
+##### `global package_code` → `String`
+
+
+##### `global drive_type` → `String`
+
+
+##### `global vehicle_type` → `String`
+
+
+##### `global body_type` → `String`
+
+
+##### `global doors` → `String`
+
+
+##### `global bedlength` → `String`
+
+
+##### `global wheelbase` → `String`
+
+
+##### `global msrp` → `String`
+
+
+##### `global invoice` → `String`
+
+
+##### `global optional_equipment_codes` → `String`
+
+
+##### `global installed_equipment_descriptions` → `String`
+
+
+---
+
+### EngineParameters
+#### Properties
+
+##### `global description` → `String`
+
+
+##### `global block_type` → `String`
+
+
+##### `global cylinders` → `String`
+
+
+##### `global displacement` → `String`
+
+
+##### `global fuel_type` → `String`
+
+
+---
+
+### TransmissionParameters
+#### Properties
+
+##### `global description` → `String`
+
+
+##### `global trans_type` → `String`
+
+
+##### `global trans_speeds` → `String`
+
+
+---
+
+### IntColor
+#### Properties
+
+##### `global description` → `String`
+
+
+##### `global color_code` → `String`
+
+
+---
+
+### ExtColor
+#### Properties
+
+##### `global description` → `String`
+
+
+##### `global color_code` → `String`
+
+
+---
+
+### DecoderSettings
+#### Fields
+
+##### `global style_data_packs` → `StylePacks`
+
+
+##### `global common_data_packs` → `CommonPacks`
+
+
+---
+#### Properties
+
+##### `global display` → `String`
+
+
+##### `global styles` → `String`
+
+
+##### `global common_data` → `String`
+
+
+---
+
+### StylePacks
+#### Properties
+
+##### `global basic_data` → `String`
+
+
+##### `global pricing` → `String`
+
+
+##### `global engines` → `String`
+
+
+##### `global transmissions` → `String`
+
+
+##### `global specifications` → `String`
+
+
+##### `global installed_equipment` → `String`
+
+
+##### `global optional_equipment` → `String`
+
+
+##### `global colors` → `String`
+
+
+##### `global safety_equipment` → `String`
+
+
+##### `global warranties` → `String`
+
+
+##### `global fuel_efficiency` → `String`
+
+
+---
+
+### CommonPacks
+#### Properties
+
+##### `global basic_data` → `String`
+
+
+##### `global pricing` → `String`
+
+
+##### `global engines` → `String`
+
+
+##### `global transmissions` → `String`
+
+
+##### `global specifications` → `String`
+
+
+##### `global installed_equipment` → `String`
+
+
+##### `global optional_equipment` → `String`
+
+
+##### `global colors` → `String`
+
+
+##### `global safety_equipment` → `String`
+
+
+##### `global warranties` → `String`
+
+
+##### `global fuel_efficiency` → `String`
 
 
 ---

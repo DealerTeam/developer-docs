@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # ClaimPrintController
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -12,7 +11,7 @@
 **Group** Service
 
 ## Constructors
-### `ClaimPrintController(ApexPages.StandardController controller)`
+### `global ClaimPrintController(ApexPages controller)`
 #### Parameters
 
 |Param|Description|
@@ -25,10 +24,10 @@
 ---
 ## Properties
 
-### `InvoiceLogo` → `String`
+### `global claimW` → `ClaimAPI`
 
 
-### `claimW` → `ClaimAPI.claim`
+### `global InvoiceLogo` → `String`
 
 
 ---

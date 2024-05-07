@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BatchUpdateVehicleInternalCharges
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -20,7 +19,7 @@
 **Group** Service
 
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 
 Collect the batches of records to be passed to execute
 
@@ -30,7 +29,7 @@ Collect the batches of records to be passed to execute
 |---|---|
 |`BC`||
 
-### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> vehicleList)`
+### `global void execute(Database BC, List<dealer__Vehicle_Inventory__c> vehicleList)`
 
 Process each batch of records
 
@@ -41,31 +40,23 @@ Process each batch of records
 |`BC`||
 |`vehicleList`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

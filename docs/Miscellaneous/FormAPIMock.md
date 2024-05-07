@@ -1,15 +1,14 @@
+---
+layout: default
+---
 # FormAPIMock
 
 `ISTEST`
-
-`APIVERSION: 52`
-
-`STATUS: ACTIVE`
 
 **Implemented types**
 
 [HttpCalloutMock](HttpCalloutMock)
 
 ## Methods
-### `respond(HttpRequest request)`
+### `global HttpResponse respond(HttpRequest request)`
 ---

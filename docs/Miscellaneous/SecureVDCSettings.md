@@ -1,30 +1,29 @@
+---
+layout: default
+---
 # SecureVDCSettings
 
 `DEPRECATED`
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 ## Constructors
-### `SecureVDCSettings()`
+### `global SecureVDCSettings()`
 
 `DEPRECATED`
 ---
 ## Properties
 
-### `OrgByDefault` → `dealer__OrganizationDefaults__c`
+### `global OrgByDefault` → `dealer__OrganizationDefaults__c`
 
 `DEPRECATED` 
 
 ---
 ## Methods
-### `static getOrgByDefault(String csValue)`
+### `global static dealer__VINDecoderCS__c getOrgByDefault(String csValue)`
 
 `DEPRECATED`
-### `static active()`
+### `global static Boolean active()`
 
 `DEPRECATED`
-### `static toggleBigObject(Boolean onoff)`
+### `global static void toggleBigObject(Boolean onoff)`
 
 `DEPRECATED`
 ---

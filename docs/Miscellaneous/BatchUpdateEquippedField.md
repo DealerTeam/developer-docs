@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BatchUpdateEquippedField
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -16,7 +15,7 @@
 **Class** BatchUpdateEquippedField
 
 ## Constructors
-### `BatchUpdateEquippedField(String q, String e, String f, String v)`
+### `global BatchUpdateEquippedField(String q, String e, String f, String v)`
 #### Parameters
 
 |Param|Description|
@@ -31,41 +30,37 @@
 ---
 ## Fields
 
-### `Entity` → `String`
+### `global Query` → `String`
 
 
-### `ListRecForEmailId` → `List<id>`
+### `global Entity` → `String`
 
 
-### `NewField` → `String`
+### `global OldField` → `String`
 
 
-### `OldField` → `String`
+### `global NewField` → `String`
 
 
-### `Query` → `String`
+### `global ListRecForEmailId` → `List<id>`
 
 
 ---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`Database`|Database.QueryLocator|
 
-Database.QueryLocator
-
-**Description**
-
-Database.QueryLocator
-
-### `execute(Database.BatchableContext BC, List<sObject> scope)`
+### `global void execute(Database BC, List<sObject> scope)`
 #### Parameters
 
 |Param|Description|
@@ -73,31 +68,23 @@ Database.QueryLocator
 |`BC`||
 |`scope`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

@@ -1,15 +1,30 @@
+---
+layout: default
+---
 # TestFactory
+## Fields
 
-`APIVERSION: 45`
+### `private namespaces` → `string`
 
-`STATUS: ACTIVE`
+
+---
 ## Methods
-### `static createSObject(SObject sObj)`
-### `static createSObject(SObject sObj, Boolean doInsert)`
-### `static createSObject(SObject sObj, String defaultClassName)`
-### `static createSObject(SObject sObj, String defaultClassName, Boolean doInsert)`
-### `static createSObjectList(Sobject sObj, Integer numberOfObjects)`
-### `static createSObjectList(SObject sObj, Integer numberOfObjects, Boolean doInsert)`
-### `static createSObjectList(SObject sObj, Integer numberOfObjects, String defaultClassName, Boolean doInsert)`
-### `static createSObjectList(Sobject sObj, Integer numberOfObjects, String defaultClassName)`
+### `global static SObject createSObject(SObject sObj)`
+### `global static SObject createSObject(SObject sObj, Boolean doInsert)`
+### `global static SObject createSObject(SObject sObj, String defaultClassName)`
+### `global static SObject createSObject(SObject sObj, String defaultClassName, Boolean doInsert)`
+### `global static SObject createSObjectList(Sobject sObj, Integer numberOfObjects)`
+### `global static SObject createSObjectList(SObject sObj, Integer numberOfObjects, Boolean doInsert)`
+### `global static SObject createSObjectList(SObject sObj, Integer numberOfObjects, String defaultClassName, Boolean doInsert)`
+### `global static SObject createSObjectList(Sobject sObj, Integer numberOfObjects, String defaultClassName)`
+### `private static void addFieldDefaults(SObject sObj, Map<String,Object> defaults)`
+---
+## Classes
+### TestFactoryException
+
+**Inheritance**
+
+TestFactoryException
+
+
 ---

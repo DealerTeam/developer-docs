@@ -1,15 +1,14 @@
+---
+layout: default
+---
 # cashierPageController
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
 **Class** cashierPageController
 
 ## Constructors
-### `cashierPageController(ApexPages.standardController sc)`
+### `global cashierPageController(ApexPages sc)`
 #### Parameters
 
 |Param|Description|
@@ -22,70 +21,58 @@
 ---
 ## Properties
 
-### `cashierRecord` → `dealer__Cashering__c`
+### `global cashierRecord` → `dealer__Cashering__c`
 
 
-### `customer` → `Account`
+### `global logoUrl` → `String`
 
 
-### `location` → `Dealer_Location__c`
+### `global location` → `Dealer_Location__c`
 
 
-### `logoUrl` → `String`
+### `global customer` → `Account`
 
 
 ---
 ## Methods
-### `getLogo()`
-#### Return
+### `global String getLogo()`
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String
+|Type|Description|
+|---|---|
+|`String`|String|
 
 
 **Method** getLogo
 
-### `queryLocation(Id locId)`
+### `global List<Dealer_Location__c> queryLocation(Id locId)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`locId`||
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;Dealer_Location__c&gt;
-
-**Description**
-
-List&lt;Dealer_Location__c&gt;
+|Type|Description|
+|---|---|
+|`List<Dealer_Location__c>`|List<Dealer_Location__c>|
 
 
 **Method** queryLocation
 
-### `queryAccount(Id acctId)`
+### `global List<Account> queryAccount(Id acctId)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`acctId`||
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;Account&gt;
-
-**Description**
-
-List&lt;Account&gt;
+|Type|Description|
+|---|---|
+|`List<Account>`|List<Account>|
 
 
 **Method** queryAccount

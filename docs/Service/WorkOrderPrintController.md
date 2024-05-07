@@ -1,19 +1,18 @@
+---
+layout: default
+---
 # WorkOrderPrintController
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
 **Group** Service
 
 ## Constructors
-### `WorkOrderPrintController(ApexPages.StandardController controller)`
+### `global WorkOrderPrintController(ApexPages controller)`
 ---
 ## Properties
 
-### `svW` → `ServiceVehicleAPI.sv`
+### `global svW` → `ServiceVehicleAPI`
 
 
 ---

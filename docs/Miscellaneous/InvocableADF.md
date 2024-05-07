@@ -1,10 +1,9 @@
+---
+layout: default
+---
 # InvocableADF
-
-`APIVERSION: 48`
-
-`STATUS: ACTIVE`
 ## Methods
-### `static InvocableRouter(List<InputParams> inputs)`
+### `global static void InvocableRouter(List<InputParams> inputs)`
 
 `INVOCABLEMETHOD`
 ---
@@ -12,15 +11,15 @@
 ### InputParams
 #### Fields
 
-##### `recipientEmail` → `String`
+##### `global trans` → `String`
 
 `INVOCABLEVARIABLE` 
 
-##### `salesUp` → `Sales_Up__c`
+##### `global recipientEmail` → `String`
 
 `INVOCABLEVARIABLE` 
 
-##### `trans` → `String`
+##### `global salesUp` → `Sales_Up__c`
 
 `INVOCABLEVARIABLE` 
 

@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BirthDayRemainderScheduler
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -17,21 +16,17 @@
 **Group** Sales
 
 ## Methods
-### `execute(SchedulableContext SC)`
+### `global void execute(SchedulableContext SC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`SC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

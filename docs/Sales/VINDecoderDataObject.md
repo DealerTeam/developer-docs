@@ -1,15 +1,14 @@
-# VINDecoderDataObject
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
+---
+layout: default
+---
+# virtual VINDecoderDataObject
 
 
 
 **Group** Sales
 
 ## Methods
-### `convertDecodeData(Object obj)`
+### `global virtual Object convertDecodeData(Object obj)`
 
 Used to provide custom mapping and return the expected data points for creating and updating sObjects
 
@@ -19,246 +18,36 @@ Used to provide custom mapping and return the expected data points for creating 
 |---|---|
 |`obj`|obj description|
 
-#### Return
+#### Returns
 
-**Type**
-
-Object
-
-**Description**
-
-return description
+|Type|Description|
+|---|---|
+|`Object`|return description|
 
 
 **Method** convertDecodeData
 
 ---
 ## Classes
-### ColorData
-#### Constructors
-##### `ColorData()`
----
-#### Properties
-
-##### `exterior_colors` → `List&lt;ExteriorColors&gt;`
-
-`AURAENABLED` 
-
-##### `interior_colors` → `List&lt;InteriorColors&gt;`
-
-`AURAENABLED` 
-
-##### `roof_colors` → `List&lt;RoofColors&gt;`
-
-`AURAENABLED` 
-
----
-
-### CommonData
-#### Properties
-
-##### `body_subtype` → `String`
-
-`AURAENABLED` 
-
-##### `body_type` → `String`
-
-`AURAENABLED` 
-
-##### `brake_system` → `String`
-
-`AURAENABLED` 
-
-##### `country_of_manufacture` → `String`
-
-`AURAENABLED` 
-
-##### `doors` → `String`
-
-`AURAENABLED` 
-
-##### `drive_type` → `String`
-
-`AURAENABLED` 
-
-##### `make` → `String`
-
-`AURAENABLED` 
-
-##### `market` → `String`
-
-`AURAENABLED` 
-
-##### `model` → `String`
-
-`AURAENABLED` 
-
-##### `model_number` → `String`
-
-`AURAENABLED` 
-
-##### `package_code` → `String`
-
-`AURAENABLED` 
-
-##### `plant` → `String`
-
-`AURAENABLED` 
-
-##### `restraint_type` → `String`
-
-`AURAENABLED` 
-
-##### `trim` → `String`
-
-`AURAENABLED` 
-
-##### `vehicle_type` → `String`
-
-`AURAENABLED` 
-
-##### `year` → `String`
-
-`AURAENABLED` 
-
----
-
 ### DecodeData
 #### Constructors
-##### `DecodeData()`
+##### `global DecodeData()`
 ---
 #### Properties
 
-##### `common_data` → `CommonData`
+##### `global transaction_id` → `String`
 
 `AURAENABLED` 
 
-##### `error` → `Error`
+##### `global error` → `Error`
 
 `AURAENABLED` 
 
-##### `styles` → `Style[]`
+##### `global common_data` → `CommonData`
 
 `AURAENABLED` 
 
-##### `transaction_id` → `String`
-
-`AURAENABLED` 
-
----
-
-### Engine
-#### Properties
-
-##### `aspiration` → `String`
-
-`AURAENABLED` 
-
-##### `availability` → `String`
-
-`AURAENABLED` 
-
-##### `block_type` → `String`
-
-`AURAENABLED` 
-
-##### `bore` → `String`
-
-`AURAENABLED` 
-
-##### `brand` → `String`
-
-`AURAENABLED` 
-
-##### `cam_type` → `String`
-
-`AURAENABLED` 
-
-##### `compression` → `String`
-
-`AURAENABLED` 
-
-##### `cylinders` → `String`
-
-`AURAENABLED` 
-
-##### `displacement` → `String`
-
-`AURAENABLED` 
-
-##### `engine_id` → `String`
-
-`AURAENABLED` 
-
-##### `fuel_induction` → `String`
-
-`AURAENABLED` 
-
-##### `fuel_quality` → `String`
-
-`AURAENABLED` 
-
-##### `fuel_type` → `String`
-
-`AURAENABLED` 
-
-##### `invoice_price` → `String`
-
-`AURAENABLED` 
-
-##### `marketing_name` → `String`
-
-`AURAENABLED` 
-
-##### `max_hp` → `String`
-
-`AURAENABLED` 
-
-##### `max_hp_at` → `String`
-
-`AURAENABLED` 
-
-##### `max_payload` → `String`
-
-`AURAENABLED` 
-
-##### `max_torque` → `String`
-
-`AURAENABLED` 
-
-##### `max_torque_at` → `String`
-
-`AURAENABLED` 
-
-##### `msrp` → `String`
-
-`AURAENABLED` 
-
-##### `name` → `String`
-
-`AURAENABLED` 
-
-##### `oil_capacity` → `String`
-
-`AURAENABLED` 
-
-##### `order_code` → `String`
-
-`AURAENABLED` 
-
-##### `redline` → `String`
-
-`AURAENABLED` 
-
-##### `stroke` → `String`
-
-`AURAENABLED` 
-
-##### `valve_timing` → `String`
-
-`AURAENABLED` 
-
-##### `valves` → `String`
+##### `global styles` → `Style`
 
 `AURAENABLED` 
 
@@ -267,178 +56,133 @@ return description
 ### Error
 #### Properties
 
-##### `error_code` → `String`
+##### `global error_code` → `String`
 
 `AURAENABLED` 
 
-##### `error_message` → `String`
-
-`AURAENABLED` 
-
----
-
-### ExteriorColors
-#### Properties
-
-##### `generic_color_name` → `String`
-
-`AURAENABLED` 
-
-##### `mfr_code` → `String`
-
-`AURAENABLED` 
-
-##### `mfr_color_name` → `String`
-
-`AURAENABLED` 
-
-##### `primary_rgb_code` → `RGB`
-
-`AURAENABLED` 
-
-##### `secondary_rgb_code` → `RGB`
-
-`AURAENABLED` 
-
-##### `two_tone` → `String`
+##### `global error_message` → `String`
 
 `AURAENABLED` 
 
 ---
 
-### FuelEfficiency
+### CommonData
 #### Properties
 
-##### `city` → `Decimal`
+##### `global market` → `String`
 
 `AURAENABLED` 
 
-##### `combined` → `Decimal`
+##### `global year` → `String`
 
 `AURAENABLED` 
 
-##### `engine_id` → `String`
+##### `global make` → `String`
 
 `AURAENABLED` 
 
-##### `fuel_grade` → `String`
+##### `global model` → `String`
 
 `AURAENABLED` 
 
-##### `fuel_type` → `String`
+##### `global trim` → `String`
 
 `AURAENABLED` 
 
-##### `highway` → `Decimal`
+##### `global vehicle_type` → `String`
 
 `AURAENABLED` 
 
-##### `transmission_id` → `String`
+##### `global body_type` → `String`
+
+`AURAENABLED` 
+
+##### `global body_subtype` → `String`
+
+`AURAENABLED` 
+
+##### `global doors` → `String`
+
+`AURAENABLED` 
+
+##### `global model_number` → `String`
+
+`AURAENABLED` 
+
+##### `global package_code` → `String`
+
+`AURAENABLED` 
+
+##### `global drive_type` → `String`
+
+`AURAENABLED` 
+
+##### `global brake_system` → `String`
+
+`AURAENABLED` 
+
+##### `global restraint_type` → `String`
+
+`AURAENABLED` 
+
+##### `global country_of_manufacture` → `String`
+
+`AURAENABLED` 
+
+##### `global plant` → `String`
+
+`AURAENABLED` 
+
+##### `global trailer_type` → `String`
+
+`AURAENABLED` 
+
+##### `global trailer_subtype` → `String`
 
 `AURAENABLED` 
 
 ---
 
-### InstalledEquipment
+### Style
 #### Properties
 
-##### `category` → `String`
+##### `global name` → `String`
 
 `AURAENABLED` 
 
-##### `equipment` → `List&lt;InstalledEquipmentDetails&gt;`
+##### `global vehicle_id` → `String`
 
 `AURAENABLED` 
 
----
-
-### InstalledEquipmentDetails
-#### Properties
-
-##### `name` → `String`
+##### `global complete` → `String`
 
 `AURAENABLED` 
 
-##### `values` → `List&lt;String&gt;`
+##### `global basic_data` → `CommonData`
 
 `AURAENABLED` 
 
----
-
-### InteriorColors
-#### Properties
-
-##### `generic_color_name` → `String`
+##### `global pricing` → `Pricing`
 
 `AURAENABLED` 
 
-##### `mfr_code` → `String`
+##### `global engines` → `List&lt;Engine&gt;`
 
 `AURAENABLED` 
 
-##### `mfr_color_name` → `String`
+##### `global transmissions` → `List&lt;Transmission&gt;`
 
 `AURAENABLED` 
 
-##### `primary_rgb_code` → `RGB`
+##### `global installed_equipment` → `List&lt;InstalledEquipment&gt;`
 
 `AURAENABLED` 
 
-##### `secondary_rgb_code` → `RGB`
+##### `global optional_equipment` → `List&lt;OptionalEquipment&gt;`
 
 `AURAENABLED` 
 
-##### `two_tone` → `String`
-
-`AURAENABLED` 
-
----
-
-### OptionalEquipment
-#### Properties
-
-##### `category` → `String`
-
-`AURAENABLED` 
-
-##### `options` → `List&lt;OptionalEquipmentDetails&gt;`
-
-`AURAENABLED` 
-
----
-
-### OptionalEquipmentDetails
-#### Properties
-
-##### `description` → `String`
-
-`AURAENABLED` 
-
-##### `install_type` → `String`
-
-`AURAENABLED` 
-
-##### `installed` → `String`
-
-`AURAENABLED` 
-
-##### `invoice_price` → `String`
-
-`AURAENABLED` 
-
-##### `msrp` → `String`
-
-`AURAENABLED` 
-
-##### `name` → `String`
-
-`AURAENABLED` 
-
-##### `option_id` → `String`
-
-`AURAENABLED` 
-
-##### `order_code` → `String`
+##### `global epa_fuel_efficiency` → `List&lt;FuelEfficiency&gt;`
 
 `AURAENABLED` 
 
@@ -447,87 +191,136 @@ return description
 ### Pricing
 #### Properties
 
-##### `destination_charge` → `Decimal`
+##### `global msrp` → `Decimal`
 
 `AURAENABLED` 
 
-##### `gas_guzzler_tax` → `Decimal`
+##### `global invoice_price` → `Decimal`
 
 `AURAENABLED` 
 
-##### `invoice_price` → `Decimal`
+##### `global destination_charge` → `Decimal`
 
 `AURAENABLED` 
 
-##### `msrp` → `Decimal`
-
-`AURAENABLED` 
-
----
-
-### RGB
-#### Properties
-
-##### `b` → `String`
-
-`AURAENABLED` 
-
-##### `g` → `String`
-
-`AURAENABLED` 
-
-##### `hex` → `String`
-
-`AURAENABLED` 
-
-##### `r` → `String`
+##### `global gas_guzzler_tax` → `Decimal`
 
 `AURAENABLED` 
 
 ---
 
-### RoofColors
-
-### Style
+### Engine
 #### Properties
 
-##### `basic_data` → `CommonData`
+##### `global name` → `String`
 
 `AURAENABLED` 
 
-##### `complete` → `String`
+##### `global brand` → `String`
 
 `AURAENABLED` 
 
-##### `engines` → `List&lt;Engine&gt;`
+##### `global engine_id` → `String`
 
 `AURAENABLED` 
 
-##### `epa_fuel_efficiency` → `List&lt;FuelEfficiency&gt;`
+##### `global availability` → `String`
 
 `AURAENABLED` 
 
-##### `installed_equipment` → `List&lt;InstalledEquipment&gt;`
+##### `global aspiration` → `String`
 
 `AURAENABLED` 
 
-##### `name` → `String`
+##### `global block_type` → `String`
 
 `AURAENABLED` 
 
-##### `optional_equipment` → `List&lt;OptionalEquipment&gt;`
+##### `global bore` → `String`
 
 `AURAENABLED` 
 
-##### `pricing` → `Pricing`
+##### `global cam_type` → `String`
 
 `AURAENABLED` 
 
-##### `transmissions` → `List&lt;Transmission&gt;`
+##### `global compression` → `String`
 
 `AURAENABLED` 
 
-##### `vehicle_id` → `String`
+##### `global cylinders` → `String`
+
+`AURAENABLED` 
+
+##### `global displacement` → `String`
+
+`AURAENABLED` 
+
+##### `global fuel_induction` → `String`
+
+`AURAENABLED` 
+
+##### `global fuel_quality` → `String`
+
+`AURAENABLED` 
+
+##### `global fuel_type` → `String`
+
+`AURAENABLED` 
+
+##### `global msrp` → `String`
+
+`AURAENABLED` 
+
+##### `global invoice_price` → `String`
+
+`AURAENABLED` 
+
+##### `global marketing_name` → `String`
+
+`AURAENABLED` 
+
+##### `global max_hp` → `String`
+
+`AURAENABLED` 
+
+##### `global max_hp_at` → `String`
+
+`AURAENABLED` 
+
+##### `global max_payload` → `String`
+
+`AURAENABLED` 
+
+##### `global max_torque` → `String`
+
+`AURAENABLED` 
+
+##### `global max_torque_at` → `String`
+
+`AURAENABLED` 
+
+##### `global oil_capacity` → `String`
+
+`AURAENABLED` 
+
+##### `global order_code` → `String`
+
+`AURAENABLED` 
+
+##### `global redline` → `String`
+
+`AURAENABLED` 
+
+##### `global stroke` → `String`
+
+`AURAENABLED` 
+
+##### `global valve_timing` → `String`
+
+`AURAENABLED` 
+
+##### `global valves` → `String`
 
 `AURAENABLED` 
 
@@ -536,43 +329,253 @@ return description
 ### Transmission
 #### Properties
 
-##### `availability` → `String`
+##### `global brand` → `String`
 
 `AURAENABLED` 
 
-##### `brand` → `String`
+##### `global name` → `String`
 
 `AURAENABLED` 
 
-##### `detail_type` → `String`
+##### `global msrp` → `String`
 
 `AURAENABLED` 
 
-##### `gears` → `String`
+##### `global transmission_id` → `String`
 
 `AURAENABLED` 
 
-##### `invoice_price` → `String`
+##### `global availability` → `String`
 
 `AURAENABLED` 
 
-##### `msrp` → `String`
+##### `global type` → `String`
 
 `AURAENABLED` 
 
-##### `name` → `String`
+##### `global detail_type` → `String`
 
 `AURAENABLED` 
 
-##### `order_code` → `String`
+##### `global gears` → `String`
 
 `AURAENABLED` 
 
-##### `transmission_id` → `String`
+##### `global invoice_price` → `String`
 
 `AURAENABLED` 
 
-##### `type` → `String`
+##### `global order_code` → `String`
+
+`AURAENABLED` 
+
+---
+
+### InstalledEquipment
+#### Properties
+
+##### `global category` → `String`
+
+`AURAENABLED` 
+
+##### `global equipment` → `List&lt;InstalledEquipmentDetails&gt;`
+
+`AURAENABLED` 
+
+---
+
+### InstalledEquipmentDetails
+#### Properties
+
+##### `global name` → `String`
+
+`AURAENABLED` 
+
+##### `global values` → `List&lt;String&gt;`
+
+`AURAENABLED` 
+
+---
+
+### OptionalEquipment
+#### Properties
+
+##### `global category` → `String`
+
+`AURAENABLED` 
+
+##### `global options` → `List&lt;OptionalEquipmentDetails&gt;`
+
+`AURAENABLED` 
+
+---
+
+### OptionalEquipmentDetails
+#### Properties
+
+##### `global name` → `String`
+
+`AURAENABLED` 
+
+##### `global option_id` → `String`
+
+`AURAENABLED` 
+
+##### `global order_code` → `String`
+
+`AURAENABLED` 
+
+##### `global installed` → `String`
+
+`AURAENABLED` 
+
+##### `global install_type` → `String`
+
+`AURAENABLED` 
+
+##### `global invoice_price` → `String`
+
+`AURAENABLED` 
+
+##### `global msrp` → `String`
+
+`AURAENABLED` 
+
+##### `global description` → `String`
+
+`AURAENABLED` 
+
+---
+
+### ColorData
+#### Constructors
+##### `global ColorData()`
+---
+#### Properties
+
+##### `global exterior_colors` → `List&lt;ExteriorColors&gt;`
+
+`AURAENABLED` 
+
+##### `global interior_colors` → `List&lt;InteriorColors&gt;`
+
+`AURAENABLED` 
+
+##### `global roof_colors` → `List&lt;RoofColors&gt;`
+
+`AURAENABLED` 
+
+---
+
+### ExteriorColors
+#### Properties
+
+##### `global mfr_code` → `String`
+
+`AURAENABLED` 
+
+##### `global two_tone` → `String`
+
+`AURAENABLED` 
+
+##### `global generic_color_name` → `String`
+
+`AURAENABLED` 
+
+##### `global mfr_color_name` → `String`
+
+`AURAENABLED` 
+
+##### `global primary_rgb_code` → `RGB`
+
+`AURAENABLED` 
+
+##### `global secondary_rgb_code` → `RGB`
+
+`AURAENABLED` 
+
+---
+
+### InteriorColors
+#### Properties
+
+##### `global mfr_code` → `String`
+
+`AURAENABLED` 
+
+##### `global two_tone` → `String`
+
+`AURAENABLED` 
+
+##### `global generic_color_name` → `String`
+
+`AURAENABLED` 
+
+##### `global mfr_color_name` → `String`
+
+`AURAENABLED` 
+
+##### `global primary_rgb_code` → `RGB`
+
+`AURAENABLED` 
+
+##### `global secondary_rgb_code` → `RGB`
+
+`AURAENABLED` 
+
+---
+
+### RoofColors
+
+### FuelEfficiency
+#### Properties
+
+##### `global engine_id` → `String`
+
+`AURAENABLED` 
+
+##### `global transmission_id` → `String`
+
+`AURAENABLED` 
+
+##### `global fuel_type` → `String`
+
+`AURAENABLED` 
+
+##### `global fuel_grade` → `String`
+
+`AURAENABLED` 
+
+##### `global city` → `Decimal`
+
+`AURAENABLED` 
+
+##### `global highway` → `Decimal`
+
+`AURAENABLED` 
+
+##### `global combined` → `Decimal`
+
+`AURAENABLED` 
+
+---
+
+### RGB
+#### Properties
+
+##### `global r` → `String`
+
+`AURAENABLED` 
+
+##### `global g` → `String`
+
+`AURAENABLED` 
+
+##### `global b` → `String`
+
+`AURAENABLED` 
+
+##### `global hex` → `String`
 
 `AURAENABLED` 
 

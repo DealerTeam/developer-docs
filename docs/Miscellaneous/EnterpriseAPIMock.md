@@ -1,15 +1,14 @@
+---
+layout: default
+---
 # EnterpriseAPIMock
 
 `ISTEST`
-
-`APIVERSION: 49`
-
-`STATUS: ACTIVE`
 
 **Implemented types**
 
 [HttpCalloutMock](HttpCalloutMock)
 
 ## Methods
-### `respond(HttpRequest request)`
+### `global HttpResponse respond(HttpRequest request)`
 ---

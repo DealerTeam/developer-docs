@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # CarDealsActivityBatchable
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -17,21 +16,17 @@
 **Group** Sales
 
 ## Methods
-### `execute(SchedulableContext sc)`
+### `global void execute(SchedulableContext sc)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`sc`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

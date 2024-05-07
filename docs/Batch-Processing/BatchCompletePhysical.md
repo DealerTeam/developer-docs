@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BatchCompletePhysical
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 Database Batchable interface used with the processing of Parts Physical Inventory workload.
 
@@ -15,7 +14,7 @@ Database Batchable interface used with the processing of Parts Physical Inventor
 **Group** Batch Processing
 
 ## Constructors
-### `BatchCompletePhysical(String q)`
+### `global BatchCompletePhysical(String q)`
 
 The constructor sets the query string for this operation.
 
@@ -28,14 +27,14 @@ The constructor sets the query string for this operation.
 ---
 ## Fields
 
-### `query` → `String`
+### `global query` → `String`
 
 
 Query string to perform work on.
 
 ---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 
 Starts execution of the batchable interface
 
@@ -45,7 +44,7 @@ Starts execution of the batchable interface
 |---|---|
 |`BC`|BatchableContext|
 
-### `execute(Database.BatchableContext BC, List<sObject> scope)`
+### `global void execute(Database BC, List<sObject> scope)`
 
 Iterates sObjects returned
 
@@ -56,17 +55,13 @@ Iterates sObjects returned
 |`BC`|Database.BatchableContext|
 |`scope`|List<sObject>|
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 
 Finish interface for the Batchable context
 
@@ -76,14 +71,10 @@ Finish interface for the Batchable context
 |---|---|
 |`BC`|Database.BatchableContext|
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

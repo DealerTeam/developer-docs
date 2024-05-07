@@ -1,10 +1,9 @@
+---
+layout: default
+---
 # batchCalculateRewardsExec
 
 `DEPRECATED`
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -13,21 +12,17 @@
 [Schedulable](Schedulable)
 
 ## Methods
-### `execute(SchedulableContext sc)`
+### `global void execute(SchedulableContext sc)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`sc`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

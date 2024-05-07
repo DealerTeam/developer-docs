@@ -1,17 +1,16 @@
+---
+layout: default
+---
 # PartsInventoryRESTService
 
 `RESTRESOURCE`
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
 **Group** Parts
 
 ## Methods
-### `static getParts()`
+### `global static List<Parts_Inventory__c> getParts()`
 
 `HTTPGET`
 ---

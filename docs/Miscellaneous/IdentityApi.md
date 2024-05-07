@@ -1,39 +1,30 @@
+---
+layout: default
+---
 # IdentityApi
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 ## Methods
-### `static callerIdentification(String searchNumber)`
+### `global static List<caller> callerIdentification(String searchNumber)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`searchNumber`|description|
 
-#### Return
+#### Returns
 
-**Type**
-
-List&lt;caller&gt;
-
-**Description**
-
-description
+|Type|Description|
+|---|---|
+|`List<caller>`|description|
 
 
 **Method** callerIdentification
 
-### `static performCallout(String api, String searchParameter)`
-#### Return
+### `global static String performCallout(String api, String searchParameter)`
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-body
+|Type|Description|
+|---|---|
+|`String`|body|
 
 
 **Method** performCallout
@@ -43,46 +34,46 @@ body
 ### caller
 #### Properties
 
-##### `FirstName` → `String`
+##### `global line_type` → `String`
 
 
-##### `LastName` → `String`
+##### `global is_connected` → `boolean`
 
 
-##### `MiddleName` → `String`
+##### `global is_valid` → `boolean`
 
 
-##### `PersonMailingCity` → `String`
+##### `global do_not_call` → `boolean`
 
 
-##### `PersonMailingCountry` → `String`
+##### `global Salutation` → `String`
 
 
-##### `PersonMailingPostalCode` → `String`
+##### `global FirstName` → `String`
 
 
-##### `PersonMailingState` → `String`
+##### `global MiddleName` → `String`
 
 
-##### `PersonMailingStreet` → `String`
+##### `global LastName` → `String`
 
 
-##### `Salutation` → `String`
+##### `global Suffix` → `String`
 
 
-##### `Suffix` → `String`
+##### `global PersonMailingStreet` → `String`
 
 
-##### `do_not_call` → `boolean`
+##### `global PersonMailingCity` → `String`
 
 
-##### `is_connected` → `boolean`
+##### `global PersonMailingState` → `String`
 
 
-##### `is_valid` → `boolean`
+##### `global PersonMailingPostalCode` → `String`
 
 
-##### `line_type` → `String`
+##### `global PersonMailingCountry` → `String`
 
 
 ---

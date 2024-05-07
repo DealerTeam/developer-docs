@@ -1,10 +1,9 @@
+---
+layout: default
+---
 # InventoryMediaServiceMockCallout
 
 `ISTEST`
-
-`APIVERSION: 47`
-
-`STATUS: ACTIVE`
 
 
 
@@ -16,5 +15,5 @@
 **Group** Test
 
 ## Methods
-### `respond(HttpRequest request)`
+### `global HttpResponse respond(HttpRequest request)`
 ---

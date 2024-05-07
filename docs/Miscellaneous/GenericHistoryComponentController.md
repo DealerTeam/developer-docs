@@ -1,53 +1,52 @@
+---
+layout: default
+---
 # GenericHistoryComponentController
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 ## Fields
 
-### `historyFieldPicklistValues` → `List<Schema.PicklistEntry>`
+### `global objectHistory` → `objectHistoryLine`
 
 
-### `myObjectFieldMap` → `Map<String,Schema.SObjectField>`
+### `global mySObjectTypeMap` → `Map<String,Schema.SObjectType>`
 
 
-### `mySObjectTypeMap` → `Map<String,Schema.SObjectType>`
+### `global myObjectFieldMap` → `Map<String,Schema.SObjectField>`
 
 
-### `objectHistory` → `objectHistoryLine[]`
+### `global historyFieldPicklistValues` → `List<Schema.PicklistEntry>`
 
 
 ---
 ## Properties
 
-### `myObject` → `SObject`
+### `global myObject` → `SObject`
 
 
-### `objectLabel` → `String`
+### `global recordLimit` → `Integer`
 
 
-### `recordLimit` → `Integer`
+### `global objectLabel` → `String`
 
 
 ---
 ## Methods
-### `getObjectHistory()`
-### `static returnFieldLabel(String fieldName)`
+### `global List<objectHistoryLine> getObjectHistory()`
+### `global static String returnFieldLabel(String fieldName)`
 ---
 ## Classes
 ### objectHistoryLine
 #### Properties
 
-##### `action` → `String`
+##### `global theDate` → `String`
 
 
-##### `theDate` → `String`
+##### `global who` → `String`
 
 
-##### `userId` → `Id`
+##### `global userId` → `Id`
 
 
-##### `who` → `String`
+##### `global action` → `String`
 
 
 ---

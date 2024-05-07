@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # BatchPopulateServiceIdOnVehicleInventory
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -17,26 +16,29 @@
 **Group** Service
 
 ## Constructors
-### `BatchPopulateServiceIdOnVehicleInventory()`
+### `global BatchPopulateServiceIdOnVehicleInventory()`
 
 **Method** BatchPopulateServiceIdOnVehicleInventory
 
 ---
 ## Fields
 
-### `ListRecForEmailId` → `List<id>`
+### `private query` → `String`
+
+
+### `global ListRecForEmailId` → `List<id>`
 
 
 ---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-### `execute(Database.BatchableContext BC, List<dealer__Vehicle_Inventory__c> scope)`
+### `global void execute(Database BC, List<dealer__Vehicle_Inventory__c> scope)`
 #### Parameters
 
 |Param|Description|
@@ -44,31 +46,23 @@
 |`BC`||
 |`scope`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

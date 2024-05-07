@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # CarDealsActivity
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -17,7 +16,7 @@
 **Group** Sales
 
 ## Constructors
-### `CarDealsActivity(string q)`
+### `global CarDealsActivity(string q)`
 #### Parameters
 
 |Param|Description|
@@ -30,19 +29,19 @@
 ---
 ## Fields
 
-### `Query` → `string`
+### `global Query` → `string`
 
 
 ---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-### `execute(Database.BatchableContext BC, List<sobject> prescriberScope)`
+### `global void execute(Database BC, List<sobject> prescriberScope)`
 #### Parameters
 
 |Param|Description|
@@ -50,15 +49,11 @@
 |`BC`||
 |`prescriberScope`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-void
-
-**Description**
-
-void
-
-### `finish(Database.BatchableCOntext BC)`
+### `global void finish(Database BC)`
 ---

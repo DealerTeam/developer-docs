@@ -1,10 +1,8 @@
+---
+layout: default
+---
 # BatchUpdatePartSaleMetricExec
 
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
-
-Handles Batch processing of parts inventory
 
 
 **Implemented types**
@@ -15,27 +13,23 @@ Handles Batch processing of parts inventory
 **Class** BatchUpdatePartSaleMetricExec
 
 
-**Test** [PartAnalyticsSystemLayer](PartAnalyticsSystemLayer)
+**Test** PartAnalyticsSystemLayer.testBatchScheduledEvent
 
 
 **Group** Service
 
 ## Methods
-### `execute(SchedulableContext sc)`
+### `global void execute(SchedulableContext sc)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`sc`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

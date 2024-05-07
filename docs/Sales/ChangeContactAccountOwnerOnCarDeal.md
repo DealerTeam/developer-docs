@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # ChangeContactAccountOwnerOnCarDeal
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -19,7 +18,7 @@
 **Group** Sales
 
 ## Constructors
-### `ChangeContactAccountOwnerOnCarDeal(String query)`
+### `global ChangeContactAccountOwnerOnCarDeal(String query)`
 #### Parameters
 
 |Param|Description|
@@ -30,36 +29,52 @@
 **Method** ChangeContactAccountOwnerOnCarDeal
 
 ---
+## Fields
+
+### `private initialState` → `String`
+
+
+### `private query` → `String`
+
+
+### `private batchsize` → `Integer`
+
+
+### `public ContactsOwners` → `Map<String,String>`
+
+
+### `public AccountOwners` → `Map<String,String>`
+
+
+### `public consList` → `List<String>`
+
+
+### `public AccsList` → `List<String>`
+
+
+---
 ## Methods
-### `start(Database.BatchableContext BC)`
+### `global Database start(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
+|Type|Description|
+|---|---|
+|`Database`||
 
-Database.QueryLocator
+### `global void execute(Database BC, List<sObject> batch)`
+#### Returns
 
-**Description**
+|Type|Description|
+|---|---|
+|`void`|void|
 
-
-
-### `execute(Database.BatchableContext BC, List<sObject> batch)`
-#### Return
-
-**Type**
-
-void
-
-**Description**
-
-void
-
-### `updateOwners(Map<String,String> con, Map<String,String> Acc)`
+### `global void updateOwners(Map<String,String> con, Map<String,String> Acc)`
 #### Parameters
 
 |Param|Description|
@@ -67,34 +82,26 @@ void
 |`con`||
 |`Acc`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 
 **Method** updateOwners
 
-### `finish(Database.BatchableContext BC)`
+### `global void finish(Database BC)`
 #### Parameters
 
 |Param|Description|
 |---|---|
 |`BC`||
 
-#### Return
+#### Returns
 
-**Type**
-
-void
-
-**Description**
-
-void
+|Type|Description|
+|---|---|
+|`void`|void|
 
 ---

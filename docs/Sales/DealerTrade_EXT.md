@@ -1,8 +1,7 @@
+---
+layout: default
+---
 # DealerTrade_EXT
-
-`APIVERSION: 45`
-
-`STATUS: ACTIVE`
 
 
 
@@ -12,7 +11,7 @@
 **Group** Sales
 
 ## Constructors
-### `DealerTrade_EXT(ApexPages.StandardController controller)`
+### `global DealerTrade_EXT(ApexPages controller)`
 #### Parameters
 
 |Param|Description|
@@ -25,21 +24,23 @@
 ---
 ## Properties
 
-### `dt` → `Dealer_Trade__c`
+### `global dt` → `Dealer_Trade__c`
+
+
+### `public createdBy` → `String`
+
+
+### `public modifiedBy` → `String`
 
 
 ---
 ## Methods
-### `getInvoiceLogo()`
-#### Return
+### `global String getInvoiceLogo()`
+#### Returns
 
-**Type**
-
-String
-
-**Description**
-
-String
+|Type|Description|
+|---|---|
+|`String`|String|
 
 
 **Method** getInvoiceLogo
